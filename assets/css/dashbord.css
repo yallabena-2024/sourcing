@@ -2585,6 +2585,13 @@
   background-color: #15803e;
 }
 
+.sub-tab {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  margin-left: 35px;
+}
+
 /* Responsive Section */
 /* in xs */
 @media (max-width: 576px) {

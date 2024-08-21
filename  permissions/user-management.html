@@ -15,1024 +15,984 @@ License: For each use you must have a valid license purchased only from above li
 <!--begin::Head-->
 
 <head>
-    <base href="" />
-    <title>Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes</title>
-    <meta charset="utf-8" />
-    <meta name="description"
-        content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
-    <meta name="keywords"
-        content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title"
-        content="Metronic - Bootstrap Admin Template, HTML, VueJS, React, Angular. Laravel, Asp.Net Core, Ruby on Rails, Spring Boot, Blazor, Django, Express.js, Node.js, Flask Admin Dashboard Theme & Template" />
-    <meta property="og:url" content="https://keenthemes.com/metronic" />
-    <meta property="og:site_name" content="Keenthemes | Metronic" />
-    <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="../assets/media/logos/favicon.ico" />
-    <!--begin::Fonts(mandatory for all pages)-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <!--end::Fonts-->
-    <!--begin::Vendor Stylesheets(used for this page only)-->
-    <link href="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-    <!--end::Vendor Stylesheets-->
-    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-    <link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/dashbord.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-    </style>
-    <!--end::Global Stylesheets Bundle-->
-    <script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+  <base href="" />
+  <title>Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes</title>
+  <meta charset="utf-8" />
+  <meta name="description"
+    content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
+  <meta name="keywords"
+    content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title"
+    content="Metronic - Bootstrap Admin Template, HTML, VueJS, React, Angular. Laravel, Asp.Net Core, Ruby on Rails, Spring Boot, Blazor, Django, Express.js, Node.js, Flask Admin Dashboard Theme & Template" />
+  <meta property="og:url" content="https://keenthemes.com/metronic" />
+  <meta property="og:site_name" content="Keenthemes | Metronic" />
+  <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+  <link rel="shortcut icon" href="../assets/media/logos/favicon.ico" />
+  <!--begin::Fonts(mandatory for all pages)-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!--end::Fonts-->
+  <!--begin::Vendor Stylesheets(used for this page only)-->
+  <link href="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <!--end::Vendor Stylesheets-->
+  <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+  <link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/dashbord.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+  <!--end::Global Stylesheets Bundle-->
+  <script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
 </head>
 <!--end::Head-->
 <!--begin::Body-->
 
 <body id="kt_app_body" style="background: #F8F8F8; background-image: url(../assets/media/img/vector.svg);"
-    data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true" data-kt-app-sidebar-enabled="true"
-    data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true"
-    data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default">
-    <!--begin::Theme mode setup on page load-->
-    <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
-        <!--begin::Page-->
-        <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
-            <!--begin::Header-->
-            <div id="kt_app_header" class="app-header border-2" data-kt-sticky="true"
-                data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize"
-                data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
-                <!--begin::Header container-->
-                <div class="app-container border-v1 container-fluid d-flex align-items-stretch justify-content-between px-lg-17"
-                    id="kt_app_header_container">
-                    <!--begin::Sidebar mobile toggle-->
+  data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true" data-kt-app-sidebar-enabled="true"
+  data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true"
+  data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default">
+  <!--begin::Theme mode setup on page load-->
+  <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+    <!--begin::Page-->
+    <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+      <!--begin::Header-->
+      <div id="kt_app_header" class="app-header border-2" data-kt-sticky="true"
+        data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize"
+        data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
+        <!--begin::Header container-->
+        <div class="app-container border-v1 container-fluid d-flex align-items-stretch justify-content-between px-lg-17"
+          id="kt_app_header_container">
+          <!--begin::Sidebar mobile toggle-->
 
-                    <!--end::Mobile logo-->
-                    <!--begin::Header wrapper-->
-                    <div class=" d-flex  justify-content-between flex-lg-grow-1 " id="kt_app_header_wrapper">
-                        <!--begin::Menu wrapper-->
-                        <div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true"
-                            data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}"
-                            data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end"
-                            data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true"
-                            data-kt-swapper-mode="{default: 'append', lg: 'prepend'}"
-                            data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}">
-                            <!--begin::Menu-->
-                            <div class="menu menu-rounded menu-column menu-lg-row my-5 my-lg-0 align-items-stretch fw-semibold px-2 px-lg-0"
-                                id="kt_app_header_menu" data-kt-menu="true">
-                                <div class="d-flex align-items-center text-bink ">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px align-items-center">
-                                        <div class="">
-                                            <span><img alt="Logo" src="../assets/media/icons/duotune/back.svg"></span>
-                                        </div>
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <span
-                                        class="menu-title  align-items-center fs-16px ml-12px text-bink fw-bold mt-1">Dashboard</span>
-                                    <!--end::Name-->
-                                </div>
-                                <div class="d-flex align-items-center text-bink ">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px ml-14px">
-                                        <div class="">
-                                            <span><img alt="Logo"
-                                                    src="../assets/media/icons/duotune/forword.svg"></span>
-                                        </div>
-                                    </div>
+          <!--end::Mobile logo-->
+          <!--begin::Header wrapper-->
+          <div class=" d-flex  justify-content-between flex-lg-grow-1 " id="kt_app_header_wrapper">
+            <!--begin::Menu wrapper-->
+            <div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true"
+              data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}"
+              data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end"
+              data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true"
+              data-kt-swapper-mode="{default: 'append', lg: 'prepend'}"
+              data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}">
+              <!--begin::Menu-->
+              <div
+                class="menu menu-rounded menu-column menu-lg-row my-5 my-lg-0 align-items-stretch fw-semibold px-2 px-lg-0"
+                id="kt_app_header_menu" data-kt-menu="true">
+                <div class="d-flex align-items-center text-bink ">
+                  <!--begin::Avatar-->
+                  <div class="symbol symbol-35px align-items-center">
+                    <div class="">
+                      <span><img alt="Logo" src="../assets/media/icons/duotune/back.svg"></span>
+                    </div>
+                  </div>
+                  <!--end::Avatar-->
+                  <!--begin::Name-->
+                  <span class="menu-title  align-items-center fs-16px ml-12px text-bink fw-bold mt-1">Dashboard</span>
+                  <!--end::Name-->
+                </div>
+                <div class="d-flex align-items-center text-bink ">
+                  <!--begin::Avatar-->
+                  <div class="symbol symbol-35px ml-14px">
+                    <div class="">
+                      <span><img alt="Logo" src="../assets/media/icons/duotune/forword.svg"></span>
+                    </div>
+                  </div>
 
-                                    <div class="symbol symbol-35px ml-14px	">
-                                        <div class="">
-                                            <span><img alt="Logo"
-                                                    src="../assets/media/icons/duotune/overview.svg"></span>
-                                        </div>
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <span class="menu-title  align-items-center fs-16px mx-2 fw-bold">Overview
-                                        Analytics</span>
-                                    <!--end::Name-->
-                                </div>
+                  <div class="symbol symbol-35px ml-14px	">
+                    <div class="">
+                      <span><img alt="Logo" src="../assets/media/icons/duotune/overview.svg"></span>
+                    </div>
+                  </div>
+                  <!--end::Avatar-->
+                  <!--begin::Name-->
+                  <span class="menu-title  align-items-center fs-16px mx-2 fw-bold">Overview
+                    Analytics</span>
+                  <!--end::Name-->
+                </div>
 
-                            </div>
+              </div>
 
-                            <!--end::Menu-->
-                        </div>
-                        <div class="card-title align-items-center d-flex ">
-                            <!--begin::Search-->
-                            <div class="d-flex align-items-center position-relative my-1">
-                                <i class="ki-duotone ki-magnifier fs-3 position-absolute ms-4">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </i>
-                                <input type="text" data-kt-ecommerce-product-filter="search"
-                                    class="form-control  w-300px ps-12" placeholder="Search Product">
-                            </div>
-                            <!--end::Search-->
-                        </div>
-                        <!--end::Menu wrapper-->
-                        <!--begin::Navbar-->
-                        <div class="app-navbar flex-shrink-0">
-                            <!--begin::Search-->
-                            <div class="app-navbar-item align-items-stretch ms-1 ms-md-4">
-                                <!--begin::Search-->
-                                <div id="kt_header_search" class="header-search d-flex align-items-stretch"
-                                    data-kt-search-keypress="true" data-kt-search-min-length="2"
-                                    data-kt-search-enter="enter" data-kt-search-layout="menu"
-                                    data-kt-menu-trigger="auto" data-kt-menu-overflow="false"
-                                    data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end"
-                                    data-kt-search="true">
-                                    <!--begin::Search toggle-->
-                                    <div class="d-flex align-items-center" data-kt-search-element="toggle"
-                                        id="kt_header_notification_toggle">
-                                        <div class="btn btn-icon btn-custom btn-icon-muted  w-35px h-35px">
-                                            <img alt="Logo" src="../assets/media/icons/duotune/notification.svg">
-                                        </div>
-                                        <div class="app-navbar-item ml-12px">
-                                            <!--begin::Menu wrapper-->
-                                            <div class="btn btn-icon btn-custom btn-icon-muted   w-35px h-35px "">
+              <!--end::Menu-->
+            </div>
+            <div class="card-title align-items-center d-flex ">
+              <!--begin::Search-->
+              <div class="d-flex align-items-center position-relative my-1">
+                <i class="ki-duotone ki-magnifier fs-3 position-absolute ms-4">
+                  <span class="path1"></span>
+                  <span class="path2"></span>
+                </i>
+                <input type="text" data-kt-ecommerce-product-filter="search" class="form-control  w-300px ps-12"
+                  placeholder="Search Product">
+              </div>
+              <!--end::Search-->
+            </div>
+            <!--end::Menu wrapper-->
+            <!--begin::Navbar-->
+            <div class="app-navbar flex-shrink-0">
+              <!--begin::Search-->
+              <div class="app-navbar-item align-items-stretch ms-1 ms-md-4">
+                <!--begin::Search-->
+                <div id="kt_header_search" class="header-search d-flex align-items-stretch"
+                  data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter"
+                  data-kt-search-layout="menu" data-kt-menu-trigger="auto" data-kt-menu-overflow="false"
+                  data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end" data-kt-search="true">
+                  <!--begin::Search toggle-->
+                  <div class="d-flex align-items-center" data-kt-search-element="toggle"
+                    id="kt_header_notification_toggle">
+                    <div class="btn btn-icon btn-custom btn-icon-muted  w-35px h-35px">
+                      <img alt="Logo" src="../assets/media/icons/duotune/notification.svg">
+                    </div>
+                    <div class="app-navbar-item ml-12px">
+                      <!--begin::Menu wrapper-->
+                      <div class="btn btn-icon btn-custom btn-icon-muted   w-35px h-35px "">
 												<img alt=" Logo" src="../assets/media/icons/duotune/line.svg">
-                                            </div>
-                                            <!--end::Menu wrapper-->
-                                        </div>
-                                        <div class="d-flex align-items-center ml-3 flex-stack">
-                                            <!--begin::Thumbnail-->
-                                            <a class="symbol ">
-                                                <span class="symbol-label  w-42px h-42px"
-                                                    style="background-image:url(../assets/media/books/1.png);"></span>
-                                            </a>
-                                            <!--end::Thumbnail-->
-                                            <div class="ms-5">
-                                                <!--begin::Title-->
-                                                <div class="link-yellow  fs-16px fw-normal fw-bolder"
-                                                    data-kt-ecommerce-product-filter="product_name">Khaled Salama</div>
-                                                <div class="text-bink fs-14px fw-normal"
-                                                    data-kt-ecommerce-product-filter="product_name">khaled@yallabena.com
-                                                </div>
-
-                                                <!--end::Title-->
-                                            </div>
-                                        </div>
-                                        <div class="app-navbar-item ml-12px ">
-                                            <!--begin::Menu wrapper-->
-                                            <div class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px position-relative"
-                                                id="kt_drawer_chat_toggle">
-                                                <img alt="Logo" src="../assets/media/icons/duotune/line.svg">
-                                            </div>
-                                            <!--end::Menu wrapper-->
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="app-navbar-item">
-                                        <!--begin::Menu wrapper-->
-                                        <div class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px position-relative"
-                                            id="kt_drawer_chat_toggle">
-                                            <img alt="Logo" src="../assets/media/icons/duotune/flag-usa.svg">
-
-                                        </div>
-                                        <!--end::Menu wrapper-->
-                                    </div>
-
-                                </div>
-                                <div class="separator separator-dashed my-6"></div>
-                                <div class="app-navbar-item d-lg-none ms-2 me-n2" title="Show header menu">
-                                    <div class="btn btn-flex btn-icon btn-active-color-primary w-30px h-30px"
-                                        id="kt_app_header_menu_toggle">
-                                        <i class="ki-duotone ki-element-4 fs-1">
-                                            <span class="path1"></span>
-                                            <span class="path2"></span>
-                                        </i>
-                                    </div>
-                                </div>
-
-                                <!--end::Search-->
-                            </div>
-                            <!--end::Search-->
-
-                            <!--end::Header menu toggle-->
-                            <!--begin::Aside toggle-->
-                            <!--end::Header menu toggle-->
+                      </div>
+                      <!--end::Menu wrapper-->
+                    </div>
+                    <div class="d-flex align-items-center ml-3 flex-stack">
+                      <!--begin::Thumbnail-->
+                      <a class="symbol ">
+                        <span class="symbol-label  w-42px h-42px"
+                          style="background-image:url(../assets/media/books/1.png);"></span>
+                      </a>
+                      <!--end::Thumbnail-->
+                      <div class="ms-5">
+                        <!--begin::Title-->
+                        <div class="link-yellow  fs-16px fw-normal fw-bolder"
+                          data-kt-ecommerce-product-filter="product_name">Khaled Salama</div>
+                        <div class="text-bink fs-14px fw-normal" data-kt-ecommerce-product-filter="product_name">
+                          khaled@yallabena.com
                         </div>
-                        <!--end::Navbar-->
+
+                        <!--end::Title-->
+                      </div>
+                    </div>
+                    <div class="app-navbar-item ml-12px ">
+                      <!--begin::Menu wrapper-->
+                      <div
+                        class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px position-relative"
+                        id="kt_drawer_chat_toggle">
+                        <img alt="Logo" src="../assets/media/icons/duotune/line.svg">
+                      </div>
+                      <!--end::Menu wrapper-->
+                    </div>
+                  </div>
+
+
+
+                  <div class="app-navbar-item">
+                    <!--begin::Menu wrapper-->
+                    <div
+                      class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px position-relative"
+                      id="kt_drawer_chat_toggle">
+                      <img alt="Logo" src="../assets/media/icons/duotune/flag-usa.svg">
 
                     </div>
+                    <!--end::Menu wrapper-->
+                  </div>
 
-
-                    <!--end::Header wrapper-->
+                </div>
+                <div class="separator separator-dashed my-6"></div>
+                <div class="app-navbar-item d-lg-none ms-2 me-n2" title="Show header menu">
+                  <div class="btn btn-flex btn-icon btn-active-color-primary w-30px h-30px"
+                    id="kt_app_header_menu_toggle">
+                    <i class="ki-duotone ki-element-4 fs-1">
+                      <span class="path1"></span>
+                      <span class="path2"></span>
+                    </i>
+                  </div>
                 </div>
 
+                <!--end::Search-->
+              </div>
+              <!--end::Search-->
 
-                <!--end::Header container-->
+              <!--end::Header menu toggle-->
+              <!--begin::Aside toggle-->
+              <!--end::Header menu toggle-->
             </div>
+            <!--end::Navbar-->
 
-            <!--end::Header-->
-            <!--begin::Wrapper-->
-            <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">
-                <!--begin::Sidebar-->
-                <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true"
-                    data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}"
-                    data-kt-drawer-overlay="true" data-kt-drawer-width="225px" data-kt-drawer-direction="start"
-                    data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
-                    <!--begin::Logo-->
-                    <div id="kt_app_sidebar_toggle_v1"
-                        class="app-sidebar-arrow my-6 app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary h-30px w-30px position-absolute top-150 start-100 translate-middle rotate mt-30"
-                        data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
-                        data-kt-toggle-name="app-sidebar-minimize" style="border-radius: 99px;
-						border: 1px solid var(--Color-Border, #E2E8F0);
-						background: var(--Color-Background, #FFF);">
-                        <img class=" fs-3 rotate-180" alt="Logo" src="../assets/media/icons/duotune/forword.svg" />
+          </div>
 
 
-                    </div>
-                    <div class="app-sidebar-logo d-flex flex-center" id="kt_app_sidebar_logo">
-                        <div class="center-content  align-items-center my-4">
-                            <img alt="Logo" src="../assets/media/logos/logo.png"
-                                class=" card-center h-53px app-sidebar-logo-default">
-                            <img alt="Logo" src="../assets/media/logos/favicon.ico"
-                                class=" card-center h-53px app-sidebar-logo-minimize">
-                        </div>
-
-
-                    </div>
-
-                    <!--end::Logo-->
-                    <!--begin::sidebar menu-->
-                    <div class="app-sidebar-menu overflow-hidden flex-column-fluid mt-4">
-                        <!--begin::Menu wrapper-->
-                        <div id="kt_app_sidebar_menu_wrapper" class="app-sidebar-wrapper">
-                            <!--begin::Scroll wrapper-->
-                            <div id="kt_app_sidebar_menu_scroll" class="scroll-y my-5 mx-3" data-kt-scroll="true"
-                                data-kt-scroll-activate="true" data-kt-scroll-height="auto"
-                                data-kt-scroll-dependencies="#kt_app_sidebar_logo, #kt_app_sidebar_footer"
-                                data-kt-scroll-wrappers="#kt_app_sidebar_menu" data-kt-scroll-offset="5px"
-                                data-kt-scroll-save-state="true" style="height: 297px;">
-                                <!--begin::Menu-->
-                                <div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6"
-                                    id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false">
-                                    <!--begin:Menu item-->
-
-                                    <div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
-
-                                        <!--begin:Menu link-->
-                                        <div class="app-sidebar-menu overflow-hidden flex-column-fluid">
-                                            <div class="menu-item mt-6">
-
-                                                <a class="menu-link  " href="../dashboard/dashbord.html">
-                                                    <span class="menu-icon">
-                                                        <img class="fs-2" alt="Logo"
-                                                            src="../assets/media/icons/duotune/grid-view.svg">
-
-                                                    </span>
-                                                    <span class="menu-title fs-16px fw-normal">Dashboards</span>
-                                                </a>
-                                            </div>
-
-                                            <div class="menu-item mt-3">
-
-                                                <a class="menu-link"
-                                                    href="../product-management/product-management.html">
-                                                    <span class="menu-icon">
-
-                                                        <img lass="fs-2" alt="Logo"
-                                                            src="../assets/media/icons/duotune/product.svg">
-
-                                                    </span>
-                                                    <span class="menu-title fs-16px  fw-normal ">Products</span>
-                                                </a>
-                                            </div>
-
-
-                                            <div class="menu-item mt-3">
-
-                                                <a class="menu-link "
-                                                    href="../inquiry-management/Inquiry-management.html">
-                                                    <span class="menu-icon ">
-                                                        <img lass="fs-2" alt="Logo"
-                                                            src="../assets/media/icons/duotune/requests.svg">
-
-                                                    </span>
-                                                    <span class="menu-title fs-16px  fw-normal">Requests</span>
-                                                </a>
-                                            </div>
-
-                                            <div class="menu-item mt-3">
-
-                                                <span class="menu-link  ">
-                                                    <span class="menu-icon">
-                                                        <img lass="fs-2" alt="Logo"
-                                                            src="../assets/media/icons/duotune/order.svg">
-
-                                                    </span>
-                                                    <span class="menu-title fs-16px   fw-normal">Order Management</span>
-                                                </span>
-                                            </div>
-
-                                            <div class="menu-item mt-3">
-
-                                                <a class="menu-link  " href="../cargo-management/cargo-management.html">
-                                                    <span class="menu-icon">
-                                                        <img lass="fs-2" alt="Logo"
-                                                            src="../assets/media/icons/duotune/cargo.svg">
-
-                                                    </span>
-                                                    <span class="menu-title fs-16px fw-normal ">Cargo Management</span>
-                                                </a>
-                                            </div>
-
-                                            <div class="menu-item mt-3">
-
-                                                <a class="menu-link  " href="../shipping/index.html">
-                                                    <span class="menu-icon">
-                                                        <img lass="fs-2" alt="Logo"
-                                                            src="../assets/media/icons/duotune/shipping.svg">
-
-                                                    </span>
-                                                    <span class="menu-title fs-16px fw-normal ">One Piece
-                                                        Shipping</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item mt-3">
-
-                                                <span class="menu-link  active">
-                                                    <span class="menu-icon">
-                                                        <img lass="fs-2" alt="Logo"
-                                                            src="../assets/media/icons/duotune/permissions-active.svg">
-
-                                                    </span>
-                                                    <span class="menu-title fs-16px">Permissions</span>
-                                                </span>
-                                            </div>
-                                        </div>
-
-
-
-
-                                        <!--end:Menu sub-->
-                                    </div>
-
-
-
-                                    <!--end:Menu item-->
-
-                                </div>
-
-
-                                <!--end::Menu-->
-                            </div>
-
-                            <!--end::Scroll wrapper-->
-                        </div>
-                        <!--end::Menu wrapper-->
-                    </div>
-
-
-                    <!--end::sidebar menu-->
-                    <!--begin::Footer-->
-                    <div class="app-sidebar-footer menu-item here show menu-accordion" id="kt_app_sidebar_footer">
-
-						<div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6"
-							id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false">
-							<!--begin:Menu item-->
-
-							<div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
-
-								<div class="app-sidebar-menu overflow-hidden flex-column-fluid ml-14px">
-
-									<div class="menu-item mt-3">
-                                        <a class="menu-link " href="../contact-us/index.html">
-											<span class="menu-icon">
-												<img lass="fs-2" alt="Logo"
-													src="../assets/media/icons/duotune/help.svg">
-
-											</span>
-											<span class="menu-title fs-16px fw-normal ">Help</span>
-										</a>
-									</div>
-									<div class="menu-item mt-3">
-
-										<a class="menu-link  " href="../settings/personal-information.html">
-											<span class="menu-icon">
-												<img lass="fs-2" alt="Logo"
-													src="../assets/media/icons/duotune/settings.svg">
-
-											</span>
-											<span class="menu-title fs-16px fw-normal ">Settings</span>
-										</a>
-									</div>
-									<div class="separator separator-dashed my-3"></div>
-
-									<div class="menu-item mt-3 ">
-
-										<a class="menu-link  " href="../login.html">
-											<span class="menu-icon">
-												<img lass="fs-2" alt="Logo"
-													src="../assets/media/icons/duotune/logout.svg">
-
-											</span>
-											<span class="menu-title text-yellow fs-16px fw-normal ">Logout</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- </div> -->
-
-					</div>
-                    <!--end::Footer-->
-                </div>
-
-                <div class="app-main flex-column flex-row-fluid " id="kt_app_main">
-                    <!--begin::Content wrapper-->
-                    <div class="d-flex flex-column flex-column-fluid">
-
-
-                        <div class="row">
-
-                            <div class="col-12 col-md-3 fixed-wrapper">
-                                <div class="fixed-div">
-                                    <div class=" col-12 col-md-12 vh-90">
-
-                                        <form action="../ permissions/role-management.html">
-                                        <button type="submit" class="mx-3 btn  fw-bold d-flex  align-items-center w-90 mt-6  py-6">
-                                            <img alt="Logo" src="../assets/media/icons/duotune/grid-view.svg" class="me-2 btn-trim-start">
-                                            <span class="justify-content-center text-gray-600 fs-16px">Role Management</span>
-                                        </button>
-                                       </form>
-                                        <button type="button" class="mx-3 btn btn-bink fw-bold d-flex  align-items-center w-90 mt-6  py-6">
-                                            <img alt="Logo" src="../assets/media/icons/duotune/product-active.svg" class="me-2 btn-trim-start">
-                                            <span class="justify-content-center text-white fs-16px">User Management</span>
-                                        </button>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                            <div class=" col-12 col-md-9 mb-4  ml-14px">
-                                <!--begin::Toolbar-->
-                                <div id="kt_app_toolbar" class="app-toolbar  py-2 py-lg-4 ">
-
-                                    <!--begin::Toolbar container-->
-                                    <div id="kt_app_toolbar_container"
-                                        class="app-container  container-xxl d-flex flex-stack ">
-
-
-
-                                        <!--begin::Page title-->
-                                        <div class="page-title d-flex flex-column justify-content-center flex-wrap ">
-                                            <!--begin::Title-->
-                                            <div class="d-flex fw-semibold align-items-center">
-
-                                                <h1
-                                                    class="link-yellow page-heading d-flex fw-bolder fs-30px flex-column justify-content-center my-0">
-                                                    User Management </h1>
-                                                <div class="btn btn-icon btn-custom btn-icon-muted   w-35px h-35px " "="">
-										<img alt=" Logo" src="../assets/media/icons/duotune/line.svg">
-                                                </div>
-                                                <!--end::Title-->
-
-                                            </div>
-
-                                            <!--begin::Breadcrumb-->
-                                            <ul
-                                                class="text-bink breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
-                                                Efficiently manage orders from placement to fulfillment. </ul>
-                                            <!--end::Breadcrumb-->
-                                        </div>
-                                        <!--end::Page title-->
-                                        <!--begin::Actions-->
-                                        <div class="d-flex align-items-center gap-2 gap-lg-3">
-
-
-                                            <!--begin::Secondary button-->
-
-                                            <!--end::Secondary button-->
-
-                                            <!--begin::Primary button-->
-                                            <button class="btn btn-primary fw-bold" data-bs-toggle="modal"
-                                                data-bs-target="#kt_modal_1">
-                                                <img class="img me-2" src="../assets/media/icons/duotune/add.svg">
-                                                Add New User
-                                            </button>
-
-
-                                            <div class="modal fade" tabindex="-1" id="kt_modal_1">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h3 class="modal-title fw-bold"> Add New User</h3>
-
-                                                            <!--begin::Close-->
-                                                            <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                                data-bs-dismiss="modal" aria-label="Close">
-                                                                <i class="ki-duotone ki-cross fs-1"><span
-                                                                        class="path1"></span><span
-                                                                        class="path2"></span></i>
-                                                            </div>
-                                                            <!--end::Close-->
-                                                        </div>
-
-                                                        <div class="modal-body" class="modal fade" tabindex="-1"
-                                                            id="kt_modal_1">
-                                                            <form
-                                                            class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
-                                                            novalidate="novalidate" id="kt_sign_in_form"
-                                                            data-kt-redirect-url="../../demo1/dist/index.html"
-                                                            action="#">
-                                                            <div
-                                                                class="mb-10 fv-row fv-plugins-icon-container ">
-                                                                <!--begin::Label-->
-                                                                <label class="required form-label fw-bold">Username</label>
-                                                                <!--end::Label-->
-                                                                <!--begin::Input-->
-                                                                <input type="text" name="Email"
-                                                                    class="form-control mb-2"
-                                                                    placeholder="Product Name">
-                                                                <!--end::Input-->
-                                                                <!--begin::Description-->
-                                                            </div>
-                                                            <div
-                                                            class="mb-10 fv-row fv-plugins-icon-container ">
-                                                            <!--begin::Label-->
-                                                            <label class="required form-label fw-bold">Password</label>
-                                                            <!--end::Label-->
-                                                            <!--begin::Input-->
-                                                            <input type="text" name="Email"
-                                                                class="form-control mb-2"
-                                                                placeholder="Product Name">
-                                                            <!--end::Input-->
-                                                            <!--begin::Description-->
-                                                        </div>
-                                                        <div class="mb-10 fv-row fv-plugins-icon-container">
-                                                            <label class="fw-bold fs-14px ">User Role</label>
-
-                                                            <select class="form-select mt-2"
-                                                                data-control="select2"
-                                                                data-placeholder="Select an option">
-                                                                <option></option>
-                                                                <option value="1">Option 1</option>
-                                                                <option value="2">Option 2</option>
-                                                            </select>
-                                                        </div>
-                                                                <div class="mb-10 ol d-flex justify-content-evenly">
-
-                                                                    <button type="button" data-bs-toggle="modal"
-                                                                        data-bs-target="#kt_done"
-                                                                        data-bs-dismiss="modal" aria-label="Close"
-                                                                        class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">Save
-                                                                        & Apply</button>
-                                                                </div>
-
-
-                                                            </form>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                        
-
-
-                                            <!--end::Primary button-->
-                                        </div>
-                                        <!--end::Actions-->
-                                    </div>
-                                    <!--end::Toolbar container-->
-                                </div>
-                                <!--end::Toolbar-->
-
-                                <!--begin::Content-->
-                                <div id="kt_app_content" class="app-content  flex-column-fluid ">
-
-                                    <div id="kt_app_content_container" class="app-container  container-xxl ">
-                                        <!--begin::Row-->
-                                        <div class="row gx-12 gx-xl-12">
-                                            <!--begin::Col-->
-
-                                            <!--end::Col-->
-
-                                            <div class="dt-container dt-bootstrap5 mt-2 table-responsive">
-
-
-                                                <!--begin::Datatable-->
-                                                <table id="kt_datatable_example_1"
-                                                    class="table align-middle table-row-dashed fs-6 gy-5  bg-white ">
-                                                    <thead
-                                                        class="bg-table text-white fw-bold fs-7 text-uppercase gs-0 bg-bink px-10">
-                                                        <tr>
-                                                            <th class="w-10px pe-2">
-                                                                <div class="form-check me-3">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        data-kt-check="true"
-                                                                        data-kt-check-target="#kt_datatable_example_1 .form-check-input"
-                                                                        value="1" />
-                                                                </div>
-                                                            </th>
-                                                            <th>#</th>
-                                                            <th>Nickname</th>
-                                                            <th>Username</th>
-                                                            <th>Email</th>
-                                                            <th>Creation Time</th>
-                                                            <th>Operate</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody class="text-gray-600 fw-semibold">
-                                                    </tbody>
-                                                </table>
-                                                <!--end::Datatable-->
-                                                <div id="" class="row">
-                                                    <div id=""
-                                                        class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start dt-toolbar">
-
-                                                        <div class="dt-info" aria-live="polite"
-                                                            id="kt_datatable_zero_configuration_info" role="status">
-                                                            Showing 1 to 10 of 57 records</div>
-                                                    </div>
-                                                    <div id=""
-                                                        class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
-                                                        <div class="dt-paging paging_simple_numbers">
-                                                            <ul class="pagination">
-                                                                <li class="dt-paging-button page-item disabled"><a
-                                                                        class="page-link previous"
-                                                                        aria-controls="kt_datatable_zero_configuration"
-                                                                        aria-disabled="true" aria-label="Previous"
-                                                                        data-dt-idx="previous" tabindex="-1"><i
-                                                                            class="previous"></i></a></li>
-                                                                <li class="dt-paging-button page-item active"><a
-                                                                        href="#" class="page-link"
-                                                                        aria-controls="kt_datatable_zero_configuration"
-                                                                        aria-current="page" data-dt-idx="0"
-                                                                        tabindex="0">1</a>
-                                                                </li>
-                                                                <li class="dt-paging-button page-item"><a href="#"
-                                                                        class="page-link"
-                                                                        aria-controls="kt_datatable_zero_configuration"
-                                                                        data-dt-idx="1" tabindex="0">2</a></li>
-                                                                <li class="dt-paging-button page-item"><a href="#"
-                                                                        class="page-link"
-                                                                        aria-controls="kt_datatable_zero_configuration"
-                                                                        data-dt-idx="2" tabindex="0">3</a></li>
-                                                                <li class="dt-paging-button page-item"><a href="#"
-                                                                        class="page-link"
-                                                                        aria-controls="kt_datatable_zero_configuration"
-                                                                        data-dt-idx="3" tabindex="0">4</a></li>
-                                                                <li class="dt-paging-button page-item"><a href="#"
-                                                                        class="page-link"
-                                                                        aria-controls="kt_datatable_zero_configuration"
-                                                                        data-dt-idx="4" tabindex="0">5</a></li>
-                                                                <li class="dt-paging-button page-item"><a href="#"
-                                                                        class="page-link"
-                                                                        aria-controls="kt_datatable_zero_configuration"
-                                                                        data-dt-idx="5" tabindex="0">6</a></li>
-                                                                <li class="dt-paging-button page-item"><a href="#"
-                                                                        class="page-link next"
-                                                                        aria-controls="kt_datatable_zero_configuration"
-                                                                        aria-label="Next" data-dt-idx="next"
-                                                                        tabindex="0"><i class="next"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                             
-                                                <div class="modal fade" tabindex="-1" id="kt_done_delete">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h3 class="modal-title fw-bold"> <img alt=" Logo"
-                                                                        src="../assets/media/icons/duotune/done.svg">
-                                                                        User Deleted Successfully</h3>
-
-                                                                <!--begin::Close-->
-                                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                                    data-bs-dismiss="modal" aria-label="Close">
-                                                                    <i class="ki-duotone ki-cross fs-1"><span
-                                                                            class="path1"></span><span
-                                                                            class="path2"></span></i>
-                                                                </div>
-                                                                <!--end::Close-->
-                                                            </div>
-
-                                                            <div class="modal-body" class="modal fade" tabindex="-1"
-                                                                id="#kt_export">
-                                                                <form
-                                                                    class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
-                                                                    novalidate="novalidate" id="kt_sign_in_form"
-                                                                    data-kt-redirect-url="../../demo1/dist/index.html"
-                                                                    action="#">
-
-                                                                    <p class="fs-14px text-bink">The user has been deleted and no longer has access to the system.</p>
-
-
-                                                                    <div class="mb-4 ol d-flex justify-content-evenly mt-12px">
-
-                                                                        <button type="button" data-bs-dismiss="modal"
-                                                                            aria-label="Close"
-                                                                            class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">OK</button>
-                                                                    </div>
-
-
-                                                                </form>
-                                                            </div>
-
-
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            
-                                                <div class="modal fade" tabindex="-1" id="kt_delete">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h3 class="modal-title fw-bold">
-                                                                    Are you sure you want to delete this User?</h3>
-
-                                                                <!--begin::Close-->
-                                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                                    data-bs-dismiss="modal" aria-label="Close">
-                                                                    <i class="ki-duotone ki-cross fs-1"><span
-                                                                            class="path1"></span><span
-                                                                            class="path2"></span></i>
-                                                                </div>
-                                                                <!--end::Close-->
-                                                            </div>
-
-                                                            <div class="modal-body" class="modal fade" tabindex="-1"
-                                                                id="#kt_export">
-
-                                                                <p class="fs-14px text-bink">
-                                                                    Ensure that you want to delete this role, and other account that have this permission?
-                                                                                                                                    </p>
-                                                                <form
-                                                                    class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
-                                                                    novalidate="novalidate" id="kt_sign_in_form"
-                                                                    data-kt-redirect-url="../../demo1/dist/index.html"
-                                                                    action="#">
-
-                                                                   
-
-
-                                                                    <div
-                                                                    class="d-flex align-items-center  mt-16px fv-row fv-plugins-icon-container">
-                                                                    <button type="button"
-                                                                        class=" img-wrapper-v2 fw-bold flex-grow-1 me-2"
-                                                                        data-bs-dismiss="modal"
-                                                                        aria-label="Close">Cancel</button>
-
-                                                                    <button type="button"
-                                                                        class="btn btn-primary fw-bold flex-grow-1 justify-content-center"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#kt_done_delete"
-                                                                        data-bs-dismiss="modal"
-                                                                        aria-label="Close">Confirm</button>
-                                                                </div>
-
-
-                                                                </form>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                             
-
-
-                                                <div class="modal fade" tabindex="-1" id="kt_done">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h3 class="modal-title fw-bold"> <img alt=" Logo"
-                                                                        src="../assets/media/icons/duotune/done.svg">
-                                                                        User Added Successful!</h3>
-
-                                                                <!--begin::Close-->
-                                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                                    data-bs-dismiss="modal" aria-label="Close">
-                                                                    <i class="ki-duotone ki-cross fs-1"><span
-                                                                            class="path1"></span><span
-                                                                            class="path2"></span></i>
-                                                                </div>
-                                                                <!--end::Close-->
-                                                            </div>
-
-                                                            <div class="modal-body" class="modal fade" tabindex="-1"
-                                                                id="#kt_export">
-                                                                <form
-                                                                    class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
-                                                                    novalidate="novalidate" id="kt_sign_in_form"
-                                                                    data-kt-redirect-url="../../demo1/dist/index.html"
-                                                                    action="#">
-
-                                                                    <p class="fs-14px text-bink">The new user has been added and assigned a role successfully.</p>
-
-
-                                                                    <div class="mb-4 ol d-flex justify-content-evenly mt-12px">
-
-                                                                        <button type="button" data-bs-dismiss="modal"
-                                                                            aria-label="Close"
-                                                                            class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">OK</button>
-                                                                    </div>
-
-
-                                                                </form>
-                                                            </div>
-
-
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div> 
-
-                                            </div>
-
-
-
-                                        </div>
-                                        <!--end::Row-->
-                                    </div>
-
-
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                    <!--end::Sidebar-->
-                    <!--begin::Main-->
-
-                    <!--end:::Main-->
-                </div>
-
-
-            </div>
-
-
-            <!--end::Wrapper-->
-            <!--end::Page-->
+          <!--end::Header wrapper-->
         </div>
 
 
+        <!--end::Header container-->
+      </div>
 
-        <!--begin::Javascript-->
-        <script>var hostUrl = "../assets/";</script>
-        <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-        <script src="../assets/plugins/global/plugins.bundle.js"></script>
-        <script src="../assets/js/scripts.bundle.js"></script>
-        <!--end::Global Javascript Bundle-->
-        <!--begin::Vendors Javascript(used for this page only)-->
-        <script src="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
-        <script src="../assets/plugins/custom/datatables/datatables.bundle.js"></script>
-        <!--end::Vendors Javascript-->
-        <!--begin::Custom Javascript(used for this page only)-->
-        <script src="../assets/js/widgets.bundle.js"></script>
-        <script src="../assets/js/custom/widgets.js"></script>
-        <script src="../assets/js/custom/apps/chat/chat.js"></script>
-        <script src="../assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-        <script src="../assets/js/custom/utilities/modals/create-app.js"></script>
-        <script src="../assets/js/custom/utilities/modals/new-target.js"></script>
-        <script src="../assets/js/custom/utilities/modals/users-search.js"></script>
-        <!--end::Custom Javascript-->
-        <!--end::Javascript-->
+      <!--end::Header-->
+      <!--begin::Wrapper-->
+      <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">
+        <!--begin::Sidebar-->
+        <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar"
+          data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+          data-kt-drawer-width="225px" data-kt-drawer-direction="start"
+          data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+          <!--begin::Logo-->
+          <div id="kt_app_sidebar_toggle_v1"
+            class="app-sidebar-arrow my-6 app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary h-30px w-30px position-absolute top-150 start-100 translate-middle rotate mt-30"
+            data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
+            data-kt-toggle-name="app-sidebar-minimize" style="border-radius: 99px;
+						border: 1px solid var(--Color-Border, #E2E8F0);
+						background: var(--Color-Background, #FFF);">
+            <img class=" fs-3 rotate-180" alt="Logo" src="../assets/media/icons/duotune/forword.svg" />
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const toggleButton = document.getElementById('kt_app_sidebar_toggle_v1');
 
-                const body = document.body;
+          </div>
+          <div class="app-sidebar-logo d-flex flex-center" id="kt_app_sidebar_logo">
+            <div class="center-content  align-items-center my-4">
+              <img alt="Logo" src="../assets/media/logos/logo.png" class=" card-center h-53px app-sidebar-logo-default">
+              <img alt="Logo" src="../assets/media/logos/favicon.ico"
+                class=" card-center h-53px app-sidebar-logo-minimize">
+            </div>
 
-                // Prevent sidebar from expanding on hover
 
-                toggleButton.addEventListener('click', function () {
-                    if (body.classList.contains('app-sidebar-minimize')) {
-                        body.classList.remove('app-sidebar-minimize');
-                    } else {
-                        body.classList.add('app-sidebar-minimize');
-                    }
-                });
-                const segments = document.querySelectorAll('.segmented-unit, .segment-wrapper');
+          </div>
 
-                let previousSegment;
+          <!--end::Logo-->
+          <!--begin::sidebar menu-->
+          <div class="app-sidebar-menu overflow-hidden flex-column-fluid mt-4">
+            <!--begin::Menu wrapper-->
+            <div id="kt_app_sidebar_menu_wrapper" class="app-sidebar-wrapper">
+              <!--begin::Scroll wrapper-->
+              <div id="kt_app_sidebar_menu_scroll" class="scroll-y my-5 mx-3" data-kt-scroll="true"
+                data-kt-scroll-activate="true" data-kt-scroll-height="auto"
+                data-kt-scroll-dependencies="#kt_app_sidebar_logo, #kt_app_sidebar_footer"
+                data-kt-scroll-wrappers="#kt_app_sidebar_menu" data-kt-scroll-offset="5px"
+                data-kt-scroll-save-state="true" style="height: 297px;">
+                <!--begin::Menu-->
+                <div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6" id="#kt_app_sidebar_menu"
+                  data-kt-menu="true" data-kt-menu-expand="false">
+                  <!--begin:Menu item-->
 
-                segments.forEach(function (segment) {
-                    segment.addEventListener('click', function () {
-                        // Remove active class from all segments
-                        segments.forEach(function (s) {
-                            s.classList.remove('segmented-unit');
-                            s.classList.add('segment-wrapper');
-                            const innerDiv = s.querySelector('.text-wrapper-23');
-                            if (innerDiv) {
-                                innerDiv.classList.remove('text-wrapper-23');
-                                innerDiv.classList.add('text-wrapper-24');
-                            }
-                        });
-                        // If this segment is already active, toggle text wrapper class and return
-                        if (this.classList.contains('segmented-unit')) {
-                            const innerDivClicked = this.querySelector('.text-wrapper-23');
-                            if (innerDivClicked) {
-                                innerDivClicked.classList.remove('text-wrapper-23');
-                                innerDivClicked.classList.add('text-wrapper-24');
-                            }
-                            return;
-                        }
+                  <div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
 
-                        // Remove active class from previous segment
-                        if (previousSegment) {
-                            previousSegment.classList.remove('segmented-unit');
-                            const innerDivPrevious = previousSegment.querySelector('.text-wrapper-23');
-                            if (innerDivPrevious) {
-                                innerDivPrevious.classList.remove('text-wrapper-23');
-                                innerDivPrevious.classList.add('text-wrapper-24');
-                            }
-                        }
+                    <!--begin:Menu link-->
+                    <div class="app-sidebar-menu overflow-hidden flex-column-fluid">
+                      <div class="menu-item mt-6">
 
-                        // Add active class to the clicked segment
-                        this.classList.add('segmented-unit');
-                        const innerDivClicked = this.querySelector('.text-wrapper-24');
-                        if (innerDivClicked) {
-                            innerDivClicked.classList.remove('text-wrapper-24');
-                            innerDivClicked.classList.add('text-wrapper-23');
-                        }
+                        <a class="menu-link  " href="../dashboard/dashbord.html">
+                          <span class="menu-icon">
+                            <img class="fs-2" alt="Logo" src="../assets/media/icons/duotune/grid-view.svg">
 
-                        // Update the previous segment
-                        previousSegment = this;
-                    });
-                });
+                          </span>
+                          <span class="menu-title fs-16px fw-normal">Dashboards</span>
+                        </a>
+                      </div>
 
-                var start = moment().subtract(29, "days");
-                var end = moment();
+                      <div class="menu-item mt-3">
+                        <div class="product-subsection-arrow menu-link" style="width: 80%; display: flex;">
+                          <span class="menu-icon">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/product.svg">
+                          </span>
+                          <span class="menu-title fs-16px">Products</span>
+                          <span class="">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/arrows/arr072.svg">
+                          </span>
+                        </div>
 
-                function cb(start, end) {
+                        <!-- Your sub-tab content here -->
+                        <div class="sub-tab mt-2" style="display: none;">
+                          <a class="menu-link" href="../product-management/stock-management.html">
+                            <span class="menu-icon">
+                              <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/abstract/abs027.svg">
+                            </span>
+                            <span class="menu-title fs-16px fw-bolder">Stock</span>
+                          </a>
+                        </div>
 
-                    $("#kt_daterangepicker_4").html(`															<img class="img" src="../assets/media/img/calendar-03-1.svg">
+                        <div class="sub-tab mt-2" style="display: none; width: 85%;">
+                          <a class="menu-link" href="../product-management/product-management.html">
+                            <span class="menu-icon">
+                              <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/ecommerce/ecm001.svg">
+                            </span>
+                            <span class="menu-title fs-16px fw-bolder">Product List</span>
+                          </a>
+                        </div>
+                      </div>
+
+
+                      <div class="menu-item mt-3">
+
+                        <a class="menu-link " href="../inquiry-management/Inquiry-management.html">
+                          <span class="menu-icon ">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/requests.svg">
+
+                          </span>
+                          <span class="menu-title fs-16px  fw-normal">Requests</span>
+                        </a>
+                      </div>
+
+                      <div class="menu-item mt-3">
+
+                        <span class="menu-link  ">
+                          <span class="menu-icon">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/order.svg">
+
+                          </span>
+                          <span class="menu-title fs-16px   fw-normal">Order Management</span>
+                        </span>
+                      </div>
+
+                      <div class="menu-item mt-3">
+
+                        <a class="menu-link  " href="../cargo-management/cargo-management.html">
+                          <span class="menu-icon">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/cargo.svg">
+
+                          </span>
+                          <span class="menu-title fs-16px fw-normal ">Cargo Management</span>
+                        </a>
+                      </div>
+
+                      <div class="menu-item mt-3">
+
+                        <a class="menu-link  " href="../shipping/index.html">
+                          <span class="menu-icon">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/shipping.svg">
+
+                          </span>
+                          <span class="menu-title fs-16px fw-normal ">One Piece
+                            Shipping</span>
+                        </a>
+                      </div>
+                      <div class="menu-item mt-3">
+
+                        <span class="menu-link  active">
+                          <span class="menu-icon">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/permissions-active.svg">
+
+                          </span>
+                          <span class="menu-title fs-16px">Permissions</span>
+                        </span>
+                      </div>
+                    </div>
+
+
+
+
+                    <!--end:Menu sub-->
+                  </div>
+
+
+
+                  <!--end:Menu item-->
+
+                </div>
+
+
+                <!--end::Menu-->
+              </div>
+
+              <!--end::Scroll wrapper-->
+            </div>
+            <!--end::Menu wrapper-->
+          </div>
+
+
+          <!--end::sidebar menu-->
+          <!--begin::Footer-->
+          <div class="app-sidebar-footer menu-item here show menu-accordion" id="kt_app_sidebar_footer">
+
+            <div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6" id="#kt_app_sidebar_menu"
+              data-kt-menu="true" data-kt-menu-expand="false">
+              <!--begin:Menu item-->
+
+              <div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
+
+                <div class="app-sidebar-menu overflow-hidden flex-column-fluid ml-14px">
+
+                  <div class="menu-item mt-3">
+                    <a class="menu-link " href="../contact-us/index.html">
+                      <span class="menu-icon">
+                        <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/help.svg">
+
+                      </span>
+                      <span class="menu-title fs-16px fw-normal ">Help</span>
+                    </a>
+                  </div>
+                  <div class="menu-item mt-3">
+
+                    <a class="menu-link  " href="../settings/personal-information.html">
+                      <span class="menu-icon">
+                        <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/settings.svg">
+
+                      </span>
+                      <span class="menu-title fs-16px fw-normal ">Settings</span>
+                    </a>
+                  </div>
+                  <div class="separator separator-dashed my-3"></div>
+
+                  <div class="menu-item mt-3 ">
+
+                    <a class="menu-link  " href="../login.html">
+                      <span class="menu-icon">
+                        <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/logout.svg">
+
+                      </span>
+                      <span class="menu-title text-yellow fs-16px fw-normal ">Logout</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+
+          </div>
+          <!--end::Footer-->
+        </div>
+
+        <div class="app-main flex-column flex-row-fluid " id="kt_app_main">
+          <!--begin::Content wrapper-->
+          <div class="d-flex flex-column flex-column-fluid">
+
+
+            <div class="row">
+
+              <div class="col-12 col-md-3 fixed-wrapper">
+                <div class="fixed-div">
+                  <div class=" col-12 col-md-12 vh-90">
+
+                    <form action="../ permissions/role-management.html">
+                      <button type="submit" class="mx-3 btn  fw-bold d-flex  align-items-center w-90 mt-6  py-6">
+                        <img alt="Logo" src="../assets/media/icons/duotune/grid-view.svg" class="me-2 btn-trim-start">
+                        <span class="justify-content-center text-gray-600 fs-16px">Role Management</span>
+                      </button>
+                    </form>
+                    <button type="button" class="mx-3 btn btn-bink fw-bold d-flex  align-items-center w-90 mt-6  py-6">
+                      <img alt="Logo" src="../assets/media/icons/duotune/product-active.svg"
+                        class="me-2 btn-trim-start">
+                      <span class="justify-content-center text-white fs-16px">User Management</span>
+                    </button>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class=" col-12 col-md-9 mb-4  ml-14px">
+                <!--begin::Toolbar-->
+                <div id="kt_app_toolbar" class="app-toolbar  py-2 py-lg-4 ">
+
+                  <!--begin::Toolbar container-->
+                  <div id="kt_app_toolbar_container" class="app-container  container-xxl d-flex flex-stack ">
+
+
+
+                    <!--begin::Page title-->
+                    <div class="page-title d-flex flex-column justify-content-center flex-wrap ">
+                      <!--begin::Title-->
+                      <div class="d-flex fw-semibold align-items-center">
+
+                        <h1
+                          class="link-yellow page-heading d-flex fw-bolder fs-30px flex-column justify-content-center my-0">
+                          User Management </h1>
+                        <div class="btn btn-icon btn-custom btn-icon-muted   w-35px h-35px " "="">
+										<img alt=" Logo" src="../assets/media/icons/duotune/line.svg">
+                        </div>
+                        <!--end::Title-->
+
+                      </div>
+
+                      <!--begin::Breadcrumb-->
+                      <ul class="text-bink breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
+                        Efficiently manage orders from placement to fulfillment. </ul>
+                      <!--end::Breadcrumb-->
+                    </div>
+                    <!--end::Page title-->
+                    <!--begin::Actions-->
+                    <div class="d-flex align-items-center gap-2 gap-lg-3">
+
+
+                      <!--begin::Secondary button-->
+
+                      <!--end::Secondary button-->
+
+                      <!--begin::Primary button-->
+                      <button class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#kt_modal_1">
+                        <img class="img me-2" src="../assets/media/icons/duotune/add.svg">
+                        Add New User
+                      </button>
+
+
+                      <div class="modal fade" tabindex="-1" id="kt_modal_1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h3 class="modal-title fw-bold"> Add New User</h3>
+
+                              <!--begin::Close-->
+                              <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span
+                                    class="path2"></span></i>
+                              </div>
+                              <!--end::Close-->
+                            </div>
+
+                            <div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_1">
+                              <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
+                                novalidate="novalidate" id="kt_sign_in_form"
+                                data-kt-redirect-url="../../demo1/dist/index.html" action="#">
+                                <div class="mb-10 fv-row fv-plugins-icon-container ">
+                                  <!--begin::Label-->
+                                  <label class="required form-label fw-bold">Username</label>
+                                  <!--end::Label-->
+                                  <!--begin::Input-->
+                                  <input type="text" name="Email" class="form-control mb-2" placeholder="Product Name">
+                                  <!--end::Input-->
+                                  <!--begin::Description-->
+                                </div>
+                                <div class="mb-10 fv-row fv-plugins-icon-container ">
+                                  <!--begin::Label-->
+                                  <label class="required form-label fw-bold">Password</label>
+                                  <!--end::Label-->
+                                  <!--begin::Input-->
+                                  <input type="text" name="Email" class="form-control mb-2" placeholder="Product Name">
+                                  <!--end::Input-->
+                                  <!--begin::Description-->
+                                </div>
+                                <div class="mb-10 fv-row fv-plugins-icon-container">
+                                  <label class="fw-bold fs-14px ">User Role</label>
+
+                                  <select class="form-select mt-2" data-control="select2"
+                                    data-placeholder="Select an option">
+                                    <option></option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                  </select>
+                                </div>
+                                <div class="mb-10 ol d-flex justify-content-evenly">
+
+                                  <button type="button" data-bs-toggle="modal" data-bs-target="#kt_done"
+                                    data-bs-dismiss="modal" aria-label="Close"
+                                    class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">Save
+                                    & Apply</button>
+                                </div>
+
+
+                              </form>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+                      <!--end::Primary button-->
+                    </div>
+                    <!--end::Actions-->
+                  </div>
+                  <!--end::Toolbar container-->
+                </div>
+                <!--end::Toolbar-->
+
+                <!--begin::Content-->
+                <div id="kt_app_content" class="app-content  flex-column-fluid ">
+
+                  <div id="kt_app_content_container" class="app-container  container-xxl ">
+                    <!--begin::Row-->
+                    <div class="row gx-12 gx-xl-12">
+                      <!--begin::Col-->
+
+                      <!--end::Col-->
+
+                      <div class="dt-container dt-bootstrap5 mt-2 table-responsive">
+
+
+                        <!--begin::Datatable-->
+                        <table id="kt_datatable_example_1"
+                          class="table align-middle table-row-dashed fs-6 gy-5  bg-white ">
+                          <thead class="bg-table text-white fw-bold fs-7 text-uppercase gs-0 bg-bink px-10">
+                            <tr>
+                              <th class="w-10px pe-2">
+                                <div class="form-check me-3">
+                                  <input class="form-check-input" type="checkbox" data-kt-check="true"
+                                    data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="1" />
+                                </div>
+                              </th>
+                              <th>#</th>
+                              <th>Nickname</th>
+                              <th>Username</th>
+                              <th>Email</th>
+                              <th>Creation Time</th>
+                              <th>Operate</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-gray-600 fw-semibold">
+                          </tbody>
+                        </table>
+                        <!--end::Datatable-->
+                        <div id="" class="row">
+                          <div id=""
+                            class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start dt-toolbar">
+
+                            <div class="dt-info" aria-live="polite" id="kt_datatable_zero_configuration_info"
+                              role="status">
+                              Showing 1 to 10 of 57 records</div>
+                          </div>
+                          <div id=""
+                            class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
+                            <div class="dt-paging paging_simple_numbers">
+                              <ul class="pagination">
+                                <li class="dt-paging-button page-item disabled"><a class="page-link previous"
+                                    aria-controls="kt_datatable_zero_configuration" aria-disabled="true"
+                                    aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                      class="previous"></i></a></li>
+                                <li class="dt-paging-button page-item active"><a href="#" class="page-link"
+                                    aria-controls="kt_datatable_zero_configuration" aria-current="page" data-dt-idx="0"
+                                    tabindex="0">1</a>
+                                </li>
+                                <li class="dt-paging-button page-item"><a href="#" class="page-link"
+                                    aria-controls="kt_datatable_zero_configuration" data-dt-idx="1" tabindex="0">2</a>
+                                </li>
+                                <li class="dt-paging-button page-item"><a href="#" class="page-link"
+                                    aria-controls="kt_datatable_zero_configuration" data-dt-idx="2" tabindex="0">3</a>
+                                </li>
+                                <li class="dt-paging-button page-item"><a href="#" class="page-link"
+                                    aria-controls="kt_datatable_zero_configuration" data-dt-idx="3" tabindex="0">4</a>
+                                </li>
+                                <li class="dt-paging-button page-item"><a href="#" class="page-link"
+                                    aria-controls="kt_datatable_zero_configuration" data-dt-idx="4" tabindex="0">5</a>
+                                </li>
+                                <li class="dt-paging-button page-item"><a href="#" class="page-link"
+                                    aria-controls="kt_datatable_zero_configuration" data-dt-idx="5" tabindex="0">6</a>
+                                </li>
+                                <li class="dt-paging-button page-item"><a href="#" class="page-link next"
+                                    aria-controls="kt_datatable_zero_configuration" aria-label="Next" data-dt-idx="next"
+                                    tabindex="0"><i class="next"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="modal fade" tabindex="-1" id="kt_done_delete">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h3 class="modal-title fw-bold"> <img alt=" Logo"
+                                    src="../assets/media/icons/duotune/done.svg">
+                                  User Deleted Successfully</h3>
+
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                                  aria-label="Close">
+                                  <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span
+                                      class="path2"></span></i>
+                                </div>
+                                <!--end::Close-->
+                              </div>
+
+                              <div class="modal-body" class="modal fade" tabindex="-1" id="#kt_export">
+                                <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
+                                  novalidate="novalidate" id="kt_sign_in_form"
+                                  data-kt-redirect-url="../../demo1/dist/index.html" action="#">
+
+                                  <p class="fs-14px text-bink">The user has been deleted and no longer has access to the
+                                    system.</p>
+
+
+                                  <div class="mb-4 ol d-flex justify-content-evenly mt-12px">
+
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close"
+                                      class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">OK</button>
+                                  </div>
+
+
+                                </form>
+                              </div>
+
+
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="modal fade" tabindex="-1" id="kt_delete">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h3 class="modal-title fw-bold">
+                                  Are you sure you want to delete this User?</h3>
+
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                                  aria-label="Close">
+                                  <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span
+                                      class="path2"></span></i>
+                                </div>
+                                <!--end::Close-->
+                              </div>
+
+                              <div class="modal-body" class="modal fade" tabindex="-1" id="#kt_export">
+
+                                <p class="fs-14px text-bink">
+                                  Ensure that you want to delete this role, and other account that have this permission?
+                                </p>
+                                <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
+                                  novalidate="novalidate" id="kt_sign_in_form"
+                                  data-kt-redirect-url="../../demo1/dist/index.html" action="#">
+
+
+
+
+                                  <div class="d-flex align-items-center  mt-16px fv-row fv-plugins-icon-container">
+                                    <button type="button" class=" img-wrapper-v2 fw-bold flex-grow-1 me-2"
+                                      data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+
+                                    <button type="button"
+                                      class="btn btn-primary fw-bold flex-grow-1 justify-content-center"
+                                      data-bs-toggle="modal" data-bs-target="#kt_done_delete" data-bs-dismiss="modal"
+                                      aria-label="Close">Confirm</button>
+                                  </div>
+
+
+                                </form>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div class="modal fade" tabindex="-1" id="kt_done">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h3 class="modal-title fw-bold"> <img alt=" Logo"
+                                    src="../assets/media/icons/duotune/done.svg">
+                                  User Added Successful!</h3>
+
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                                  aria-label="Close">
+                                  <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span
+                                      class="path2"></span></i>
+                                </div>
+                                <!--end::Close-->
+                              </div>
+
+                              <div class="modal-body" class="modal fade" tabindex="-1" id="#kt_export">
+                                <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
+                                  novalidate="novalidate" id="kt_sign_in_form"
+                                  data-kt-redirect-url="../../demo1/dist/index.html" action="#">
+
+                                  <p class="fs-14px text-bink">The new user has been added and assigned a role
+                                    successfully.</p>
+
+
+                                  <div class="mb-4 ol d-flex justify-content-evenly mt-12px">
+
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close"
+                                      class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">OK</button>
+                                  </div>
+
+
+                                </form>
+                              </div>
+
+
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+                    </div>
+                    <!--end::Row-->
+                  </div>
+
+
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <!--end::Sidebar-->
+          <!--begin::Main-->
+
+          <!--end:::Main-->
+        </div>
+
+
+      </div>
+
+
+      <!--end::Wrapper-->
+      <!--end::Page-->
+    </div>
+
+
+
+    <!--begin::Javascript-->
+    <script>var hostUrl = "../assets/";</script>
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="../assets/plugins/global/plugins.bundle.js"></script>
+    <script src="../assets/js/scripts.bundle.js"></script>
+    <script src="../assets/js/custom/pages/products/product-sub-section.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Vendors Javascript(used for this page only)-->
+    <script src="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+    <script src="../assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <!--end::Vendors Javascript-->
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="../assets/js/widgets.bundle.js"></script>
+    <script src="../assets/js/custom/widgets.js"></script>
+    <script src="../assets/js/custom/apps/chat/chat.js"></script>
+    <script src="../assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="../assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="../assets/js/custom/utilities/modals/new-target.js"></script>
+    <script src="../assets/js/custom/utilities/modals/users-search.js"></script>
+    <!--end::Custom Javascript-->
+    <!--end::Javascript-->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('kt_app_sidebar_toggle_v1');
+
+        const body = document.body;
+
+        // Prevent sidebar from expanding on hover
+
+        toggleButton.addEventListener('click', function () {
+          if (body.classList.contains('app-sidebar-minimize')) {
+            body.classList.remove('app-sidebar-minimize');
+          } else {
+            body.classList.add('app-sidebar-minimize');
+          }
+        });
+        const segments = document.querySelectorAll('.segmented-unit, .segment-wrapper');
+
+        let previousSegment;
+
+        segments.forEach(function (segment) {
+          segment.addEventListener('click', function () {
+            // Remove active class from all segments
+            segments.forEach(function (s) {
+              s.classList.remove('segmented-unit');
+              s.classList.add('segment-wrapper');
+              const innerDiv = s.querySelector('.text-wrapper-23');
+              if (innerDiv) {
+                innerDiv.classList.remove('text-wrapper-23');
+                innerDiv.classList.add('text-wrapper-24');
+              }
+            });
+            // If this segment is already active, toggle text wrapper class and return
+            if (this.classList.contains('segmented-unit')) {
+              const innerDivClicked = this.querySelector('.text-wrapper-23');
+              if (innerDivClicked) {
+                innerDivClicked.classList.remove('text-wrapper-23');
+                innerDivClicked.classList.add('text-wrapper-24');
+              }
+              return;
+            }
+
+            // Remove active class from previous segment
+            if (previousSegment) {
+              previousSegment.classList.remove('segmented-unit');
+              const innerDivPrevious = previousSegment.querySelector('.text-wrapper-23');
+              if (innerDivPrevious) {
+                innerDivPrevious.classList.remove('text-wrapper-23');
+                innerDivPrevious.classList.add('text-wrapper-24');
+              }
+            }
+
+            // Add active class to the clicked segment
+            this.classList.add('segmented-unit');
+            const innerDivClicked = this.querySelector('.text-wrapper-24');
+            if (innerDivClicked) {
+              innerDivClicked.classList.remove('text-wrapper-24');
+              innerDivClicked.classList.add('text-wrapper-23');
+            }
+
+            // Update the previous segment
+            previousSegment = this;
+          });
+        });
+
+        var start = moment().subtract(29, "days");
+        var end = moment();
+
+        function cb(start, end) {
+
+          $("#kt_daterangepicker_4").html(`															<img class="img" src="../assets/media/img/calendar-03-1.svg">
 `+ start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
-                }
+        }
 
-                $("#kt_daterangepicker_4").daterangepicker({
-                    startDate: start,
-                    endDate: end,
-                    ranges: {
-                        "Today": [moment(), moment()],
-                        "Yesterday": [moment().subtract(1, "days"), moment().subtract(1, "days")],
-                        "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                        "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                        "This Month": [moment().startOf("month"), moment().endOf("month")],
-                        "Last Month": [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+        $("#kt_daterangepicker_4").daterangepicker({
+          startDate: start,
+          endDate: end,
+          ranges: {
+            "Today": [moment(), moment()],
+            "Yesterday": [moment().subtract(1, "days"), moment().subtract(1, "days")],
+            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+            "This Month": [moment().startOf("month"), moment().endOf("month")],
+            "Last Month": [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
 
-                    },
-                    opens: 'left' // Specify the calendar to open on the left side of the input
-
-
-                }, cb);
+          },
+          opens: 'left' // Specify the calendar to open on the left side of the input
 
 
-                $('#kt_daterangepicker_4').on('show.daterangepicker', function (ev, picker) {
-                    picker.container.addClass(' mt-2');
-
-                });
-
-                cb(start, end);
+        }, cb);
 
 
-                // Select the table body
-                var tableBody = document.querySelector('#kt_datatable_example_1 tbody');
+        $('#kt_daterangepicker_4').on('show.daterangepicker', function (ev, picker) {
+          picker.container.addClass(' mt-2');
 
-                // Loop to create 6 rows
-                for (var i = 1; i <= 6; i++) {
-                    // Create a new row element
-                    var row = document.createElement('tr');
+        });
 
-                    // Add row content
-                    row.innerHTML = `
+        cb(start, end);
+
+
+        // Select the table body
+        var tableBody = document.querySelector('#kt_datatable_example_1 tbody');
+
+        // Loop to create 6 rows
+        for (var i = 1; i <= 6; i++) {
+          // Create a new row element
+          var row = document.createElement('tr');
+
+          // Add row content
+          row.innerHTML = `
         <td>
             <div class="form-check me-3 ">
                 <input class="form-check-input" type="checkbox" data-kt-check="true" 
@@ -1053,19 +1013,19 @@ License: For each use you must have a valid license purchased only from above li
                           </td>
     `;
 
-                    // Append the row to the table body
-                    tableBody.appendChild(row);
-                }
+          // Append the row to the table body
+          tableBody.appendChild(row);
+        }
 
-            });
-
-
+      });
 
 
-            // $("#kt_datatable_zero_configuration").DataTable();
 
 
-        </script>
+      // $("#kt_datatable_zero_configuration").DataTable();
+
+
+    </script>
 </body>
 <!--end::Body-->
 

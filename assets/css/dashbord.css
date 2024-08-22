@@ -2592,6 +2592,40 @@
   margin-left: 35px;
 }
 
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.quantity-label {
+  margin-right: 10px;
+}
+
+.quantity-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+#decrease {
+  color: red;
+}
+
+#increase {
+  color: green;
+}
+
+#quantity-input {
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
 /* Responsive Section */
 /* in xs */
 @media (max-width: 576px) {

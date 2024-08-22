@@ -539,12 +539,12 @@ License: For each use you must have a valid license purchased only from above li
                         <!--start::priduct item-->
 
                         <div>
-                          <div class="d-flex align-items-center mt-3">
+                          <!-- <div class="d-flex align-items-center mt-3">
                             <h1 class="fs-16px text-black">
                               Price
                             </h1>
                             <div class="product-item fw-bold ms-3">$150</div>
-                          </div>
+                          </div> -->
                           <div class="d-flex align-items-center mt-3">
                             <h1 class="fs-16px text-black">
                               Category
@@ -583,27 +583,43 @@ License: For each use you must have a valid license purchased only from above li
                           <!--end::Product item-->
                         </div>
 
-                        
-
                         <div class="container">
-                          <div class="filter-option">
-                            <label for="color" class="filter-label">Color</label>
-                            <select id="color" class="dropdown-select">
-                              <option value="menu-label">Menu Label</option>
-                              <option value="option1">Option 1</option>
-                              <option value="option2">Option 2</option>
-                              <option value="option3">Option 3</option>
-                            </select>
-                          </div>
+                          <div>
+                            <div class="d-flex align-items-center mt-3">
+                              <h1 class="fs-16px text-black">
+                                Price
+                              </h1>
+                              <div class="product-item fw-bold ms-3">$150</div>
+                            </div>
 
-                          <div class="filter-option">
-                            <label for="size" class="filter-label">Size</label>
-                            <select id="size" class="dropdown-select">
-                              <option value="menu-label">Menu Label</option>
-                              <option value="option1">Option 1</option>
-                              <option value="option2">Option 2</option>
-                              <option value="option3">Option 3</option>
-                            </select>
+                            <div class="filter-option mt-4">
+                              <label for="size" class="filter-label">Size</label>
+                              <select id="size" class="dropdown-select">
+                                <option value="menu-label">Menu Label</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div>
+
+                            <div class="quantity-container">
+                              <span class="quantity-label">Quantity</span>
+                              <button class="quantity-btn" id="decrease">-</button>
+                              <input id="quantity-input" value="1" min="1" />
+                              <button class="quantity-btn" id="increase">+</button>
+                            </div>
+
+                            <div class="filter-option mt-4">
+                              <label for="size" class="filter-label">Size</label>
+                              <select id="size" class="dropdown-select">
+                                <option value="menu-label">Menu Label</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
 
@@ -987,6 +1003,7 @@ License: For each use you must have a valid license purchased only from above li
     <!--begin::Global Javascript Bundle(mandatory for all pages)-->
     <script src="../assets/plugins/global/plugins.bundle.js"></script>
     <script src="../assets/js/scripts.bundle.js"></script>
+    <script src="../assets/js/custom/pages/products/product-details.js"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Vendors Javascript(used for this page only)-->
     <script src="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>

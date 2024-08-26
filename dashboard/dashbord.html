@@ -98,10 +98,7 @@ License: For each use you must have a valid license purchased only from above li
 									data-kt-search-layout="menu" data-kt-menu-trigger="auto" data-kt-menu-overflow="false"
 									data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end" data-kt-search="true">
 									<!--begin::Search toggle-->
-									
-										<nav-info></nav-info>
-									
-
+									<nav-info></nav-info>
 								</div>
 								<div class="separator separator-dashed my-6"></div>
 								<div class="app-navbar-item d-lg-none ms-2 me-n2" title="Show header menu">
@@ -150,18 +147,9 @@ License: For each use you must have a valid license purchased only from above li
 						border: 1px solid var(--Color-Border, #E2E8F0);
 						background: var(--Color-Background, #FFF);">
 						<img class=" fs-3 rotate-180" alt="Logo" src="../assets/media/icons/duotune/forword.svg" />
-
-
 					</div>
-					<div class="app-sidebar-logo d-flex flex-center" id="kt_app_sidebar_logo">
-						<div class="center-content  align-items-center my-4">
-							<img alt="Logo" src="../assets/media/logos/logo.png" class=" card-center h-53px app-sidebar-logo-default">
-							<img alt="Logo" src="../assets/media/logos/favicon.ico"
-								class=" card-center h-53px app-sidebar-logo-minimize">
-						</div>
 
-
-					</div>
+					<sidebar-logo></sidebar-logo>
 
 					<!--end::Logo-->
 					<!--begin::sidebar menu-->
@@ -182,18 +170,21 @@ License: For each use you must have a valid license purchased only from above li
 									<div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
 
 										<!--begin:Menu link-->
-										<div class="app-sidebar-menu overflow-hidden flex-column-fluid">
-											<div class="menu-item mt-6">
 
-												<span class="menu-link active ">
+										<div class="app-sidebar-menu overflow-hidden flex-column-fluid">
+											<main-tabs menu-title="Dashboards" menu-href=""
+												menu-src="../assets/media/icons/duotune/grid-view-acitive.svg" highlight="true">
+											</main-tabs>
+
+
+											<div class="menu-item mt-6">
+												<span class="menu-link active">
 													<span class="menu-icon">
 														<img class="fs-2" alt="Logo" src="../assets/media/icons/duotune/grid-view-acitive.svg">
-
 													</span>
 													<span class="menu-title">Dashboards</span>
 												</span>
 											</div>
-
 
 											<div class="menu-item mt-3">
 												<div class="product-subsection-arrow menu-link" style="width: 100%; display: flex;">
@@ -226,16 +217,18 @@ License: For each use you must have a valid license purchased only from above li
 												</div>
 											</div>
 
-											<div class="menu-item mt-3">
+											<main-tabs menu-title="Requests" menu-href="../inquiry-management/Inquiry-management.html"
+												menu-src="../assets/media/icons/duotune/requests.svg" highlight="false"></main-tabs>
 
+											<div class="menu-item mt-3">
 												<a class="menu-link" href="../inquiry-management/Inquiry-management.html">
 													<span class="menu-icon ">
 														<img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/requests.svg">
-
 													</span>
 													<span class="menu-title fs-16px">Requests</span>
 												</a>
 											</div>
+
 											<div class="menu-item mt-3">
 
 												<a class="menu-link  " href="../order/index.html">
@@ -281,8 +274,6 @@ License: For each use you must have a valid license purchased only from above li
 												</a>
 											</div>
 										</div>
-
-
 
 
 										<!--end:Menu sub-->
@@ -1099,6 +1090,8 @@ License: For each use you must have a valid license purchased only from above li
 	<script src="../assets/js/custom/components/nav-bar/NavMenu.js"></script>
 	<script src="../assets/js/custom/components/nav-bar/Search.js"></script>
 	<script src="../assets/js/custom/components/nav-bar/NavInfo.js"></script>
+	<script src="../assets/js/custom/components/side-bar/SideBarLogo.js"></script>
+	<script src="../assets/js/custom/components/side-bar/MainTabs.js"></script>
 	<!--end::Global Javascript Bundle-->
 	<!--begin::Vendors Javascript(used for this page only)-->
 	<script src="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>

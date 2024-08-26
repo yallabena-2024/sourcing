@@ -72,6 +72,14 @@ class NavInfo extends HTMLElement {
       </div>
       <!--end::Menu wrapper-->
     </div>
+    <div class="menu-item ">
+												<a class="menu-link  " href="../login.html">
+													<span class="menu-icon">
+														<img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/logout.svg">
+													</span>
+													<span class="menu-title text-yellow fs-16px fw-normal ">Logout</span>
+												</a>
+											</div>
   </div>
   </div>
     `;

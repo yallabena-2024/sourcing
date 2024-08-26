@@ -21,17 +21,27 @@ class Search extends HTMLElement {
 
     const container = document.createElement('div');
     container.innerHTML = `
-    <div class="card-title align-items-center d-flex ">
-							<!--begin::Search-->
-							<div class="d-flex align-items-center position-relative my-1">
-								<i class="ki-duotone ki-magnifier fs-3 position-absolute ms-4">
-									<span class="path1"></span>
-									<span class="path2"></span>
-								</i>
-								<input type="text" data-kt-ecommerce-product-filter="search" class="form-control  w-300px ps-12"
-									placeholder="Search Product">
+    <div class="">
+							<div class="row justify-content-center">
+								<div>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search">
+										<select class="form-select" aria-label="Select category">
+											<option value="">Select Category</option>
+											<option value="electronics">Electronics</option>
+											<option value="clothing">Clothing</option>
+											<option value="home-garden">Home & Garden</option>
+											<option value="sports">Sports</option>
+											<option value="books">Books</option>
+											<option value="toys">Toys</option>
+											<!-- Add more options as needed -->
+										</select>
+										<button class="btn btn-primary" type="button">
+											<img src="../assets/media/icons/duotune/general/gen021.svg" alt="search-icon">
+										</button>
+									</div>
+								</div>
 							</div>
-							<!--end::Search-->
 						</div>
     `;
 

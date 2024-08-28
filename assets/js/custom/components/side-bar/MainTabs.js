@@ -43,7 +43,7 @@ class MainTabs extends HTMLElement {
 
   render() {
     const menuTitle = this.getAttribute('menu-title');
-    const menuHref = this.getAttribute('menu-href') || '#';
+    const menuHref = this.getAttribute('menu-href');
     const menuSrc = this.getAttribute('menu-src');
     const isHighlighted = this.getAttribute('highlight') === 'true';
 
@@ -53,7 +53,7 @@ class MainTabs extends HTMLElement {
       : 'padding: 8px; color: gray;  font-size: 16px; width: 95%;';
 
     this.container.innerHTML = `
-      <div class="menu-item mt-6" style="${containerStyle}">
+      <div class="menu-item" style="${containerStyle}">
         <a class="menu-link" href="${menuHref}">
           <span class="menu-icon">
             <img class="fs-2" alt="Logo" src="${menuSrc}">

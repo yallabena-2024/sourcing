@@ -41,6 +41,11 @@ class MainTabs extends HTMLElement {
     }
   }
 
+  toggleHighlight() {
+    const isHighlighted = this.getAttribute('highlight') === 'true';
+    this.setAttribute('highlight', !isHighlighted);
+  }
+
   render() {
     const menuTitle = this.getAttribute('menu-title');
     const menuHref = this.getAttribute('menu-href');
@@ -66,3 +71,38 @@ class MainTabs extends HTMLElement {
 }
 
 customElements.define('main-tabs', MainTabs);
+
+const toggleButton = document.getElementById('kt_app_sidebar_toggle_v1');
+toggleButton.toggleState = false;
+
+toggleButton.addEventListener('click', () => {
+  // Get all MainTabs components
+  const mainTabsComponents = document.querySelectorAll('.main-tabs');
+  const productTab = document.querySelector('.menu-item')
+
+  // Iterate over each MainTabs component
+  mainTabsComponents.forEach(mainTabsComponent => {
+    // Access the shadow root of each MainTabs component
+    const shadowRoot = mainTabsComponent.shadowRoot;
+
+    // Select the elements inside the shadow DOM
+    const menuItem = shadowRoot.querySelector('.menu-item');
+    const menuTitle = shadowRoot.querySelector('.menu-title');
+
+    // Toggle styles using the toggleState variable on the button
+    if (toggleButton.toggleState) {
+      // Set width to 90% and display to inline
+      menuItem.style.width = '95%';
+      // productTab.style.width = '95%';
+      menuTitle.style.display = 'inline';
+    } else {
+      // Set width to 27% and display to none
+      menuItem.style.width = '63px';
+      // productTab.style.width = '63px';
+      menuTitle.style.display = 'none';
+    }
+  });
+
+  // Flip the toggle state
+  toggleButton.toggleState = !toggleButton.toggleState;
+});

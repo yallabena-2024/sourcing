@@ -20,6 +20,7 @@
 	<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
 	<link rel="shortcut icon" href="../assets/media/logos/favicon.ico" />
 	<!--begin::Fonts(mandatory for all pages)-->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 	<!--end::Fonts-->
 	<!--begin::Vendor Stylesheets(used for this page only)-->
@@ -194,19 +195,22 @@
 												</div>
 											</div>
 
-											<main-tabs class="main-tabs" menu-title="Requests" menu-href="../inquiry-management/Inquiry-management.html"
+											<main-tabs class="main-tabs" menu-title="Requests"
+												menu-href="../inquiry-management/Inquiry-management.html"
 												menu-src="../assets/media/icons/duotune/requests.svg" highlight="false"></main-tabs>
 
 											<main-tabs class="main-tabs" menu-title="Order Management" menu-href="../order/index.html"
 												menu-src="../assets/media/icons/duotune/order.svg" highlight="false"></main-tabs>
 
-											<main-tabs class="main-tabs" menu-title="Cargo Management" menu-href="../cargo-management/cargo-management.html"
+											<main-tabs class="main-tabs" menu-title="Cargo Management"
+												menu-href="../cargo-management/cargo-management.html"
 												menu-src="../assets/media/icons/duotune/cargo.svg" highlight="false"></main-tabs>
 
 											<main-tabs class="main-tabs" menu-title="One Piece Shipping" menu-href="../shipping/index.html"
 												menu-src="../assets/media/icons/duotune/shipping.svg" highlight="false"></main-tabs>
 
-											<main-tabs class="main-tabs" menu-title="Permissions" menu-href="../ permissions/role-management.html"
+											<main-tabs class="main-tabs" menu-title="Permissions"
+												menu-href="../ permissions/role-management.html"
 												menu-src="../assets/media/icons/duotune/permissions.svg" highlight="false"></main-tabs>
 
 										</div>
@@ -611,7 +615,7 @@
 
 
 
-									<div class="table-responsive frame-30 ">
+									<div class="table-responsive frame-30">
 										<div class="dt-container dt-bootstrap5 ">
 											<!-- <div id="kt_datatable_zero_configuration_wrapper" class="dt-container dt-bootstrap5"> -->
 
@@ -743,33 +747,77 @@
 												</div>
 											</div>
 
-											<div class="dt-container dt-bootstrap5 mt-2">
-
+											<div class="dt-container align-items-center justify-content-evenly dt-bootstrap5 mt-2">
 
 												<!--begin::Datatable-->
-												<table id="kt_datatable_example_1" class="table align-middle table-row-dashed fs-6 gy-5 ">
-													<thead class="bg-table text-white fw-bold fs-7 text-uppercase gs-0 bg-bink px-10">
-														<tr>
-															<th class="w-10px pe-2">
-																<div class="form-check me-3">
-																	<input class="form-check-input" type="checkbox" data-kt-check="true"
-																		data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="1" />
-																</div>
-															</th>
-															<th>#</th>
-															<th>Product Name</th>
-															<th>Country</th>
-															<th>Number</th>
-															<th>Manager</th>
-															<th>Inquiry Status</th>
-															<th>Creation Time</th>
-															<th>Operate</th>
-															<th>Actions</th>
-														</tr>
-													</thead>
-													<tbody class="text-gray-600 fw-semibold">
-													</tbody>
-												</table>
+												<div class="d-flex justify-content-between align-items">
+
+													<table id="kt_datatable_example_1" class="table align-middle table-row-dashed fs-6 gy-5 ">
+														<thead class="bg-table text-white fw-bold fs-7 text-uppercase gs-0 bg-bink px-10">
+															<tr>
+																<th class="w-10px pe-2">
+																	<div class="form-check me-3">
+																		<input class="form-check-input" type="checkbox" data-kt-check="true"
+																			data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="1" />
+																	</div>
+																</th>
+																<th>#</th>
+																<th>Product Name</th>
+																<th>Product Category</th>
+																<th>Stock</th>
+																<th>Price</th>
+															</tr>
+														</thead>
+														<tbody class="text-gray-600 fw-semibold">
+														</tbody>
+													</table>
+
+													<div class="category-container mr-2">
+														<div class="fw-bold fs-18px mb-5">Product Category</div>
+
+														<div class="category-item">
+															<div class="category-img">
+																<img src="../assets/media/icons/duotune/export.svg" alt="Category Icon">
+															</div>
+															<div class="category-details">
+																<p class="category-name">Category Name</p>
+																<p class="product-number">20 Products Available</p>
+															</div>
+														</div>
+
+														<div class="category-item">
+															<div class="category-img">
+																<img src="../assets/media/icons/duotune/export.svg" alt="Category Icon">
+															</div>
+															<div class="category-details">
+																<p class="category-name">Category Name</p>
+																<p class="product-number">20 Products Available</p>
+															</div>
+														</div>
+
+														<div class="category-item">
+															<div class="category-img">
+																<img src="../assets/media/icons/duotune/export.svg" alt="Category Icon">
+															</div>
+															<div class="category-details">
+																<p class="category-name">Category Name</p>
+																<p class="product-number">20 Products Available</p>
+															</div>
+														</div>
+
+														<div class="category-item">
+															<div class="category-img">
+																<img src="../assets/media/icons/duotune/export.svg" alt="Category Icon">
+															</div>
+															<div class="category-details">
+																<p class="category-name">Category Name</p>
+																<p class="product-number">20 Products Available</p>
+															</div>
+														</div>
+
+													</div>
+
+												</div>
 												<!--end::Datatable-->
 												<div id="" class="row">
 													<div id=""
@@ -812,9 +860,9 @@
 														</div>
 													</div>
 												</div>
+
 											</div>
 										</div>
-
 									</div>
 								</div>
 								<!--end::Row-->
@@ -1007,18 +1055,10 @@
         </td>
         <td>${i}</td>
         <td>Product ${i}</td>
-        <td>Country ${i}</td>
-        <td>Number ${i}</td>
-        <td>Manager ${i}</td>
-        <td>Inquiry Status ${i}</td>
-        <td>Creation Time ${i}</td>
-        <td>Operate ${i}</td>
-        <td>
-                            <div class="frame-35">
-                              <div class="img-wrapper"><img class="img-4" src="../assets/media/img/eye-5.svg"></div>
-                              <div class="img-wrapper"><img class="img-4" src="../assets/media/img/edit-02-5.svg"></div>
-                            
-                          </div></td>
+        <td>Category ${i}</td>
+        <td>Stock ${i}</td>
+        <td>Price ${i}</td>
+        
     `;
 
 				// Append the row to the table body

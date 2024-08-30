@@ -28,13 +28,13 @@ class NavInfo extends HTMLElement {
       <img alt="Logo" src="../assets/media/icons/duotune/notification.svg">
     </div>
   
-    <div class="app-navbar-item ml-12px">
+    <div class="app-navbar-item">
       <div class="btn btn-icon btn-custom btn-icon-muted w-35px h-35px">
         <img alt=" Logo" src="../assets/media/icons/duotune/line.svg">
       </div>
     </div>
   
-    <div class="d-flex align-items-center ml-3 flex-stack">
+    <div class="d-flex align-items-center flex-stack">
       <!--begin::Thumbnail-->
       <a class="symbol ">
         <span class="symbol-label  w-42px h-42px"
@@ -53,7 +53,7 @@ class NavInfo extends HTMLElement {
       </div>
     </div>
   
-    <div class="app-navbar-item ml-12px ">
+    <div class="app-navbar-item">
       <!--begin::Menu wrapper-->
       <div
         class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px position-relative"

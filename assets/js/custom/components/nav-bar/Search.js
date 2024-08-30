@@ -26,8 +26,8 @@ class Search extends HTMLElement {
 								<div>
 									<div class="input-group">
 										<input type="text" class="form-control" placeholder="Search">
-										<select class="form-select" aria-label="Select category">
-											<option value="">Select Category</option>
+										<select class="form-select" aria-label="Select Category">
+											<option value="">Select Product Type</option>
 											<option value="electronics">Electronics</option>
 											<option value="clothing">Clothing</option>
 											<option value="home-garden">Home & Garden</option>

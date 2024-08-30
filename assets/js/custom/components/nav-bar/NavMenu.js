@@ -52,7 +52,7 @@ class NavMenu extends HTMLElement {
       </div>
       <!--end::Avatar-->
       <!--begin::Name-->
-      <span class="menu-title  align-items-center fs-16px mx-2 fw-bold">Overview
+      <span class="menu-title align-items-center fs-16px fw-bold text-center">Overview
         Analytics</span>
       <!--end::Name-->
     </div>

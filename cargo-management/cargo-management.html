@@ -202,19 +202,22 @@
                         </div>
                       </div>
 
-                      <main-tabs class="main-tabs" menu-title="Requests" menu-href="../inquiry-management/Inquiry-management.html"
+                      <main-tabs class="main-tabs" menu-title="Requests"
+                        menu-href="../inquiry-management/Inquiry-management.html"
                         menu-src="../assets/media/icons/duotune/requests.svg" highlight="false"></main-tabs>
 
                       <main-tabs class="main-tabs" menu-title="Order Management" menu-href="../order/index.html"
                         menu-src="../assets/media/icons/duotune/order.svg" highlight="false"></main-tabs>
 
-                      <main-tabs class="main-tabs" menu-title="Cargo Management" menu-href="../cargo-management/cargo-management.html"
+                      <main-tabs class="main-tabs" menu-title="Cargo Management"
+                        menu-href="../cargo-management/cargo-management.html"
                         menu-src="../assets/media/icons/duotune/cargo-active.svg" highlight="true"></main-tabs>
 
                       <main-tabs class="main-tabs" menu-title="One Piece Shipping" menu-href="../shipping/index.html"
                         menu-src="../assets/media/icons/duotune/shipping.svg" highlight="false"></main-tabs>
 
-                      <main-tabs class="main-tabs" menu-title="Permissions" menu-href="../ permissions/role-management.html"
+                      <main-tabs class="main-tabs" menu-title="Permissions"
+                        menu-href="../ permissions/role-management.html"
                         menu-src="../assets/media/icons/duotune/permissions.svg" highlight="false"></main-tabs>
 
                     </div>
@@ -248,11 +251,11 @@
 
               <div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
                 <div class="app-sidebar-menu overflow-hidden flex-column-fluid ml-14px">
-									<main-tabs class="main-tabs" menu-title="Help" menu-href="../contact-us/index.html"
-                        menu-src="../assets/media/icons/duotune/help.svg" highlight="false"></main-tabs>
-									<main-tabs class="main-tabs" menu-title="Settings" menu-href="../settings/personal-information.html"
-                        menu-src="../assets/media/icons/duotune/settings.svg" highlight="false"></main-tabs>
-								</div>
+                  <main-tabs class="main-tabs" menu-title="Help" menu-href="../contact-us/index.html"
+                    menu-src="../assets/media/icons/duotune/help.svg" highlight="false"></main-tabs>
+                  <main-tabs class="main-tabs" menu-title="Settings" menu-href="../settings/personal-information.html"
+                    menu-src="../assets/media/icons/duotune/settings.svg" highlight="false"></main-tabs>
+                </div>
               </div>
             </div>
             <!-- </div> -->
@@ -274,7 +277,7 @@
 
 
                 <!--begin::Page title-->
-                <div class="page-title d-flex flex-column justify-content-center flex-wrap ">
+                <div class="page-title d-flex flex-column justify-content-center flex-wrap col-3">
                   <!--begin::Title-->
                   <h1 class="link-yellow page-heading d-flex fw-bolder fs-30px flex-column justify-content-center my-0">
                     Cargo Management
@@ -289,8 +292,15 @@
                 </div>
                 <!--end::Page title-->
                 <!--begin::Actions-->
-                <div class="d-flex align-items-center gap-2 gap-lg-3">
+                <div class="d-flex justify-content-md-end align-items-center gap-2 gap-lg-3 col-9">
 
+                  <div class="upload-container">
+                    <input type="file" id="fileUpload" accept=".xls,.xlsx" style="display:none" />
+                    <button id="uploadButton" class="upload-btn">
+                      <img src="../assets/media/icons/duotune/files/fil022.svg" alt="Upload Icon" class="upload-icon" />
+                      Upload Product
+                    </button>
+                  </div>
 
                   <div class="wrapper w-300px">
                     <div class="custom-input">
@@ -314,7 +324,7 @@
                   <button class="btn btn-primary fs-7me-3 fw-bolder d-flex justify-content-center align-items-center"
                     data-bs-toggle="modal" data-bs-target="#kt_modal_shelves">
                     <img class="img w-15px m-1 me-3" src="../assets/media/icons/duotune/edit.svg">
-                    <span class="fs-14px fw-bolder">Update Status</span>
+                    <span class="fs-14px fw-bolder">Add Product</span>
                   </button>
                   <!--end::Add Product button-->
                 </div>
@@ -713,87 +723,81 @@
 
         // Add row content
         row[i] = (`
-                <div class="col d-flex">
-                                            <div class="card p-6 w-100">
-                                                <!--begin::Header-->
-                                                <div class="d-flex">
-                                                    <div class="h-100px w-100px">
-
-                                                    
-                                                    <img src="../assets/media/books/10.png"
-                                                        class="card-img object-fit-cover h-100px w-100px" />
-                                                    </div>
-                                                    <div class="">
-                                                        <div class="d-flex">
-                                                            <div class="col">
-                                                                <h1 class="fs-16px text-primary fw-bolder">
-
-                                                                    Anti snoring tool</h1>
-                                                                <div class="d-flex">
-                                                                    <div class="d-flex align-items-center me-3">
-                                                                        <h1 class="fs-7 text-black fw-semibold">
-                                                                            Number
-                                                                        </h1>
-                                                                        <div class="product-item fw-bold fs-7 ms-3">4
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="d-flex align-items-center ">
-                                                                        <h1 class="fs-7 text-black fw-semibold">
-                                                                            Number
-                                                                        </h1>
-                                                                        <div class="product-item fw-bold ms-3  fs-7">4
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col">
-
-                                                                <div class="cargo-item fw-bold ms-3 text-gray-800 fs-7">
-                                                                    Disptach to next hub</div>
-
-                                                            </div>
-                                                        </div>
-                                                        <h1 class="fs-7 text-gray-200 fw-light">
-
-                                                            Combat snoring with our innovative anti-snoring tool. Sleep
-                                                            soundly and wake up refreshed.</h1>
-                                                    </div>
-                                                </div>
-                                                <!--end::Header-->
-                                                <!--begin::Actions-->
-                    <div class="d-flex justify-content-center align-items-center mt-6">
-    <button class="btn btn-primary fs-7 w-50 me-3 fw-bolder d-flex justify-content-center align-items-center"
-     data-bs-toggle="modal" data-bs-target="#kt_modal_shelves">
-        <img class="img me-2" src="../assets/media/img/arrow-up-05-sharp.svg" style="width: 15px;">
-        <span class="fs-14px fw-bolder">Shelves</span>
-    </button>
-    <a href="../product-management/edit-product.html" class="btn btn-outline fs-7 w-50 d-flex justify-content-center align-items-center">
-        <img class="img me-2" src="../assets/media/img/edit-02-5.svg" style="width: 15px;">
-        <span class="fs-14px fw-bolder">Edit</span>
-    </a>
-</div>
-                                                <!--end::Actions-->
-
-                                            </div>
-
-
-
-                                        </div>
+        <div class="col d-flex justify-content-center p-3">
+                      <div class="card p-6 w-100 d-flex flex-column" style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); width:100%; max-width: 600px">
+                        <!--begin::Header-->
+                        <div class="d-flex">
+                          <div class="w-100px">
+                            <img src="../assets/media/books/5.png" class="card-img object-fit-cover w-100px" />
+                          </div>
+                          <div class="mx-5">
+                            <div class="">
+                              <div class="col">
+                                <h1 class="fs-16px text-primary fw-bolder">
+                                  Anti snoring tool</h1>
+                                <div class="d-flex">
+                                  <div class="d-flex align-items-center me-3">
+                                    <h1 class="fs-7 text-black fw-semibold mt-2">
+                                      Number
+                                    </h1>
+                                    <div class="product-item fw-bold fs-7 ms-3">4
+                                    </div>
+                                  </div>
+                                  <div class="d-flex align-items-center ">
+                                    <h1 class="fs-7 text-black fw-semibold mt-2">
+                                      Status
+                                    </h1>
+                                    <div class="product-item fw-bold ms-3  fs-7">4
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="cargo-item fw-bold p-2 my-2 text-gray-800 fs-7">
+                                  Disptach to next hub</div>
+                              </div>
+                            </div>
+                            <h1 class="fs-7 text-gray-200 fw-light">
+                              Combat snoring with our innovative anti-snoring tool. Sleep
+                              soundly and wake up refreshed.</h1>
+                          </div>
+                        </div>
+                        <!--end::Header-->
+                        <!--begin::Actions-->
+                        <div class="d-flex justify-content-center align-items-center mt-6">
+                          <button
+                            class="btn btn-primary fs-7 w-50 me-3 fw-bolder d-flex justify-content-center align-items-center"
+                            data-bs-toggle="modal" data-bs-target="#kt_modal_shelves">
+                            <img class="img me-2" src="../assets/media/img/arrow-up-05-sharp.svg" style="width: 15px;">
+                            <span class="fs-14px fw-bolder">Shelves</span>
+                          </button>
+                          <a href="../product-management/edit-product.html"
+                            class="btn btn-outline fs-7 w-50 d-flex justify-content-center align-items-center">
+                            <img class="img me-2" src="../assets/media/img/edit-02-5.svg" style="width: 15px;">
+                            <span class="fs-14px fw-bolder">Edit</span>
+                          </a>
+                        </div>
+                        <!--end::Actions-->
+                      </div>
+                    </div>
     `);
-
         // Append the row to the table body
         //div.appendChild(row);
       }
       div.innerHTML = row.join('');
-
     });
 
+    document.getElementById('uploadButton').addEventListener('click', function () {
+      document.getElementById('fileUpload').click();
+    });
 
-
-
-    // $("#kt_datatable_zero_configuration").DataTable();
-
-
+    document.getElementById('fileUpload').addEventListener('change', function (event) {
+      var file = event.target.files[0];
+      if (file) {
+        // console.log('Selected file:', file.name);
+        // You can handle the file upload process here
+      }
+    });
   </script>
 </body>
 <!--end::Body-->

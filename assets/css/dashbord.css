@@ -2687,6 +2687,40 @@
   /* Ensure the table takes the full width of the container */
 }
 
+.upload-container {
+  display: inline-block;
+  position: relative;
+}
+
+.upload-btn {
+  background-color: #ec522c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #d94c3a;
+}
+
+.upload-icon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+#fileUpload {
+  display: none;
+}
+
 /* Responsive Section */
 /* in xs */
 @media (max-width: 576px) {

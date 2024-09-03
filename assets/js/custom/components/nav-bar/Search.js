@@ -25,8 +25,8 @@ class Search extends HTMLElement {
 							<div class="row justify-content-center">
 								<div>
 									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Search">
-										<select class="form-select" aria-label="Select Category">
+										<input id="searchInput" type="text" class="form-control" placeholder="Search">
+										<select id="categorySelect" class="form-select" aria-label="Select Category">
 											<option value="">Select Product Type</option>
 											<option value="electronics">Electronics</option>
 											<option value="clothing">Clothing</option>
@@ -36,7 +36,7 @@ class Search extends HTMLElement {
 											<option value="toys">Toys</option>
 											<!-- Add more options as needed -->
 										</select>
-										<button class="btn btn-primary" type="button">
+										<button id="searchButton" class="btn btn-primary" type="button">
 											<img src="../assets/media/icons/duotune/general/gen021.svg" alt="search-icon">
 										</button>
 									</div>
@@ -46,6 +46,35 @@ class Search extends HTMLElement {
     `;
 
     shadow.appendChild(container);
+
+    // Add event listener for the search button
+    shadow.querySelector('#searchButton').addEventListener('click', () => {
+      const searchInput = shadow.querySelector('#searchInput').value;
+      const categorySelect = shadow.querySelector('#categorySelect').value;
+
+      // Create request payload
+      const payload = {
+        search: searchInput,
+        category: categorySelect
+      };
+
+      // Send request to the API
+      fetch('https://sourcing.yallabena.com/Comp/SellGoods/goodsList', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+          // Handle the response data as needed
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    });
   }
 }
 

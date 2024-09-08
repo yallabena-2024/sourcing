@@ -35,6 +35,7 @@
 			font-family: Arial, sans-serif;
 			margin: 20px;
 		}
+
 	</style>
 	<!--end::Global Stylesheets Bundle-->
 	<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
@@ -204,19 +205,22 @@
 												</div>
 											</div>
 
-											<main-tabs class="main-tabs" menu-title="Requests" menu-href="../inquiry-management/Inquiry-management.html"
+											<main-tabs class="main-tabs" menu-title="Requests"
+												menu-href="../inquiry-management/Inquiry-management.html"
 												menu-src="../assets/media/icons/duotune/requests.svg" highlight="false"></main-tabs>
 
 											<main-tabs class="main-tabs" menu-title="Order Management" menu-href="../order/index.html"
 												menu-src="../assets/media/icons/duotune/order.svg" highlight="false"></main-tabs>
 
-											<main-tabs class="main-tabs" menu-title="Cargo Management" menu-href="../cargo-management/cargo-management.html"
+											<main-tabs class="main-tabs" menu-title="Cargo Management"
+												menu-href="../cargo-management/cargo-management.html"
 												menu-src="../assets/media/icons/duotune/cargo.svg" highlight="false"></main-tabs>
 
 											<main-tabs class="main-tabs" menu-title="One Piece Shipping" menu-href="../shipping/index.html"
 												menu-src="../assets/media/icons/duotune/shipping.svg" highlight="false"></main-tabs>
 
-											<main-tabs class="main-tabs" menu-title="Permissions" menu-href="../ permissions/role-management.html"
+											<main-tabs class="main-tabs" menu-title="Permissions"
+												menu-href="../ permissions/role-management.html"
 												menu-src="../assets/media/icons/duotune/permissions.svg" highlight="false"></main-tabs>
 
 										</div>
@@ -249,11 +253,11 @@
 
 							<div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
 								<div class="app-sidebar-menu overflow-hidden flex-column-fluid ml-14px">
-                  <main-tabs class="main-tabs" menu-title="Help" menu-href="../contact-us/index.html"
-                    menu-src="../assets/media/icons/duotune/help.svg" highlight="false"></main-tabs>
-                  <main-tabs class="main-tabs" menu-title="Settings" menu-href="../settings/personal-information.html"
-                    menu-src="../assets/media/icons/duotune/settings.svg" highlight="false"></main-tabs>
-                </div>
+									<main-tabs class="main-tabs" menu-title="Help" menu-href="../contact-us/index.html"
+										menu-src="../assets/media/icons/duotune/help.svg" highlight="false"></main-tabs>
+									<main-tabs class="main-tabs" menu-title="Settings" menu-href="../settings/personal-information.html"
+										menu-src="../assets/media/icons/duotune/settings.svg" highlight="false"></main-tabs>
+								</div>
 							</div>
 						</div>
 						<!-- </div> -->
@@ -582,11 +586,11 @@
 
 									<!--begin::Row-->
 
-									<div class="d-flex flex-wrap mt-12px">
-										<volist name="cache" id="vo">
-											<div class="col min-w-325px d-flex mt-2 ">
-
-												<div class="card min-w-325px">
+									<div class="cards-container mt-10">
+										<div class="row align-items-stretch">
+											<!-- Card 1 -->
+											<div class="col-md-4 mb-4">
+												<div class="card h-100 w-100">
 													<!--begin::Header-->
 													<div class="card-header pt-5">
 														<a href="./product-details.html">
@@ -598,40 +602,32 @@
 														<div class="mb-5">
 															<!--begin::Details-->
 															<div class="product-title-container">
-																<h3 class="product-name d-flex align-items-center fs-2">Product Name
-																</h3>
-
-																<!-- <div style="color: #908f8f;margin-left: 30px;">
-																	<span style="font-size: 25px;">{$country}</span>
-																	<php>if($vo['is_quantity'] == 1){</php>
-																	<i class="Hui-iconfont"
-																		style="margin-left: 5px;color: #f37240;font-size: 25px;">&#xe67f;</i>
-																	<php>}</php>
-																</div> -->
+																<h3 class="product-name d-flex align-items-center fs-2">Product Name Product Name Product Name</h3>
 															</div>
 
 															<div class="mb-2 mt-3 link-yellow">
 																<div class="product-title-container d-flex align-items-center justify-content-between"
 																	style="width: 100%;">
-																	<p style="font-size: 17px; color: #B03684;">Category</p>
-																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">Home & Kitchin</p>
+																	<p class="product-property">Category</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px; text-align: end;">Sport,
+																		Fitness & Outdoors</p>
 																</div>
 
 																<div class="product-title-container d-flex align-items-center justify-content-between"
 																	style="width: 100%;">
-																	<p style="font-size: 17px; color: #B03684;">Price</p>
+																	<p class="product-property">Price</p>
 																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
 																</div>
 
 																<div class="product-title-container d-flex align-items-center justify-content-between"
 																	style="width: 100%;">
-																	<p style="font-size: 17px; color: #B03684;">Air All In</p>
+																	<p class="product-property">Air All In</p>
 																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
 																</div>
 
 																<div class="product-title-container d-flex align-items-center justify-content-between"
 																	style="width: 100%;">
-																	<p style="font-size: 17px; color: #B03684;">Sea All In</p>
+																	<p class="product-property">Sea All In</p>
 																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
 																</div>
 															</div>
@@ -662,8 +658,222 @@
 													</div>
 												</div>
 											</div>
-										</volist>
-										<!--end::Row-->
+
+											<!-- Repeat the above card structure for each card -->
+
+											<!-- Card 2 -->
+											<div class="col-md-4 mb-4">
+												<div class="card h-100 w-100">
+													<!--begin::Header-->
+													<div class="card-header pt-5">
+														<a href="./product-details.html">
+															<img src="../assets/media/products/19.png" class="card-img h-250px" />
+														</a>
+													</div>
+													<!--end::Header-->
+													<div class="card-body py-6">
+														<div class="mb-5">
+															<!--begin::Details-->
+															<div class="product-title-container">
+																<h3 class="product-name d-flex align-items-center fs-2">Product Name Product Name Product Name</h3>
+															</div>
+
+															<div class="mb-2 mt-3 link-yellow">
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Category</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px; text-align: end;">Sport &
+																		Fitness</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Price</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Air All In</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Sea All In</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+															</div>
+															<!--end::Details-->
+
+															<!--begin::Actions-->
+															<div class="d-flex justify-content-between align-content-center">
+																<a href="./product-details.html">
+																	<div class="btn btn-outline fs-7"
+																		style="width:130px; float:left; text-align:center; font-size: 22px; line-height:25px; cursor:pointer"
+																		id="show_{$vo.product_id}" title="show">
+																		<img src="../assets/media/img/eye-5.svg" alt="show-icon">
+																		<span style="font-size: 14px;color: black; "><b>Show</b></span>
+																	</div>
+																</a>
+																<a href="#">
+																	<div class="btn btn-primary fs-7"
+																		style="width:130px; float:left; text-align:center; font-size: 22px; line-height:25px; cursor:pointer"
+																		id="buy_{$vo.product_id}" title="Create Order">
+																		<img src="../assets/media/img/shopping-cart-check-in-02.svg" alt="buy-icon">
+																		<span style="font-size: 14px;color: white;"><b>Buy Now</b></span>
+																	</div>
+																</a>
+																<!--end::Actions-->
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- Card 3 -->
+											<div class="col-md-4 mb-4">
+												<div class="card h-100 w-100">
+													<!--begin::Header-->
+													<div class="card-header pt-5">
+														<a href="./product-details.html">
+															<img src="../assets/media/products/19.png" class="card-img h-250px" />
+														</a>
+													</div>
+													<!--end::Header-->
+													<div class="card-body py-6">
+														<div class="mb-5">
+															<!--begin::Details-->
+															<div class="product-title-container">
+																<h3 class="product-name d-flex align-items-center fs-2">Product Name Product Name Product Name</h3>
+															</div>
+
+															<div class="mb-2 mt-3 link-yellow">
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Category</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px; text-align: end;">Sport,
+																		Fitness & Outdoors</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Price</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Air All In</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Sea All In</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+															</div>
+															<!--end::Details-->
+
+															<!--begin::Actions-->
+															<div class="d-flex justify-content-between align-content-center">
+																<a href="./product-details.html">
+																	<div class="btn btn-outline fs-7"
+																		style="width:130px; float:left; text-align:center; font-size: 22px; line-height:25px; cursor:pointer"
+																		id="show_{$vo.product_id}" title="show">
+																		<img src="../assets/media/img/eye-5.svg" alt="show-icon">
+																		<span style="font-size: 14px;color: black; "><b>Show</b></span>
+																	</div>
+																</a>
+																<a href="#">
+																	<div class="btn btn-primary fs-7"
+																		style="width:130px; float:left; text-align:center; font-size: 22px; line-height:25px; cursor:pointer"
+																		id="buy_{$vo.product_id}" title="Create Order">
+																		<img src="../assets/media/img/shopping-cart-check-in-02.svg" alt="buy-icon">
+																		<span style="font-size: 14px;color: white;"><b>Buy Now</b></span>
+																	</div>
+																</a>
+																<!--end::Actions-->
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- Card 4 -->
+											<div class="col-md-4 mb-4">
+												<div class="card h-100 w-100">
+													<!--begin::Header-->
+													<div class="card-header pt-5">
+														<a href="./product-details.html">
+															<img src="../assets/media/products/19.png" class="card-img h-250px" />
+														</a>
+													</div>
+													<!--end::Header-->
+													<div class="card-body py-6">
+														<div class="mb-5">
+															<!--begin::Details-->
+															<div class="product-title-container">
+																<h3 class="product-name d-flex align-items-center fs-2">Product Name Product Name Product Name</h3>
+															</div>
+
+															<div class="mb-2 mt-3 link-yellow">
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Category</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px; text-align: end;">Sport,
+																		Fitness & Outdoors</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Price</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Air All In</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+
+																<div class="product-title-container d-flex align-items-center justify-content-between"
+																	style="width: 100%;">
+																	<p class="product-property">Sea All In</p>
+																	<p class="fw-bold me-2 mt-n1 mb-2" style="font-size: 17px;">$150.50</p>
+																</div>
+															</div>
+															<!--end::Details-->
+
+															<!--begin::Actions-->
+															<div class="d-flex justify-content-between align-content-center">
+																<a href="./product-details.html">
+																	<div class="btn btn-outline fs-7"
+																		style="width:130px; float:left; text-align:center; font-size: 22px; line-height:25px; cursor:pointer"
+																		id="show_{$vo.product_id}" title="show">
+																		<img src="../assets/media/img/eye-5.svg" alt="show-icon">
+																		<span style="font-size: 14px;color: black; "><b>Show</b></span>
+																	</div>
+																</a>
+																<a href="#">
+																	<div class="btn btn-primary fs-7"
+																		style="width:130px; float:left; text-align:center; font-size: 22px; line-height:25px; cursor:pointer"
+																		id="buy_{$vo.product_id}" title="Create Order">
+																		<img src="../assets/media/img/shopping-cart-check-in-02.svg" alt="buy-icon">
+																		<span style="font-size: 14px;color: white;"><b>Buy Now</b></span>
+																	</div>
+																</a>
+																<!--end::Actions-->
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 
 

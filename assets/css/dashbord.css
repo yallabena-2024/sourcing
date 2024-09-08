@@ -2822,6 +2822,16 @@
   font-size: 12px;
 }
 
+.product-title-container {
+  height: 50px;
+}
+
+.product-property {
+  font-size: 17px;
+  color: #B03684;
+  margin-right: 50px;
+}
+
 /* Responsive Section */
 /* in xs */
 @media (max-width: 576px) {

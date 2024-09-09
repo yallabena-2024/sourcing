@@ -2588,7 +2588,7 @@
 .sub-tab {
   overflow: hidden;
   transition: max-height 0.3s ease;
-  max-height: 0;
+  max-height: 30;
   margin-left: 35px;
 }
 

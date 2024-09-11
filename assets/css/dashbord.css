@@ -255,11 +255,6 @@
   --space-s-s32: 32px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
 .div {
   background-color: #ffffff;
   width: 1440px;

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--begin::Head-->
 
 <head>
-  <base href="" />
   <title>Requests - Yallabena</title>
+
   <meta charset="utf-8" />
   <meta name="description"
     content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
@@ -17,17 +16,10 @@
     content="Metronic - Bootstrap Admin Template, HTML, VueJS, React, Angular. Laravel, Asp.Net Core, Ruby on Rails, Spring Boot, Blazor, Django, Express.js, Node.js, Flask Admin Dashboard Theme & Template" />
   <meta property="og:url" content="https://keenthemes.com/metronic" />
   <meta property="og:site_name" content="Keenthemes | Metronic" />
-  <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-  <link rel="shortcut icon" href="../assets/media/logos/favicon.ico" />
-  <!--begin::Fonts(mandatory for all pages)-->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-  <!--end::Fonts-->
-  <!--begin::Vendor Stylesheets(used for this page only)-->
-  <link href="../assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-  <!--end::Vendor Stylesheets-->
-  <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-  <link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 
+  <link rel="shortcut icon" href="../assets/media/logos/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
   <link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
   <link href="../assets/css/dashbord.css" rel="stylesheet" type="text/css" />
   <style>
@@ -36,57 +28,36 @@
       margin: 20px;
     }
   </style>
-  <!--end::Global Stylesheets Bundle-->
-  <script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
 </head>
-<!--end::Head-->
-<!--begin::Body-->
 
 <body id="kt_app_body" style="background: #F8F8F8; background-image: url(../assets/media/img/vector.svg);"
   data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true" data-kt-app-sidebar-enabled="true"
   data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true"
   data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default">
-  <!--begin::Theme mode setup on page load-->
   <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
-    <!--begin::Page-->
     <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
-      <!--begin::Header-->
       <div id="kt_app_header" class="app-header border-2" data-kt-sticky="true"
         data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize"
         data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
-        <!--begin::Header container-->
         <div class="app-container border-v1 container-fluid d-flex align-items-stretch justify-content-between px-lg-4"
           id="kt_app_header_container">
-          <!--begin::Sidebar mobile toggle-->
-
-          <!--end::Mobile logo-->
-          <!--begin::Header wrapper-->
           <div class=" d-flex align-items-center justify-content-between flex-lg-grow-1 " id="kt_app_header_wrapper">
-            <!--begin::Menu wrapper-->
             <div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true"
               data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}"
               data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end"
               data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true"
               data-kt-swapper-mode="{default: 'append', lg: 'prepend'}"
               data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}">
-              <!--begin::Menu-->
               <nav-menu></nav-menu>
-              <!--end::Menu-->
             </div>
             <nav-search></nav-search>
-            <!--end::Menu wrapper-->
-            <!--begin::Navbar-->
             <div class="app-navbar flex-shrink-0">
-              <!--begin::Search-->
               <div class="app-navbar-item align-items-stretch ms-1 ms-md-4">
-                <!--begin::Search-->
                 <div id="kt_header_search" class="header-search d-flex align-items-stretch"
                   data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter"
                   data-kt-search-layout="menu" data-kt-menu-trigger="auto" data-kt-menu-overflow="false"
                   data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end" data-kt-search="true">
-                  <!--begin::Search toggle-->
                   <nav-info></nav-info>
-
                 </div>
                 <div class="separator separator-dashed my-6"></div>
                 <div class="app-navbar-item d-lg-none ms-2 me-n2" title="Show header menu">
@@ -98,36 +69,16 @@
                     </i>
                   </div>
                 </div>
-
-                <!--end::Search-->
               </div>
-              <!--end::Search-->
-
-              <!--end::Header menu toggle-->
-              <!--begin::Aside toggle-->
-              <!--end::Header menu toggle-->
             </div>
-            <!--end::Navbar-->
-
           </div>
-
-
-          <!--end::Header wrapper-->
         </div>
-
-
-        <!--end::Header container-->
       </div>
-
-      <!--end::Header-->
-      <!--begin::Wrapper-->
       <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">
-        <!--begin::Sidebar-->
         <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar"
           data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
           data-kt-drawer-width="225px" data-kt-drawer-direction="start"
           data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
-          <!--begin::Logo-->
           <div id="kt_app_sidebar_toggle_v1"
             class="app-sidebar-arrow my-6 app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary h-30px w-30px position-absolute top-150 start-100 translate-middle rotate mt-30"
             data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
@@ -135,8 +86,6 @@
                     border: 1px solid var(--Color-Border, #E2E8F0);
                     background: var(--Color-Background, #FFF);">
             <img class=" fs-3 rotate-180" alt="Logo" src="../assets/media/icons/duotune/forword.svg" />
-
-
           </div>
           <div class="app-sidebar-logo d-flex flex-center" id="kt_app_sidebar_logo">
             <div class="center-content  align-items-center my-4">
@@ -144,34 +93,21 @@
               <img alt="Logo" src="../assets/media/logos/favicon.ico"
                 class=" card-center h-53px app-sidebar-logo-minimize">
             </div>
-
-
           </div>
-
-          <!--end::Logo-->
-          <!--begin::sidebar menu-->
           <div class="app-sidebar-menu overflow-hidden flex-column-fluid mt-4">
-            <!--begin::Menu wrapper-->
             <div id="kt_app_sidebar_menu_wrapper" class="app-sidebar-wrapper">
-              <!--begin::Scroll wrapper-->
               <div id="kt_app_sidebar_menu_scroll" class="scroll-y my-5 mx-3" data-kt-scroll="true"
                 data-kt-scroll-activate="true" data-kt-scroll-height="auto"
                 data-kt-scroll-dependencies="#kt_app_sidebar_logo, #kt_app_sidebar_footer"
                 data-kt-scroll-wrappers="#kt_app_sidebar_menu" data-kt-scroll-offset="5px"
                 data-kt-scroll-save-state="true" style="height: 297px;">
-                <!--begin::Menu-->
                 <div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6" id="#kt_app_sidebar_menu"
                   data-kt-menu="true" data-kt-menu-expand="false">
-                  <!--begin:Menu item-->
-
                   <div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
-
-                    <!--begin:Menu link-->
                     <div class="app-sidebar-menu overflow-hidden flex-column-fluid">
                       <main-tabs class="main-tabs" menu-title="Dashboards" menu-href="../dashboard/dashbord.html"
                         menu-src="../assets/media/icons/duotune/grid-view.svg" highlight="false">
                       </main-tabs>
-
                       <div class="menu-item">
                         <div class="product-subsection-arrow menu-link" style="width: 100%; display: flex;">
                           <span class="menu-icon">
@@ -182,8 +118,6 @@
                             <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/arrows/arr072.svg">
                           </span>
                         </div>
-
-                        <!-- Your sub-tab content here -->
                         <div class="sub-tab mt-2" style="display: none;">
                           <a class="menu-link" href="../product-management/stock-management.html">
                             <span class="menu-icon">
@@ -192,7 +126,6 @@
                             <span class="menu-title fs-16px fw-bolder">Stock</span>
                           </a>
                         </div>
-
                         <div class="sub-tab mt-2" style="display: none; width: 85%;">
                           <a class="menu-link" href="../product-management/product-management.html">
                             <span class="menu-icon">
@@ -202,44 +135,22 @@
                           </a>
                         </div>
                       </div>
-
                       <main-tabs class="main-tabs" menu-title="Requests" menu-href=""
                         menu-src="../assets/media/icons/duotune/requests-active.svg" highlight="true"></main-tabs>
-
                       <main-tabs class="main-tabs" menu-title="Order Management" menu-href="../order/index.html"
                         menu-src="../assets/media/icons/duotune/order.svg" highlight="false"></main-tabs>
-
-                      <main-tabs class="main-tabs" menu-title="Permissions" menu-href="../ permissions/role-management.html"
+                      <main-tabs class="main-tabs" menu-title="Permissions"
+                        menu-href="../ permissions/role-management.html"
                         menu-src="../assets/media/icons/duotune/permissions.svg" highlight="false"></main-tabs>
-
                     </div>
-                    <!--end:Menu sub-->
                   </div>
-
-
-
-                  <!--end:Menu item-->
-
                 </div>
-
-
-                <!--end::Menu-->
               </div>
-
-              <!--end::Scroll wrapper-->
             </div>
-            <!--end::Menu wrapper-->
           </div>
-
-
-          <!--end::sidebar menu-->
-          <!--begin::Footer-->
           <div class="app-sidebar-footer menu-item here show menu-accordion" id="kt_app_sidebar_footer">
-
             <div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6" id="#kt_app_sidebar_menu"
               data-kt-menu="true" data-kt-menu-expand="false">
-              <!--begin:Menu item-->
-
               <div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
                 <div class="app-sidebar-menu overflow-hidden flex-column-fluid ml-14px">
                   <main-tabs class="main-tabs" menu-title="Help" menu-href="../contact-us/index.html"
@@ -249,67 +160,33 @@
                 </div>
               </div>
             </div>
-            <!-- </div> -->
-
           </div>
-          <!--end::Footer-->
         </div>
-
         <div class="app-main flex-column flex-row-fluid " id="kt_app_main">
-          <!--begin::Content wrapper-->
           <div class="d-flex flex-column flex-column-fluid">
-
-            <!--begin::Toolbar-->
             <div id="kt_app_toolbar" class="app-toolbar  py-2 py-lg-4 ">
-
-
             </div>
-            <!--end::Toolbar-->
-
-            <!--begin::Content-->
             <div id="kt_app_content" class="app-content  flex-column-fluid ">
-
-
-              <!--begin::Content container-->
               <div id="kt_app_content_container" class="app-container  container-xxl ">
-                <!--begin::Row-->
                 <div class="row gx-12 gx-xl-12">
-                  <!--begin::Col-->
-
-                  <!--end::Col-->
-
-                  <!--begin::Col-->
                   <div class="container-xxl">
-                    <!--begin::Row-->
                     <div class="row">
                       <div class="col d-flex gap-3 justify-content-evenly">
                         <div class="card flex-fill">
                           <div class="card-header pt-5">
                             <h4 class="card-title d-flex align-items-center">
                               <img src="../assets/media/img/product_in_stock.svg" class="text-success me-2" />
-                              <span class="card-label fw-bold text-gray-800">Product
-                                In-stock</span>
+                              <span class="card-label fw-bold text-gray-800">Product In-stock</span>
                             </h4>
                           </div>
                           <div class="card-body py-6">
                             <div class="mb-5">
-                              <!--begin::Statistics-->
                               <div class="d-flex align-items-center mb-2 link-yellow">
-
                                 <span class="fs-3x fw-bold me-2 lh-1 ls-n2">45</span>
-
-
-
                               </div>
-                              <!--end::Statistics-->
-
-                              <!--begin::Description-->
                               <span class="fs-6 fw-semibold text-gray-500">View products
                                 available for immediate sale.</span>
-
-                              <!--end::Description-->
                             </div>
-
                           </div>
                         </div>
                         <div class="card flex-fill ml-3">
@@ -322,23 +199,13 @@
                           </div>
                           <div class="card-body py-6">
                             <div class="mb-5">
-                              <!--begin::Statistics-->
                               <div class="d-flex align-items-center mb-2 link-yellow">
-
                                 <span class="fs-3x fw-bold me-2 lh-1 ls-n2">32</span>
-
-
-
                               </div>
-                              <!--end::Statistics-->
-
-                              <!--begin::Description-->
-                              <span class="fs-6 fw-semibold text-gray-500">See products
-                                currently unavailable for purchase.</span>
-
-                              <!--end::Description-->
+                              <span class="fs-6 fw-semibold text-gray-500">
+                                See products currently unavailable for purchase.
+                              </span>
                             </div>
-
                           </div>
                         </div>
                         <div class="card flex-fill ml-3">
@@ -351,47 +218,19 @@
                           </div>
                           <div class="card-body py-6">
                             <div class="mb-5">
-                              <!--begin::Statistics-->
                               <div class="d-flex align-items-center mb-2 link-yellow">
-
                                 <span class="fs-3x fw-bold me-2 lh-1 ls-n2">4</span>
-
-
-
                               </div>
-                              <!--end::Statistics-->
-
-                              <!--begin::Description-->
                               <span class="fs-6 fw-semibold text-gray-500">Track products
                                 currently being prepared for shipment.</span>
-
-                              <!--end::Description-->
                             </div>
-
                           </div>
                         </div>
-
-
-
-
                       </div>
-
                     </div>
-                    <!--end::Row-->
-
-
                   </div>
-                  <!--end::Row-->
-
-
-
-
-
-
                   <div class="table-responsive frame-30 ">
                     <div class="dt-container dt-bootstrap5 ">
-                      <!-- <div id="kt_datatable_zero_configuration_wrapper" class="dt-container dt-bootstrap5"> -->
-
                       <div class="frame-31">
                         <div class="frame-22">
                           <div class="left-content-2">
@@ -406,72 +245,46 @@
                               customers and partners.
                             </p>
                           </div>
-
                           <div class="d-flex align-items-center gap-2 gap-lg-3">
-
-
-                            <!--begin::Date button-->
                             <button type="button"
                               class="btn btn-outline fw-bold  btn justify-content-center align-items-center"
                               id="kt_daterangepicker_4">
                               <img class="img" src="../assets/media/img/calendar-03-1.svg">
                               Date range </button>
-
-
-
-                            <!--end::Date button-->
-
-                            <!--begin::Filter button-->
-
                             <button type="button"
                               class="btn btn-outline fw-bold  btn justify-content-center align-items-center">
                               <img class="img" src="../assets/media/img/filter-2.svg">Filter</button>
-                            <!--end::Filter button-->
-                            <!--begin::Import button-->
                             <button class="btn btn-primary fw-bold">
                               <img class="img" src="../assets/media/img/folder-upload.svg">
                               Import
                             </button>
-                            <!--end::Import button-->
-                            <!--begin::Add button-->
                             <button class="btn btn-primary fw-bolder" data-bs-toggle="modal"
                               data-bs-target="#kt_modal_add">
                               <img class="img" src="../assets/media/img/elementsadd.svg">
                               Add New Inquiry
                             </button>
-                            <!--end::Add button-->
                           </div>
                           <div class="modal fade" tabindex="-1" id="kt_modal_1">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header">
                                   <h3 class="modal-title fw-bold"> Filter Inquiry</h3>
-
-                                  <!--begin::Close-->
                                   <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                                     aria-label="Close">
                                     <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span
                                         class="path2"></span></i>
                                   </div>
-                                  <!--end::Close-->
                                 </div>
-
                                 <div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_1">
                                   <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
                                     novalidate="novalidate" id="kt_sign_in_form"
                                     data-kt-redirect-url="../../demo1/dist/index.html" action="#">
                                     <div class="mb-10 fv-row fv-plugins-icon-container ">
-                                      <!--begin::Label-->
                                       <label class="required form-label fw-bold">Product
                                         Name</label>
-                                      <!--end::Label-->
-                                      <!--begin::Input-->
                                       <input type="text" name="Email" class="form-control mb-2"
                                         placeholder="Product Name">
-                                      <!--end::Input-->
-                                      <!--begin::Description-->
                                     </div>
-
                                     <div class="mb-10 fv-row fv-plugins-icon-container">
                                       <label for="" class="form-label fw-bold">Inquiry
                                         Numbers</label>
@@ -479,7 +292,6 @@
                                         rows="10" placeholder="Inquiry number (one per line)"></textarea>
                                     </div>
                                     <div class="mb-10 fv-row fv-plugins-icon-container">
-
                                       <select class="form-select" data-control="select2"
                                         data-placeholder="Select an option">
                                         <option></option>
@@ -488,21 +300,15 @@
                                       </select>
                                     </div>
                                     <div class="mb-10 ol d-flex justify-content-evenly">
-
                                       <button type="button"
                                         class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">Save
                                         & Apply</button>
                                     </div>
-
-
                                   </form>
                                 </div>
-
-
                               </div>
                             </div>
                           </div>
-
                         </div>
                         <div class="segmented-control">
                           <div id="segment-all-order" class="segmented-unit">
@@ -522,11 +328,7 @@
                           </div>
                         </div>
                       </div>
-
                       <div class="dt-container dt-bootstrap5 mt-2">
-
-
-                        <!--begin::Datatable-->
                         <table id="kt_datatable_example_1" class="table align-middle table-row-dashed fs-6 gy-5 ">
                           <thead class="bg-table text-white fw-bold fs-7 text-uppercase gs-0 bg-bink px-10">
                             <tr>
@@ -550,11 +352,9 @@
                           <tbody class="text-gray-600 fw-semibold">
                           </tbody>
                         </table>
-                        <!--end::Datatable-->
                         <div id="" class="row">
                           <div id=""
                             class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start dt-toolbar">
-
                             <div class="dt-info" aria-live="polite" id="kt_datatable_zero_configuration_info"
                               role="status">
                               Showing 1 to 10 of 57 records</div>
@@ -594,53 +394,27 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
-                <!--end::Row-->
               </div>
-              <!--end::Content container-->
             </div>
-            <!--end::Content-->
-
           </div>
-          <!--end::Content wrapper-->
-
-
-
         </div>
-
-        <!--end::Sidebar-->
-        <!--begin::Main-->
-
-        <!--end:::Main-->
       </div>
-
-
     </div>
-
-
-
-    <!--end::Wrapper-->
-    <!--end::Page-->
   </div>
-
-  <!--begin::Modal-->
   <div class="modal fade modal-75" tabindex="-1" id="kt_modal_edit">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title fw-bold">Edit Inquiry quotation</h3>
-          <!--begin::Close-->
           <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
             <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
           </div>
-          <!--end::Close-->
         </div>
         <div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_edit">
           <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate"
             id="kt_sign_in_form" data-kt-redirect-url="../../demo1/dist/index.html" action="">
-            <!--begin:Title section-->
             <div class="d-flex justify-content-between">
               <div class="p-2">
                 <h1 class="link-yellow  d-flex fw-bolder fs-24px  justify-content-start p-0">
@@ -651,97 +425,50 @@
                 </h1>
               </div>
               <div>
-
-
                 <button type="button"
                   class="btn btn-primary fw-bold fs-6 btn justify-content-center align-items-center ml-3 ">
                   <img src="../assets/media/img/edit-02.svg" class="me-3" />
                   Update Status</button>
               </div>
             </div>
-            <!--end:Title section-->
-
-            <!--begin::First section-->
             <div class="d-flex flex-row p-0 m-0 mt-3">
-              <!--begin::Produc column-->
               <div class=" col-6">
-                <!--begin::Row-->
                 <div class="col">
-                  <!--begin::Label-->
                   <label class="required form-label fw-bold">Ref NO</label>
-                  <!--end::Label-->
-                  <!--begin::Input-->
                   <input type="text" name="Email" class="form-control mb-2" placeholder="Ref NO">
-                  <!--end::Input-->
                 </div>
-                <!--end::Row-->
-                <!--begin::Row-->
                 <div class="col">
-                  <!--begin::Label-->
                   <label class="required form-label fw-bold">Product Name</label>
-                  <!--end::Label-->
-                  <!--begin::Input-->
                   <input type="text" name="Email" class="form-control mb-2" placeholder="Product Name">
-                  <!--end::Input-->
                 </div>
-                <!--end::Row-->
-
-
-                <!--begin::Row-->
                 <div class="d-flex flex-row p-0 mt-3">
                   <div class="col">
-                    <!--begin::Label-->
                     <label class="required form-label fw-bold">Product URL</label>
-                    <!--end::Label-->
-                    <!--begin::Input-->
                     <input type="text" name="Email" class="form-control mb-2" placeholder="Product URL">
-                    <!--end::Input-->
                   </div>
                   <div class="col ml-3">
-                    <!--begin::Label-->
                     <label class="required form-label fw-bold">Img URL</label>
-                    <!--end::Label-->
-                    <!--begin::Input-->
                     <input type="text" name="Email" class="form-control mb-2" placeholder="Img URL">
-                    <!--end::Input-->
                   </div>
                 </div>
-                <!--end::Row-->
-                <!--begin::Row-->
                 <div class="d-flex flex-row p-0 mt-3">
                   <div class="col">
-                    <!--start::Country Selection-->
-
                     <label class="required form-label fw-bold">Country</label>
-
                     <div class=" fv-row fv-plugins-icon-container">
-
                       <select class="form-select" data-control="select2" data-placeholder="Select">
                         <option></option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
                       </select>
                     </div>
-                    <!--end::Country Selection-->
                   </div>
                   <div class="col ml-3">
-                    <!--begin::Label-->
                     <label class="required form-label fw-bold">Quantity</label>
-                    <!--end::Label-->
-                    <!--begin::Input-->
                     <input type="text" name="Email" class="form-control" placeholder="Quantity">
-                    <!--end::Input-->
                   </div>
                 </div>
-                <!--end::Row-->
-                <!--begin::Row-->
                 <div class="col">
-
-                  <!--start::Country Selection-->
-
                   <label class="required form-label fw-bold">Status</label>
-
-
                 </div>
                 <div class="dropdown mb-10 fv-row fv-plugins-icon-container w-100">
                   <button onclick="toggleDropdown()" class="dropbtn w-100">Inquired</button>
@@ -779,7 +506,6 @@
                           Working on punchers Product
                         </label>
                       </div>
-
                     </div>
                     <div class="form-check mb-3">
                       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
@@ -802,270 +528,140 @@
                         </label>
                       </div>
                     </div>
-
                   </div>
                 </div>
-
-                <!--end::Row-->
-
-
-
-
               </div>
-              <!--end::Product column-->
-
-              <!--begin::Note column-->
               <div class="col-6 ms-3">
-
-                <!--begin::Label-->
                 <label class="required form-label fw-bold">Notes</label>
-                <!--end::Label-->
-                <!--begin::Input-->
                 <textarea type="text" name="introduction" class="form-control" placeholder="Notes"></textarea>
-                <!--end::Input-->
               </div>
-              <!--end::Note column-->
-
             </div>
-            <!--end::First section-->
-
-            <!--begin::Buttons section-->
             <div class="d-flex flex-row p-0 mt-6">
               <button type="button"
                 class="btn btn-outline fw-bold  btn justify-content-center align-items-center vw-100">Cancel</button>
-
               <button type="button"
                 class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100 ml-3">Save
                 & Update</button>
             </div>
-            <!--end::Buttons section-->
           </form>
         </div>
-
-
-
       </div>
-
-
     </div>
   </div>
-  <!--end::Modal-->
-
-  <!--begin::Modal-->
   <div class="modal fade modal-75" tabindex="-1" id="kt_modal_view">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title fw-bold">View Inquiry Details</h3>
-          <!--begin::Close-->
           <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
             <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
           </div>
-          <!--end::Close-->
         </div>
-        <!--begin::Modal body-->
         <div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_view">
-          <!--begin::First section-->
           <div class="d-flex">
-            <!--begin::Image column-->
             <div class="col-4">
               <img src="../assets/media/img/Rectangle17765.png" class="w-100 " />
             </div>
-            <!--end::Image column-->
-
-            <!--begin::Details column-->
             <div class="col-8 ms-6">
-              <!--begin::Row Details-->
               <div class="d-flex mb-1">
                 <h1 class="fs-16px fw-bold text-gray-700 me-3">Ref No:</h1>
                 <h1 class="fs-16px fw-semibold text-gray-200">#1234221</h1>
               </div>
-              <!--end::Row Details-->
-              <!--begin::Row Details-->
               <div class="d-flex mb-1">
                 <h1 class="fs-16px fw-bold text-gray-700 me-3">Product Name:</h1>
                 <h1 class="fs-16px fw-semibold text-gray-200">Anti snoring tool</h1>
               </div>
-              <!--end::Row Details-->
-              <!--begin::Row Details-->
               <div class="d-flex mb-1">
                 <h1 class="fs-16px fw-bold text-gray-700 me-3">Product URL:</h1>
                 <h1 class="fs-16px fw-semibold text-gray-200">https://www.yallabena.com/</h1>
               </div>
-              <!--end::Row Details-->
-              <!--begin::Row Details-->
               <div class="d-flex mb-1">
                 <h1 class="fs-16px fw-bold text-gray-700 me-3">Country:</h1>
                 <h1 class="fs-16px fw-semibold text-gray-200">Saudi Arabia</h1>
               </div>
-              <!--end::Row Details-->
-              <!--begin::Row Details-->
               <div class="d-flex mb-1">
                 <h1 class="fs-16px fw-bold text-gray-700 me-3">Quantity:</h1>
                 <h1 class="fs-16px fw-semibold text-gray-200">4</h1>
               </div>
-              <!--end::Row Details-->
-              <!--begin::Row Details-->
               <div class="d-flex mb-1">
                 <h1 class="fs-16px fw-bold text-gray-700 me-3">Status:</h1>
                 <h1 class="fs-16px fw-semibold text-primary">Buying Process Working On Buying Product
                 </h1>
               </div>
-              <!--end::Row Details-->
               <h1 class="fs-16px fw-bold text-gray-700 me-3">Note</h1>
               <h1 class="fs-16px fw-semibold text-gray-200">Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley of type and scrambled
               </h1>
-
             </div>
-            <!--end::Details column-->
           </div>
-          <!--end::First section-->
           <button type="button"
             class="btn btn-primary fw-bold  btn justify-content-center align-items-center w-100 mt-6">Continue</button>
-
         </div>
-        <!--end::Modal body-->
-
-
-
       </div>
-
-
     </div>
   </div>
-  <!--end::Modal-->
-
-  <!--begin::Modal-->
   <div class="modal fade" tabindex="-1" id="kt_modal_add">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title fw-bold">New Inquiry</h3>
-          <!--begin::Close-->
           <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
             <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
           </div>
-          <!--end::Close-->
         </div>
-        <!--begin::Modal body-->
-
         <div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_edit">
-          <!--begin::Form section-->
           <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate"
             id="kt_sign_in_form" data-kt-redirect-url="../../demo1/dist/index.html" action="">
-
-            <!--begin::First section-->
-
-
-
-            <!--begin::Row-->
             <div class="d-flex flex-row p-0">
               <div class="col">
-                <!--begin::Label-->
                 <label class="required form-label fw-bold">Ref NO</label>
-                <!--end::Label-->
-                <!--begin::Input-->
                 <input type="text" name="Email" class="form-control mb-2" placeholder="Ref NO">
-                <!--end::Input-->
               </div>
               <div class="col ml-3">
-                <!--begin::Label-->
                 <label class="required form-label fw-bold">Quantity</label>
-                <!--end::Label-->
-                <!--begin::Input-->
                 <input type="text" name="Email" class="form-control" placeholder="Quantity">
-                <!--end::Input-->
               </div>
             </div>
-            <!--end::Row-->
-            <!--begin::Row-->
             <div class="d-flex flex-row p-0 mt-3">
               <div class="col">
-                <!--begin::Label-->
                 <label class="required form-label fw-bold">Product Name</label>
-                <!--end::Label-->
-                <!--begin::Input-->
                 <input type="text" name="Email" class="form-control mb-2" placeholder="Product Name">
-                <!--end::Input-->
               </div>
               <div class="col ms-3">
-                <!--begin::Label-->
                 <label class="required form-label fw-bold">Product URL</label>
-                <!--end::Label-->
-                <!--begin::Input-->
                 <input type="text" name="Email" class="form-control mb-2" placeholder="Product URL">
-                <!--end::Input-->
               </div>
             </div>
-            <!--end::Row-->
-
-
-
-            <!--begin::Row-->
             <div class="d-flex flex-row p-0 mt-3">
               <div class="col">
-                <!--start::Country Selection-->
-
                 <label class="required form-label fw-bold">Country</label>
-
                 <div class=" fv-row fv-plugins-icon-container">
-
                   <select class="form-select" data-control="select2" data-placeholder="Select">
                     <option></option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                   </select>
                 </div>
-                <!--end::Country Selection-->
               </div>
               <div class="col ml-3">
-                <!--begin::Label-->
                 <label class="required form-label fw-bold">Img URL</label>
-                <!--end::Label-->
-                <!--begin::Input-->
                 <input type="text" name="Email" class="form-control mb-2" placeholder="Img URL">
-                <!--end::Input-->
               </div>
-
             </div>
-            <!--end::Row-->
-            <!--end::Row-->
-            <!--begin::Row-->
             <div class="d-flex flex-row p-0 mt-3">
               <div class="col">
-                <!--begin::Label-->
                 <label class="required form-label fw-bold">City</label>
-                <!--end::Label-->
-                <!--begin::Input-->
                 <input type="text" name="Email" class="form-control mb-2" placeholder="City">
-                <!--end::Input-->
               </div>
               <div class="col ms-3">
-                <!--begin::Label-->
                 <label class="required form-label fw-bold">Address</label>
-                <!--end::Label-->
-                <!--begin::Input-->
                 <input type="text" name="Email" class="form-control mb-2" placeholder="Address">
-                <!--end::Input-->
               </div>
             </div>
-            <!--end::Row-->
-
-
-            <!--begin::Note row-->
-            <!--begin::Label-->
             <label class="required form-label fw-bold">Notes</label>
-            <!--end::Label-->
-            <!--begin::Input-->
             <textarea type="text" name="introduction" class="form-control min-h-300px fw-bold"
               placeholder="Notes"></textarea>
-            <!--end::Input-->
-            <!--end::Note row-->
-            <!--end::First section-->
-
-            <!--begin::Buttons section-->
             <div class="d-flex flex-row p-0 mt-6">
               <button type="button"
                 class="btn btn-outline fw-bold  btn justify-content-center align-items-center vw-100">Cancel</button>
@@ -1074,35 +670,22 @@
                 class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100 ml-3"
                 data-bs-toggle="modal" data-bs-target="#kt_modal_submitted">Submit</button>
             </div>
-            <!--end::Buttons section-->
           </form>
         </div>
-        <!--end::Form section-->
       </div>
-      <!--end::Modal body-->
-
-
-
     </div>
-
-
   </div>
   </div>
-  <!--end::Modal-->
-  <!--begin::Modal-->
   <div class="modal fade" tabindex="-1" id="kt_modal_submitted">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title fw-bold"><img src="../assets/media/img/sucsess.svg" /> Inquiry Submitted Successfully
           </h3>
-          <!--begin::Close-->
           <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
             <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
           </div>
-          <!--end::Close-->
         </div>
-
         <div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_submitted">
           <div>
             <h3 class="modal-title fw-light fs-6 mb-10">Your request is under review and awaiting a quote from our admin
@@ -1111,15 +694,11 @@
               <button type="button"
                 class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100 ml-3">OK</button>
             </div>
-
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
-  <!--end::Modal-->
 
   <!--begin::Javascript-->
   <script>var hostUrl = "../assets/";</script>
@@ -1163,10 +742,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const toggleButton = document.getElementById('kt_app_sidebar_toggle_v1');
-
       const body = document.body;
-
-      // Prevent sidebar from expanding on hover
 
       toggleButton.addEventListener('click', function () {
         if (body.classList.contains('app-sidebar-minimize')) {
@@ -1175,13 +751,12 @@
           body.classList.add('app-sidebar-minimize');
         }
       });
-      const segments = document.querySelectorAll('.segmented-unit, .segment-wrapper');
 
+      const segments = document.querySelectorAll('.segmented-unit, .segment-wrapper');
       let previousSegment;
 
       segments.forEach(function (segment) {
         segment.addEventListener('click', function () {
-          // Remove active class from all segments
           segments.forEach(function (s) {
             s.classList.remove('segmented-unit');
             s.classList.add('segment-wrapper');
@@ -1191,7 +766,6 @@
               innerDiv.classList.add('text-wrapper-24');
             }
           });
-          // If this segment is already active, toggle text wrapper class and return
           if (this.classList.contains('segmented-unit')) {
             const innerDivClicked = this.querySelector('.text-wrapper-23');
             if (innerDivClicked) {
@@ -1201,7 +775,6 @@
             return;
           }
 
-          // Remove active class from previous segment
           if (previousSegment) {
             previousSegment.classList.remove('segmented-unit');
             const innerDivPrevious = previousSegment.querySelector('.text-wrapper-23');
@@ -1211,7 +784,6 @@
             }
           }
 
-          // Add active class to the clicked segment
           this.classList.add('segmented-unit');
           const innerDivClicked = this.querySelector('.text-wrapper-24');
           if (innerDivClicked) {
@@ -1219,7 +791,6 @@
             innerDivClicked.classList.add('text-wrapper-23');
           }
 
-          // Update the previous segment
           previousSegment = this;
         });
       });
@@ -1228,11 +799,9 @@
       var end = moment();
 
       function cb(start, end) {
-
-        $("#kt_daterangepicker_4").html(`															<img class="img" src="../assets/media/img/calendar-03-1.svg">
+        $("#kt_daterangepicker_4").html(`<img class="img" src="../assets/media/img/calendar-03-1.svg">
 `+ start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
       }
-
       $("#kt_daterangepicker_4").daterangepicker({
         startDate: start,
         endDate: end,
@@ -1243,36 +812,23 @@
           "Last 30 Days": [moment().subtract(29, "days"), moment()],
           "This Month": [moment().startOf("month"), moment().endOf("month")],
           "Last Month": [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
-
         },
-        opens: 'left' // Specify the calendar to open on the left side of the input
-
-
+        opens: 'left'
       }, cb);
-
-
       $('#kt_daterangepicker_4').on('show.daterangepicker', function (ev, picker) {
         picker.container.addClass(' mt-2');
-
       });
-
       cb(start, end);
 
-
-      // Select the table body
       var tableBody = document.querySelector('#kt_datatable_example_1 tbody');
 
-      // Loop to create 6 rows
       for (var i = 1; i <= 6; i++) {
-        // Create a new row element
         var row = document.createElement('tr');
-
-        // Add row content
         row.innerHTML = `
         <td>
             <div class="form-check me-3 ">
-                <input class="form-check-input" type="checkbox" data-kt-check="true" 
-                       data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="${i}" />
+              <input class="form-check-input" type="checkbox" data-kt-check="true" 
+              data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="${i}" />
             </div>
         </td>
         <td>${i}</td>
@@ -1284,29 +840,20 @@
         <td>Creation Time ${i}</td>
         <td>Operate ${i}</td>
         <td>
-                            <div class="frame-35">
-                              <div class="img-wrapper"><img class="img-4" data-bs-toggle="modal" data-bs-target="#kt_modal_view" src="../assets/media/img/eye-5.svg"></div>
-                              <div class="img-wrapper"><img class="img-4"  data-bs-toggle="modal" data-bs-target="#kt_modal_edit" src="../assets/media/img/edit-02-5.svg"></div>
-                            
-                          </div></td>
+          <div class="frame-35">
+            <div class="img-wrapper"><img class="img-4" data-bs-toggle="modal" data-bs-target="#kt_modal_view" src="../assets/media/img/eye-5.svg"></div>
+            <div class="img-wrapper"><img class="img-4"  data-bs-toggle="modal" data-bs-target="#kt_modal_edit" src="../assets/media/img/edit-02-5.svg"></div>
+          </div>
+          </td>
     `;
-
-        // Append the row to the table body
         tableBody.appendChild(row);
       }
-
     });
-
-
-
-
-    // $("#kt_datatable_zero_configuration").DataTable();
 
     function toggleDropdown() {
       document.getElementById("dropdownContent").classList.toggle("show");
     }
 
-    // Close the dropdown if the user clicks outside of it
     window.onclick = function (event) {
       if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -1320,6 +867,5 @@
     }
   </script>
 </body>
-<!--end::Body-->
 
 </html>

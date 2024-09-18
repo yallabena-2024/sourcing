@@ -2681,12 +2681,6 @@
   margin: 0;
 }
 
-.table-responsive table {
-  width: auto;
-  min-width: 75%;
-  /* Ensure the table takes the full width of the container */
-}
-
 .upload-container {
   display: inline-block;
   position: relative;

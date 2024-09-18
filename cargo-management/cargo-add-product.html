@@ -295,6 +295,7 @@
   <script src="../assets/js/custom/components/nav-bar/NavMenu.js"></script>
   <script src="../assets/js/custom/components/nav-bar/Search.js"></script>
   <script src="../assets/js/custom/components/side-bar/MainTabs.js"></script>
+  <script src="../assets/js/custom/shared/handle-upload-image.js"></script>
 
   <!--end::Global Javascript Bundle-->
   <!--begin::Vendors Javascript(used for this page only)-->
@@ -320,23 +321,6 @@
   <script src="../assets/js/custom/utilities/modals/create-app.js"></script>
   <script src="../assets/js/custom/utilities/modals/new-target.js"></script>
   <script src="../assets/js/custom/utilities/modals/users-search.js"></script>
-  <script>
-    // Function to handle image previews
-    document.querySelectorAll('input[type="file"]').forEach(input => {
-      input.addEventListener('change', function (event) {
-        const file = event.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          const preview = document.getElementById(`${event.target.id}-preview`);
-          reader.onload = function (e) {
-            preview.src = e.target.result;
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-    });
-
-  </script>
 </body>
 
 </html>

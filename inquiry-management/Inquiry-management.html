@@ -233,7 +233,7 @@
                     <div class="dt-container dt-bootstrap5 ">
                       <div class="frame-31">
                         <div class="frame-22">
-                          <div class="left-content-2">
+                          <div class="left-content-2 col-4">
                             <div class="div-2">
                               <img class="img-2" src="../assets/media/img/list-view-1.svg">
                               <div class="div-wrapper">
@@ -254,10 +254,6 @@
                             <button type="button"
                               class="btn btn-outline fw-bold  btn justify-content-center align-items-center">
                               <img class="img" src="../assets/media/img/filter-2.svg">Filter</button>
-                            <button class="btn btn-primary fw-bold">
-                              <img class="img" src="../assets/media/img/folder-upload.svg">
-                              Import
-                            </button>
                             <button class="btn btn-primary fw-bolder" data-bs-toggle="modal"
                               data-bs-target="#kt_modal_add">
                               <img class="img" src="../assets/media/img/elementsadd.svg">
@@ -314,39 +310,27 @@
                           <div id="segment-all-order" class="segmented-unit">
                             <div class="text-wrapper-23">All Order</div>
                           </div>
-                          <div id="segment-inquired" class="segment-wrapper">
-                            <div class="text-wrapper-24">Inquired</div>
-                          </div>
-                          <div id="segment-quoted" class="segment-wrapper">
-                            <div class="text-wrapper-24">Quoted</div>
-                          </div>
-                          <div id="segment-ordered" class="segment-wrapper">
-                            <div class="text-wrapper-24">Ordered</div>
-                          </div>
-                          <div id="segment-cancelled" class="segment-wrapper">
-                            <div class="text-wrapper-24">Cancelled</div>
-                          </div>
                         </div>
                       </div>
                       <div class="dt-container dt-bootstrap5 mt-2">
-                        <table id="kt_datatable_example_1" class="table align-middle table-row-dashed fs-6 gy-5 ">
+                        <table id="kt_datatable_example_1"
+                          class="table align-middle table-row-dashed fs-6 gy-5 text-center">
                           <thead class="bg-table text-white fw-bold fs-7 text-uppercase gs-0 bg-bink px-10">
                             <tr>
-                              <th class="w-10px pe-2">
-                                <div class="form-check me-3">
+                              <th class="w-10px pe-2 text-center">
+                                <div>
                                   <input class="form-check-input" type="checkbox" data-kt-check="true"
                                     data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="1" />
                                 </div>
                               </th>
-                              <th>#</th>
-                              <th>Product Name</th>
-                              <th>Country</th>
-                              <th>Number</th>
-                              <th>Manager</th>
-                              <th>Inquiry Status</th>
-                              <th>Creation Time</th>
-                              <th>Operate</th>
-                              <th>Actions</th>
+                              <th class="text-center">ORDER NO.</th>
+                              <th class="text-center">PRODUCT NAME</th>
+                              <th class="text-center">COUNTRY</th>
+                              <th class="text-center">QUANTITY</th>
+                              <th class="text-center">PRICE</th>
+                              <th class="text-center">USER</th>
+                              <th class="text-center">DATE</th>
+                              <th class="text-center">ACTIONS</th>
                             </tr>
                           </thead>
                           <tbody class="text-gray-600 fw-semibold">
@@ -403,9 +387,14 @@
       </div>
     </div>
   </div>
+
+
+
+
+
   <div class="modal fade modal-75" tabindex="-1" id="kt_modal_edit">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content w-75 m-auto">
         <div class="modal-header">
           <h3 class="modal-title fw-bold">Edit Inquiry quotation</h3>
           <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
@@ -415,139 +404,73 @@
         <div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_edit">
           <form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate"
             id="kt_sign_in_form" data-kt-redirect-url="../../demo1/dist/index.html" action="">
-            <div class="d-flex justify-content-between">
-              <div class="p-2">
-                <h1 class="link-yellow  d-flex fw-bolder fs-24px  justify-content-start p-0">
-                  Inquiry #322434
-                </h1>
-                <h1 class="text-gray-200 d-flex fw-bolder fs-16px  justify-content-start p-0">
-                  Add the prices so that the order status will be updated
-                </h1>
+            <div class="d-flex flex-row p-0">
+              <div class="col">
+                <label class="required form-label fw-bold">Ref NO</label>
+                <input type="text" name="Email" class="form-control mb-2" placeholder="Ref NO">
               </div>
-              <div>
-                <button type="button"
-                  class="btn btn-primary fw-bold fs-6 btn justify-content-center align-items-center ml-3 ">
-                  <img src="../assets/media/img/edit-02.svg" class="me-3" />
-                  Update Status</button>
+              <div class="col ml-3">
+                <label class="required form-label fw-bold">Quantity</label>
+                <input type="text" name="Email" class="form-control" placeholder="Quantity">
               </div>
             </div>
-            <div class="d-flex flex-row p-0 m-0 mt-3">
-              <div class=" col-6">
-                <div class="col">
-                  <label class="required form-label fw-bold">Ref NO</label>
-                  <input type="text" name="Email" class="form-control mb-2" placeholder="Ref NO">
-                </div>
-                <div class="col">
-                  <label class="required form-label fw-bold">Product Name</label>
-                  <input type="text" name="Email" class="form-control mb-2" placeholder="Product Name">
-                </div>
-                <div class="d-flex flex-row p-0 mt-3">
-                  <div class="col">
-                    <label class="required form-label fw-bold">Product URL</label>
-                    <input type="text" name="Email" class="form-control mb-2" placeholder="Product URL">
-                  </div>
-                  <div class="col ml-3">
-                    <label class="required form-label fw-bold">Img URL</label>
-                    <input type="text" name="Email" class="form-control mb-2" placeholder="Img URL">
-                  </div>
-                </div>
-                <div class="d-flex flex-row p-0 mt-3">
-                  <div class="col">
-                    <label class="required form-label fw-bold">Country</label>
-                    <div class=" fv-row fv-plugins-icon-container">
-                      <select class="form-select" data-control="select2" data-placeholder="Select">
-                        <option></option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col ml-3">
-                    <label class="required form-label fw-bold">Quantity</label>
-                    <input type="text" name="Email" class="form-control" placeholder="Quantity">
-                  </div>
-                </div>
-                <div class="col">
-                  <label class="required form-label fw-bold">Status</label>
-                </div>
-                <div class="dropdown mb-10 fv-row fv-plugins-icon-container w-100">
-                  <button onclick="toggleDropdown()" class="dropbtn w-100">Inquired</button>
-                  <div id="dropdownContent" class="card dropdown-content p-6">
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Inquired
-                      </label>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                        checked>
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Re-Inquired
-                      </label>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                        checked>
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Buying Process
-                      </label>
-                      <div class="form-check mb-3 mt-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                          checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Working On Buying Product
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                          checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Working on punchers Product
-                        </label>
-                      </div>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                        checked>
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Shipped
-                      </label>
-                      <div class="form-check mb-3 mt-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                          checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Shipped to local warehouse China
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                          checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Received in local warehouse China
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="d-flex flex-row p-0 mt-3">
+              <div class="col">
+                <label class="required form-label fw-bold">Product Name</label>
+                <input type="text" name="Email" class="form-control mb-2" placeholder="Product Name">
               </div>
-              <div class="col-6 ms-3">
-                <label class="required form-label fw-bold">Notes</label>
-                <textarea type="text" name="introduction" class="form-control" placeholder="Notes"></textarea>
+              <div class="col ms-3">
+                <label class="required form-label fw-bold">Product URL</label>
+                <input type="text" name="Email" class="form-control mb-2" placeholder="Product URL">
               </div>
             </div>
+            <div class="d-flex flex-row p-0 mt-3">
+              <div class="col">
+                <label class="required form-label fw-bold">Country</label>
+                <div class=" fv-row fv-plugins-icon-container">
+                  <select class="form-select" data-control="select2" data-placeholder="Select">
+                    <option></option>
+                    <option value="saudi-arabia">Saudi Arabia</option>
+                    <option value="the-united-arab-emirates">The United Arab Emirates</option>
+                    <option value="kuwait">Kuwait</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col ml-3">
+                <label class="form-label fw-bold">Img URL</label>
+                <input type="text" name="Email" class="form-control mb-2" placeholder="Img URL">
+              </div>
+            </div>
+            <div class="form-group mt-4">
+              <label class="form-label fw-bold">商品图片</label>
+              <div class="image-upload-group">
+                <div class="image-upload w-50">
+                  <img src="../assets/media/misc/image.png" alt="upload" id="img1-preview">
+                  <input type="file" id="img1" accept="image/*" hidden>
+                  <button type="button" onclick="document.getElementById('img1').click()">Upload</button>
+                </div>
+              </div>
+            </div>
+            <label class="form-label fw-bold mt-4">Notes</label>
+            <textarea type="text" name="introduction" class="form-control min-h-300px fw-bold"
+              placeholder="Notes"></textarea>
             <div class="d-flex flex-row p-0 mt-6">
               <button type="button"
                 class="btn btn-outline fw-bold  btn justify-content-center align-items-center vw-100">Cancel</button>
               <button type="button"
-                class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100 ml-3">Save
-                & Update</button>
+                class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100 ml-3"
+                data-bs-toggle="modal" data-bs-target="#kt_modal_submitted">Submit</button>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
+
+
+
+
+
   <div class="modal fade modal-75" tabindex="-1" id="kt_modal_view">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -639,33 +562,33 @@
                 <div class=" fv-row fv-plugins-icon-container">
                   <select class="form-select" data-control="select2" data-placeholder="Select">
                     <option></option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
+                    <option value="saudi-arabia">Saudi Arabia</option>
+                    <option value="the-united-arab-emirates">The United Arab Emirates</option>
+                    <option value="kuwait">Kuwait</option>
                   </select>
                 </div>
               </div>
               <div class="col ml-3">
-                <label class="required form-label fw-bold">Img URL</label>
+                <label class="form-label fw-bold">Img URL</label>
                 <input type="text" name="Email" class="form-control mb-2" placeholder="Img URL">
               </div>
             </div>
-            <div class="d-flex flex-row p-0 mt-3">
-              <div class="col">
-                <label class="required form-label fw-bold">City</label>
-                <input type="text" name="Email" class="form-control mb-2" placeholder="City">
-              </div>
-              <div class="col ms-3">
-                <label class="required form-label fw-bold">Address</label>
-                <input type="text" name="Email" class="form-control mb-2" placeholder="Address">
+            <div class="form-group mt-4">
+              <label class="form-label fw-bold">商品图片</label>
+              <div class="image-upload-group">
+                <div class="image-upload w-50">
+                  <img src="../assets/media/misc/image.png" alt="upload" id="img1-preview">
+                  <input type="file" id="img1" accept="image/*" hidden>
+                  <button type="button" onclick="document.getElementById('img1').click()">Upload</button>
+                </div>
               </div>
             </div>
-            <label class="required form-label fw-bold">Notes</label>
+            <label class="form-label fw-bold mt-4">Notes</label>
             <textarea type="text" name="introduction" class="form-control min-h-300px fw-bold"
               placeholder="Notes"></textarea>
             <div class="d-flex flex-row p-0 mt-6">
               <button type="button"
                 class="btn btn-outline fw-bold  btn justify-content-center align-items-center vw-100">Cancel</button>
-
               <button type="button"
                 class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100 ml-3"
                 data-bs-toggle="modal" data-bs-target="#kt_modal_submitted">Submit</button>
@@ -710,6 +633,7 @@
   <script src="../assets/js/custom/components/nav-bar/NavMenu.js"></script>
   <script src="../assets/js/custom/components/nav-bar/Search.js"></script>
   <script src="../assets/js/custom/components/side-bar/MainTabs.js"></script>
+  <script src="../assets/js/custom/shared/handle-upload-image.js"></script>
 
   <!--end::Global Javascript Bundle-->
   <!--begin::Vendors Javascript(used for this page only)-->
@@ -822,29 +746,37 @@
 
       var tableBody = document.querySelector('#kt_datatable_example_1 tbody');
 
-      for (var i = 1; i <= 6; i++) {
+      for (var i = 1; i <= 2; i++) {
         var row = document.createElement('tr');
         row.innerHTML = `
-        <td>
-            <div class="form-check me-3 ">
-              <input class="form-check-input" type="checkbox" data-kt-check="true" 
-              data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="${i}" />
-            </div>
-        </td>
-        <td>${i}</td>
-        <td>Product ${i}</td>
-        <td>Country ${i}</td>
-        <td>Number ${i}</td>
-        <td>Manager ${i}</td>
-        <td>Inquiry Status ${i}</td>
-        <td>Creation Time ${i}</td>
-        <td>Operate ${i}</td>
-        <td>
-          <div class="frame-35">
-            <div class="img-wrapper"><img class="img-4" data-bs-toggle="modal" data-bs-target="#kt_modal_view" src="../assets/media/img/eye-5.svg"></div>
-            <div class="img-wrapper"><img class="img-4"  data-bs-toggle="modal" data-bs-target="#kt_modal_edit" src="../assets/media/img/edit-02-5.svg"></div>
+        <td class="text-center">
+          <div class="text-center">
+            <input class="form-check-input" type="checkbox" data-kt-check="true" 
+            data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="${i}" />
           </div>
-          </td>
+        </td>
+        <td class="text-center">Order No. ${i}</td>
+        <td class="text-center">Product ${i}</td>
+        <td class="text-center">Country ${i}</td>
+        <td class="text-center">Quantity ${i}</td>
+        <td class="text-center">
+          <div>Price: 4.12 USD</div>
+          <div>Freight: 3.34 USD</div>
+          <div>Total Price: 82.06 USD</div>
+        </td>
+        <td class="text-center">User ${i}</td>
+        <td class="text-center">Date ${i}</td>
+        <td class="text-center">
+          <div class="frame-35">
+            <!-- <div class="img-wrapper" data-bs-toggle="modal" data-bs-target="#kt_modal_view">
+              <img class="img-4" src="../assets/media/img/eye-5.svg">
+            </div> -->
+            
+            <div class="img-wrapper" data-bs-toggle="modal" data-bs-target="#kt_modal_edit">
+              <img class="img-4" src="../assets/media/img/edit-02-5.svg">
+            </div>
+          </div>
+        </td>
     `;
         tableBody.appendChild(row);
       }

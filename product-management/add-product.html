@@ -109,9 +109,9 @@
                         menu-src="../assets/media/icons/duotune/grid-view.svg" highlight="false">
                       </main-tabs>
                       <div class="menu-item">
-                        <div class="product-subsection-arrow menu-link active" style="width: 100%; display: flex;">
+                        <div class="product-subsection-arrow menu-link" style="width: 100%; display: flex;">
                           <span class="menu-icon">
-                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/product-active.svg">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/product.svg">
                           </span>
                           <span class="menu-title fs-16px">Products</span>
                           <span class="">
@@ -388,6 +388,7 @@
   <script src="../assets/js/custom/components/nav-bar/NavMenu.js"></script>
   <script src="../assets/js/custom/components/nav-bar/Search.js"></script>
   <script src="../assets/js/custom/components/side-bar/MainTabs.js"></script>
+  <script src="../assets/js/custom/shared/sidebar-collapsing.js"></script>
 
   <!--end::Global Javascript Bundle-->
   <!--begin::Vendors Javascript(used for this page only)-->
@@ -420,43 +421,6 @@
     function updateTextInput(val) {
       document.getElementById('rangeValueInput').value = val;
     }
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleButton = document.getElementById('kt_app_sidebar_toggle_v1');
-      const body = document.body;
-
-      toggleButton.addEventListener('click', function () {
-        if (body.classList.contains('app-sidebar-minimize')) {
-          body.classList.remove('app-sidebar-minimize');
-        } else {
-          body.classList.add('app-sidebar-minimize');
-        }
-      });
-
-      var start = moment().subtract(29, "days");
-      var end = moment();
-
-      function cb(start, end) {
-        $("#kt_daterangepicker_4").html(`<img class="img" src="../assets/media/img/calendar-03-1.svg">
-`+ start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
-      }
-      $("#kt_daterangepicker_4").daterangepicker({
-        startDate: start,
-        endDate: end,
-        ranges: {
-          "Today": [moment(), moment()],
-          "Yesterday": [moment().subtract(1, "days"), moment().subtract(1, "days")],
-          "Last 7 Days": [moment().subtract(6, "days"), moment()],
-          "Last 30 Days": [moment().subtract(29, "days"), moment()],
-          "This Month": [moment().startOf("month"), moment().endOf("month")],
-          "Last Month": [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
-        },
-        opens: 'left'
-      }, cb);
-      $('#kt_daterangepicker_4').on('show.daterangepicker', function (ev, picker) {
-        picker.container.addClass(' mt-2');
-      });
-      cb(start, end);
-    })
 
     document.getElementById('fileInput').addEventListener('change', function (event) {
       const files = event.target.files;

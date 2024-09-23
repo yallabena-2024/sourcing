@@ -1391,11 +1391,11 @@
   position: relative;
   flex: 1;
   flex-grow: 1;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   -webkit-overflow-scrolling: touch;
   background-color: var(--neutral-10);
   border-radius: 12px;
-  /* overflow: hidden; */
+  overflow: hidden;
   border: 1px solid;
   border-color: var(--neutral-30);
 }
@@ -2627,7 +2627,7 @@
 }
 
 .category-container {
-  max-width: 25%;
+  width: 30%;
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;

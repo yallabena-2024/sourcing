@@ -21,6 +21,10 @@ class NavInfo extends HTMLElement {
 
     const container = document.createElement('div');
     container.innerHTML = `
+    <div class="profile-popup" >
+      <a href="../settings/change-password.html">Change Password</a>
+      <a href="../settings/personal-information.html">Edit Information</a>
+    </div>
     <div class="d-flex align-items-center" data-kt-search-element="toggle"
 										id="kt_header_notification_toggle">
     <div class="d-flex align-items-center">
@@ -36,7 +40,7 @@ class NavInfo extends HTMLElement {
   
     <div class="d-flex align-items-center flex-stack">
       <!--begin::Thumbnail-->
-      <a class="symbol ">
+      <a class="symbol profile-trigger">
         <span class="symbol-label  w-42px h-42px"
           style="background-image:url(../assets/media/books/1.png);"></span>
       </a>
@@ -84,7 +88,45 @@ class NavInfo extends HTMLElement {
   </div>
     `;
 
+    const style = document.createElement('style');
+    style.textContent = `
+      .profile-popup {
+        position: absolute;
+        top: 75px;
+        right: 250px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 1000;
+        display: none;
+        width: 150px;
+      }
+      
+      .profile-popup a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
+      }
+
+      .profile-popup a:hover {
+        background-color: #f0f0f0;
+      }
+      `
+
+    shadow.appendChild(style);
     shadow.appendChild(container);
+
+    const profileTrigger = container.querySelector('.profile-trigger');
+    const profilePopup = container.querySelector('.profile-popup');
+
+    profileTrigger.addEventListener('click', () => {
+      profilePopup.style.display = profilePopup.style.display === 'block' ? 'none' : 'block';
+    });
   }
 }
 

@@ -2827,6 +2827,35 @@ canvas {
   margin: 0 auto;
 }
 
+.navbar {
+  display: flex;
+  background-color: rgb(30, 36, 52);
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 35px;
+}
+
+.nav-item {
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: rgb(209, 218, 230);
+  font-weight: 1000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  background-color: #dbdfeb;
+  color: #4c47f7;
+}
+
+.user-tab {
+  display: flex;
+  align-items: center;
+}
+
 /* Responsive Section */
 /* in xs */
 @media (max-width: 576px) {

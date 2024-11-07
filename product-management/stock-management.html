@@ -221,6 +221,15 @@
 					</div>
 				</div>
 				<div class="app-main flex-column flex-row-fluid " id="kt_app_main">
+					<div class="navbar">
+						<div class="nav-item active" onclick="selectTab(this)">Accessories</div>
+						<div class="nav-item" onclick="selectTab(this)">Automotive</div>
+						<div class="nav-item" onclick="selectTab(this)">Beauty & Perfumes</div>
+						<div class="nav-item" onclick="selectTab(this)">Fashion</div>
+						<div class="nav-item" onclick="selectTab(this)">Home & Kitchin</div>
+						<div class="nav-item" onclick="selectTab(this)">Tech</div>
+						<div class="nav-item" onclick="selectTab(this)">Sport, Fitness & Outdoors</div>
+					</div>
 					<div class="d-flex flex-column flex-column-fluid">
 						<div id="kt_app_toolbar" class="app-toolbar  py-2 py-lg-4 ">
 							<div id="kt_app_toolbar_container" class="app-container  container-xxl d-flex flex-stack ">
@@ -629,6 +638,17 @@
 				valueMin.innerHTML = values[handle];
 			}
 		});
+
+
+		// function to highlight the selected tab
+		function selectTab(selectedTab) {
+			// Remove 'active' class from all tabs
+			const tabs = document.querySelectorAll('.nav-item');
+			tabs.forEach(tab => tab.classList.remove('active'));
+
+			// Add 'active' class to the clicked tab
+			selectedTab.classList.add('active');
+		}
 
 	</script>
 </body>

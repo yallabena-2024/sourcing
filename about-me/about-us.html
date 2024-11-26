@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>About Us - Yallabena</title>
+
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+
+  <link rel="shortcut icon" href="../assets/media/logos/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/dashbord.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .responsive-cell-block {
+      min-height: 75px;
+    }
+
+    * {
+      font-family: Nunito, sans-serif;
+    }
+
+    a {
+      text-decoration-line: none;
+      text-decoration-thickness: initial;
+      text-decoration-style: initial;
+      text-decoration-color: initial;
+      color: inherit;
+    }
+
+    .text-blk {
+      color: rgb(230, 46, 25);
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      line-height: 25px;
+    }
+
+    .responsive-container-block {
+      min-height: 75px;
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      justify-content: flex-start;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    .responsive-container-block.container {
+      max-width: 1320px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+
+    .responsive-container-block.big-container {
+      justify-content: center;
+      padding-top: 0px;
+      padding-right: 50px;
+      padding-bottom: 0px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    .text-blk.section-text {
+      color: rgb(147, 147, 147);
+      max-width: 750px;
+      margin-top: 25px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    .text-blk.section-head {
+      max-width: 750px;
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: 700;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+    }
+
+    .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6.content-one {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.img-one {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.content-one {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (max-width: 1024px) {
+      .responsive-container-block {
+        flex-direction: column-reverse;
+      }
+
+      .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.content-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.img-one {
+        display: flex;
+        max-height: 300px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bg-image {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(-90deg) scaleX(1) scaleY(1) scaleZ(1);
+        width: 100%;
+      }
+
+      .responsive-container-block.container {
+        margin-top: 50px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .text-blk.section-text {
+        font-size: 18px;
+      }
+
+      .text-blk.section-head {
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .text-blk.section-head {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      .responsive-container-block.big-container {
+        padding-top: 0px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+      }
+
+      .text-blk.section-text {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-6.wk-ipadp-12.img-one {
+        max-height: 250px;
+      }
+
+      .responsive-container-block.big-container {
+        padding-top: 0px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+      }
+
+      .responsive-container-block.container {
+        margin-top: 40px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+      }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+    *,
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .wk-desk-1 {
+      width: 8.333333%;
+    }
+
+    .wk-desk-2 {
+      width: 16.666667%;
+    }
+
+    .wk-desk-3 {
+      width: 25%;
+    }
+
+    .wk-desk-4 {
+      width: 33.333333%;
+    }
+
+    .wk-desk-5 {
+      width: 41.666667%;
+    }
+
+    .wk-desk-6 {
+      width: 50%;
+    }
+
+    .wk-desk-7 {
+      width: 58.333333%;
+    }
+
+    .wk-desk-8 {
+      width: 66.666667%;
+    }
+
+    .wk-desk-9 {
+      width: 75%;
+    }
+
+    .wk-desk-10 {
+      width: 83.333333%;
+    }
+
+    .wk-desk-11 {
+      width: 91.666667%;
+    }
+
+    .wk-desk-12 {
+      width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      .wk-ipadp-1 {
+        width: 8.333333%;
+      }
+
+      .wk-ipadp-2 {
+        width: 16.666667%;
+      }
+
+      .wk-ipadp-3 {
+        width: 25%;
+      }
+
+      .wk-ipadp-4 {
+        width: 33.333333%;
+      }
+
+      .wk-ipadp-5 {
+        width: 41.666667%;
+      }
+
+      .wk-ipadp-6 {
+        width: 50%;
+      }
+
+      .wk-ipadp-7 {
+        width: 58.333333%;
+      }
+
+      .wk-ipadp-8 {
+        width: 66.666667%;
+      }
+
+      .wk-ipadp-9 {
+        width: 75%;
+      }
+
+      .wk-ipadp-10 {
+        width: 83.333333%;
+      }
+
+      .wk-ipadp-11 {
+        width: 91.666667%;
+      }
+
+      .wk-ipadp-12 {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .wk-tab-1 {
+        width: 8.333333%;
+      }
+
+      .wk-tab-2 {
+        width: 16.666667%;
+      }
+
+      .wk-tab-3 {
+        width: 25%;
+      }
+
+      .wk-tab-4 {
+        width: 33.333333%;
+      }
+
+      .wk-tab-5 {
+        width: 41.666667%;
+      }
+
+      .wk-tab-6 {
+        width: 50%;
+      }
+
+      .wk-tab-7 {
+        width: 58.333333%;
+      }
+
+      .wk-tab-8 {
+        width: 66.666667%;
+      }
+
+      .wk-tab-9 {
+        width: 75%;
+      }
+
+      .wk-tab-10 {
+        width: 83.333333%;
+      }
+
+      .wk-tab-11 {
+        width: 91.666667%;
+      }
+
+      .wk-tab-12 {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .wk-mobile-1 {
+        width: 8.333333%;
+      }
+
+      .wk-mobile-2 {
+        width: 16.666667%;
+      }
+
+      .wk-mobile-3 {
+        width: 25%;
+      }
+
+      .wk-mobile-4 {
+        width: 33.333333%;
+      }
+
+      .wk-mobile-5 {
+        width: 41.666667%;
+      }
+
+      .wk-mobile-6 {
+        width: 50%;
+      }
+
+      .wk-mobile-7 {
+        width: 58.333333%;
+      }
+
+      .wk-mobile-8 {
+        width: 66.666667%;
+      }
+
+      .wk-mobile-9 {
+        width: 75%;
+      }
+
+      .wk-mobile-10 {
+        width: 83.333333%;
+      }
+
+      .wk-mobile-11 {
+        width: 91.666667%;
+      }
+
+      .wk-mobile-12 {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body id="kt_app_body" style="background: #F8F8F8; background-image: url(../assets/media/img/vector.svg);"
+  data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true" data-kt-app-sidebar-enabled="true"
+  data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true"
+  data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default">
+  <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+    <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+      <div id="kt_app_header" class="app-header border-2" data-kt-sticky="true"
+        data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize"
+        data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
+        <div class="app-container border-v1 container-fluid d-flex align-items-stretch justify-content-between px-lg-4"
+          id="kt_app_header_container">
+          <div class="d-flex align-items-center justify-content-between flex-lg-grow-1 " id="kt_app_header_wrapper">
+            <div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true"
+              data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}"
+              data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end"
+              data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true"
+              data-kt-swapper-mode="{default: 'append', lg: 'prepend'}"
+              data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}">
+              <nav-menu></nav-menu>
+            </div>
+            <nav-search></nav-search>
+            <div class="app-navbar flex-shrink-0">
+              <div class="app-navbar-item align-items-stretch ms-1 ms-md-4">
+                <div id="kt_header_search" class="header-search d-flex align-items-stretch"
+                  data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter"
+                  data-kt-search-layout="menu" data-kt-menu-trigger="auto" data-kt-menu-overflow="false"
+                  data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end" data-kt-search="true">
+                  <nav-info></nav-info>
+                </div>
+                <div class="separator separator-dashed my-6"></div>
+                <div class="app-navbar-item d-lg-none ms-2 me-n2" title="Show header menu">
+                  <div class="btn btn-flex btn-icon btn-active-color-primary w-30px h-30px"
+                    id="kt_app_header_menu_toggle">
+                    <i class="ki-duotone ki-element-4 fs-1">
+                      <span class="path1"></span>
+                      <span class="path2"></span>
+                    </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">
+        <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar"
+          data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+          data-kt-drawer-width="225px" data-kt-drawer-direction="start"
+          data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+          <div id="kt_app_sidebar_toggle_v1"
+            class="app-sidebar-arrow my-6 app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary h-30px w-30px position-absolute top-150 start-100 translate-middle rotate mt-30"
+            data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
+            data-kt-toggle-name="app-sidebar-minimize" style="border-radius: 99px;
+						border: 1px solid var(--Color-Border, #E2E8F0);
+						background: var(--Color-Background, #FFF);">
+            <img class=" fs-3 rotate-180" alt="Logo" src="../assets/media/icons/duotune/forword.svg" />
+          </div>
+          <div class="app-sidebar-logo d-flex flex-center" id="kt_app_sidebar_logo">
+            <div class="center-content  align-items-center my-4">
+              <img alt="Logo" src="../assets/media/logos/logo.png" class=" card-center h-53px app-sidebar-logo-default">
+              <img alt="Logo" src="../assets/media/logos/favicon.ico"
+                class=" card-center h-53px app-sidebar-logo-minimize">
+            </div>
+          </div>
+          <div class="app-sidebar-menu overflow-hidden flex-column-fluid mt-4">
+            <div id="kt_app_sidebar_menu_wrapper" class="app-sidebar-wrapper">
+              <div id="kt_app_sidebar_menu_scroll" class="scroll-y my-5 mx-3" data-kt-scroll="true"
+                data-kt-scroll-activate="true" data-kt-scroll-height="auto"
+                data-kt-scroll-dependencies="#kt_app_sidebar_logo, #kt_app_sidebar_footer"
+                data-kt-scroll-wrappers="#kt_app_sidebar_menu" data-kt-scroll-offset="5px"
+                data-kt-scroll-save-state="true" style="height: 297px;">
+                <div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6" id="#kt_app_sidebar_menu"
+                  data-kt-menu="true" data-kt-menu-expand="false">
+                  <div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
+                    <div class="app-sidebar-menu overflow-hidden flex-column-fluid">
+                      <main-tabs class="main-tabs" menu-title="Dashboards" menu-href="../dashboard/dashbord.html"
+                        menu-src="../assets/media/icons/duotune/grid-view.svg" highlight="false">
+                      </main-tabs>
+                      <div class="menu-item">
+                        <div class="product-subsection-arrow menu-link" style="width: 100%; display: flex;">
+                          <span class="menu-icon">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/product.svg">
+                          </span>
+                          <span class="menu-title fs-16px">Products</span>
+                          <span class="">
+                            <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/arrows/arr072.svg">
+                          </span>
+                        </div>
+                        <div class="sub-tab mt-2" style="display: none;">
+                          <a class="menu-link" href="../product-management/stock-management.html">
+                            <span class="menu-icon">
+                              <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/abstract/abs027.svg">
+                            </span>
+                            <span class="menu-title fs-16px fw-bolder">Stock</span>
+                          </a>
+                        </div>
+                        <div class="sub-tab mt-2" style="display: none; width: 85%;">
+                          <a class="menu-link" href="../product-management/product-management.html">
+                            <span class="menu-icon">
+                              <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/ecommerce/ecm001.svg">
+                            </span>
+                            <span class="menu-title fs-16px fw-bolder">Product List</span>
+                          </a>
+                        </div>
+                      </div>
+                      <main-tabs class="main-tabs" menu-title="Requests"
+                        menu-href="../inquiry-management/Inquiry-management.html"
+                        menu-src="../assets/media/icons/duotune/requests.svg" highlight="false"></main-tabs>
+                      <main-tabs class="main-tabs" menu-title="Order Management" menu-href="../order/index.html"
+                        menu-src="../assets/media/icons/duotune/order.svg" highlight="false"></main-tabs>
+                      <main-tabs class="main-tabs" menu-title="Permissions"
+                        menu-href="../ permissions/role-management.html"
+                        menu-src="../assets/media/icons/duotune/permissions.svg" highlight="false"></main-tabs>
+                        <main-tabs class="main-tabs" menu-title="Contact us"
+                        menu-href="../about-me/contact-us.html"
+                        menu-src="../assets/media/icons/duotune/communication/com003.svg" highlight="false"></main-tabs>
+                        <main-tabs class="main-tabs" menu-title="About us"
+                        menu-href="../about-me/about-us.html"
+                        menu-src="../assets/media/icons/duotune/communication/com014.svg" highlight="true"></main-tabs>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-sidebar-footer menu-item here show menu-accordion" id="kt_app_sidebar_footer">
+            <div class="menu menu-column menu-rounded menu-sub-indention fw-semibold fs-6" id="#kt_app_sidebar_menu"
+              data-kt-menu="true" data-kt-menu-expand="false">
+              <div data-kt-menu-trigger="click" class=" menu-item here show menu-accordion">
+                <div class="app-sidebar-menu overflow-hidden flex-column-fluid ml-14px">
+                  <main-tabs class="main-tabs" menu-title="Help" menu-href="../contact-us/index.html"
+                    menu-src="../assets/media/icons/duotune/help.svg" highlight="false"></main-tabs>
+                  <main-tabs class="main-tabs" menu-title="Settings" menu-href="../settings/personal-information.html"
+                    menu-src="../assets/media/icons/duotune/settings.svg" highlight="false"></main-tabs>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-container-block big-container">
+          <div class="responsive-container-block container">
+            <div class="responsive-container-block">
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-12 img-one">
+                <img alt="golden-lines.png" class="image-block bg-image"
+                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/golden%20lines.png">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-12 content-one">
+                <p class="text-blk section-head">
+                  Welcome to Yallabena!
+                </p>
+                <p class="text-blk section-text">
+                  your trusted ecommerce supply chain marketplace
+                  At Yallabena, we are more than just an eCommerce platform – we are your strategic partner in
+                  navigating the dynamic world of online business. Our journey began with a vision to transform the
+                  eCommerce landscape by providing comprehensive solutions to businesses looking to enhance their online
+                  presence and streamline their operations
+                </p>
+                <p class="text-blk section-text">
+                  Fueled by a passion for innovation and a commitment to excellence, we have created a pioneering
+                  eCommerce service platform that serves as the ultimate hub for B2B customers, suppliers, and B2C
+                  sellers, with a special focus on the S2B2C (Supplier to Business to Consumer) model. Our platform
+                  seamlessly bridges communication and transactions between buyers and sellers, optimizing every step of
+                  the eCommerce journey.
+                </p>
+                <p class="text-blk section-text">
+                  What distinguishes us is our holistic approach to eCommerce solutions. We address every aspect of the
+                  process, from product display and price acquisition to warehousing, logistics, and fund transfer. By
+                  offering a full-service platform, we empower our partners to unlock their full potential in the
+                  digital marketplace, particularly within the S2B2C framework.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--begin::Javascript-->
+  <script>var hostUrl = "../assets/";</script>
+  <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+  <script src="../assets/plugins/global/plugins.bundle.js"></script>
+  <script src="../assets/js/scripts.bundle.js"></script>
+  <script src="../assets/js/custom/pages/products/product-sub-section.js"></script>
+  <script src="../assets/js/custom/components/nav-bar/NavInfo.js"></script>
+  <script src="../assets/js/custom/components/nav-bar/NavMenu.js"></script>
+  <script src="../assets/js/custom/components/nav-bar/Search.js"></script>
+  <script src="../assets/js/custom/components/side-bar/MainTabs.js"></script>
+  <script src="../assets/js/custom/shared/sidebar-collapsing.js"></script>
+
+  <!--end::Global Javascript Bundle-->
+  <!--begin::Vendors Javascript(used for this page only)-->
+  <script src="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+  <script src="../assets/plugins/custom/datatables/datatables.bundle.js"></script>
+  <!--end::Vendors Javascript-->
+  <!--begin::Custom Javascript(used for this page only)-->
+  <script src="../assets/js/widgets.bundle.js"></script>
+  <script src="../assets/js/custom/widgets.js"></script>
+  <script src="../assets/js/custom/apps/chat/chat.js"></script>
+  <script src="../assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+  <script src="../assets/js/custom/utilities/modals/create-app.js"></script>
+  <script src="../assets/js/custom/utilities/modals/new-target.js"></script>
+  <script src="../assets/js/custom/utilities/modals/users-search.js"></script>
+  <!--end::Custom Javascript-->
+  <!--end::Javascript-->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tableBody = document.querySelector('#kt_datatable_example_1 tbody');
+      for (var i = 1; i <= 6; i++) {
+        var row = document.createElement('tr');
+
+        row.innerHTML = `
+        <td>
+            <div class="form-check me-3 ">
+            	<input class="form-check-input" type="checkbox" data-kt-check="true" 
+              	data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="${i}" />
+            </div>
+        </td>
+        <td>Order NO ${i}</td>
+        <td>Ref NO  ${i}</td>
+        <td>Weight ${i}</td>
+        <td>Country ${i}</td>
+        <td>Order Status ${i}</td>
+        <td>Creation Time ${i}</td>
+        <td>
+                            <div class="frame-35">
+                              <button class="img-wrapper-v2 text-yellow"  data-bs-toggle="modal" data-bs-target="#kt_details">View</button>
+                            
+                          </div>
+						  <div class="modal fade" tabindex="-1" id="kt_status">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h3 class="modal-title fw-bold">  Update Order Status <span class="text-yellow fw-bolder">#323432</span></h3>
+																<!--begin::Close-->
+																<div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+																	data-bs-dismiss="modal"
+																	aria-label="Close">
+																	<i class="ki-duotone ki-cross fs-1"><span
+																			class="path1"></span><span
+																			class="path2"></span></i>
+																</div>
+																<!--end::Close-->
+														</div>
+														<div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_1">
+															<form
+																class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
+																novalidate="novalidate" id="kt_sign_in_form"
+																data-kt-redirect-url="../../demo1/dist/index.html"
+																action="#">
+															
+																<div
+																	class="mb-10 fv-row fv-plugins-icon-container">
+																	<h3 class="fw-bold fs-14px " style='text-align: left;'>Select Status</h3>
+																	<select class="form-select mt-2"
+																		data-control="select2"
+																		data-placeholder="Select an option">
+																		<option></option>
+																		<option value="1">Option 1</option>
+																		<option value="2">Option 2</option>
+																	</select>
+																</div>
+																<div
+															<div class="d-flex align-items-center  mt-16px fv-row fv-plugins-icon-container">
+																			<button type="button" class=" img-wrapper-v2 fw-bold flex-grow-1 me-2" data-bs-dismiss="modal"
+																			aria-label="Close"  data-bs-dismiss="modal"
+																aria-label="Close">Cancel</button>
+																			<button type="button" class="btn btn-primary fw-bold flex-grow-1 ms-2 " data-bs-toggle="modal" data-bs-target="#kt_done" data-bs-dismiss="modal"
+																			aria-label="Close" data-bs-target="#updated" data-bs-dismiss="modal"
+																aria-label="Close">Save & Apply</button>
+																		</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+														<div class="modal fade" tabindex="-1" id="updated">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h3 class="modal-title fw-bold"> <img alt=" Logo"
+																src="../assets/media/icons/duotune/done.svg">
+															Order Updated Successful!</h3>
+																<!--begin::Close-->
+																<div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+																	data-bs-dismiss="modal"
+																	aria-label="Close">
+																	<i class="ki-duotone ki-cross fs-1"><span
+																			class="path1"></span><span
+																			class="path2"></span></i>
+																</div>
+																<!--end::Close-->
+														</div>
+														<div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_1">
+															<form
+																class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
+																novalidate="novalidate" id="kt_sign_in_form"
+																data-kt-redirect-url="../../demo1/dist/index.html"
+																action="#">
+															
+																<p class="fs-12px text-bink">Order data updated successfully. Changes will be reflected on the customer side. We will notify the customer of the status update.</p>
+																<div
+																class="mb-4 ol d-flex justify-content-evenly">
+																<button type="button" data-bs-toggle="modal" data-bs-target="#kt_modal_2" data-bs-dismiss="modal"
+																aria-label="Close"
+																class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">OK</button>
+															</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+						  </td>
+    `;
+        tableBody.appendChild(row);
+      }
+    });
+
+    document.getElementById('fileInput').addEventListener('change', function (event) {
+      const files = event.target.files;
+      const imageList = document.getElementById('imageList');
+      const imageTitle = document.getElementById('imageTitle');
+      if (files.length > 0) {
+        imageTitle.classList.remove("d-none");
+      } else {
+        imageTitle.classList.add('d-none');
+      }
+
+      for (const file of files) {
+        if (!file.type.startsWith('image/')) {
+          continue;
+        }
+
+        const card = document.createElement('div');
+        card.className = 'card image-card';
+        const fileURL = URL.createObjectURL(file);
+
+        card.innerHTML = `
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <div class="card-header p-2">
+            <img src="${fileURL}" class="card-img w-75px h-75px" />
+          </div>
+          <div class="flex-column align-self-center p-2">
+            <h3 class="fw-bolder fs-20px">${file.name}</h3>
+            <h3 class="fw-bolder fs-14px text-gray-200">${(file.size / 1024).toFixed(2)} KB</h3>
+          </div>
+        </div>
+        <div class="p-2 me-3">
+          <img src="../assets/media/img/delete.svg" class="card-img w-20px h-20px" onclick="removeCard(this)" />
+        </div>
+      </div>
+    `;
+
+        imageList.appendChild(card);
+        card.querySelector('img').onload = () => {
+          URL.revokeObjectURL(fileURL);
+        };
+      }
+    });
+
+    function removeCard(element) {
+      const card = element.closest('.card');
+      if (card) {
+        card.remove();
+      }
+    }
+
+    document.querySelectorAll('.custom-checkbox input[type="radio"]').forEach(function (checkbox) {
+      checkbox.addEventListener('change', function () {
+        document.querySelectorAll('.custom-checkbox').forEach(function (cb) {
+          cb.classList.remove('selected');
+          cb.classList.remove('yes-selected');
+        });
+        if (checkbox.checked) {
+          checkbox.closest('.custom-checkbox').classList.add('selected');
+          checkbox.closest('.custom-checkbox').classList.add('yes-selected');
+        }
+      });
+    });
+
+    document.querySelectorAll('.custom-checkbox').forEach(function (label) {
+      label.addEventListener('click', function () {
+        var input = label.querySelector('input[type="radio"]');
+        input.checked = true;
+        input.dispatchEvent(new Event('change'));
+      });
+    });
+  </script>
+</body>
+
+</html>

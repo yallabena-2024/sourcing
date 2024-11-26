@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Add Product - Yallabena</title>
+  <title>Contact Us - Yallabena</title>
 
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="article" />
@@ -12,11 +12,76 @@
   <link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
   <link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
   <link href="../assets/css/dashbord.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
     }
+
+    .contact-card {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 650px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #007BFF;
+  margin-right: 10px;
+}
+
+.contact-item a, .contact-item p {
+  color: #333;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-item a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+.contact-card a {
+  display: inline-block;
+  word-break: break-word;
+}
+
+@media (max-width: 400px) {
+  .contact-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contact-card h1 {
+    font-size: 20px;
+  }
+
+  .contact-item {
+    font-size: 16px;
+  }
+
+  .contact-item i {
+    font-size: 18px;
+  }
+}
   </style>
 </head>
 
@@ -31,7 +96,7 @@
         data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
         <div class="app-container border-v1 container-fluid d-flex align-items-stretch justify-content-between px-lg-4"
           id="kt_app_header_container">
-          <div class=" d-flex align-items-center justify-content-between flex-lg-grow-1 " id="kt_app_header_wrapper">
+          <div class="d-flex align-items-center justify-content-between flex-lg-grow-1 " id="kt_app_header_wrapper">
             <div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true"
               data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}"
               data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end"
@@ -73,8 +138,8 @@
             class="app-sidebar-arrow my-6 app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary h-30px w-30px position-absolute top-150 start-100 translate-middle rotate mt-30"
             data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
             data-kt-toggle-name="app-sidebar-minimize" style="border-radius: 99px;
-                    border: 1px solid var(--Color-Border, #E2E8F0);
-                    background: var(--Color-Background, #FFF);">
+						border: 1px solid var(--Color-Border, #E2E8F0);
+						background: var(--Color-Background, #FFF);">
             <img class=" fs-3 rotate-180" alt="Logo" src="../assets/media/icons/duotune/forword.svg" />
           </div>
           <div class="app-sidebar-logo d-flex flex-center" id="kt_app_sidebar_logo">
@@ -117,7 +182,7 @@
                           </a>
                         </div>
                         <div class="sub-tab mt-2" style="display: none; width: 85%;">
-                          <a class="menu-link active" href="../product-management/product-management.html">
+                          <a class="menu-link" href="../product-management/product-management.html">
                             <span class="menu-icon">
                               <img lass="fs-2" alt="Logo" src="../assets/media/icons/duotune/ecommerce/ecm001.svg">
                             </span>
@@ -133,9 +198,11 @@
                       <main-tabs class="main-tabs" menu-title="Permissions"
                         menu-href="../ permissions/role-management.html"
                         menu-src="../assets/media/icons/duotune/permissions.svg" highlight="false"></main-tabs>
-                      <main-tabs class="main-tabs" menu-title="Contact us" menu-href="../about-me/contact-us.html"
-                        menu-src="../assets/media/icons/duotune/communication/com003.svg" highlight="false"></main-tabs>
-                      <main-tabs class="main-tabs" menu-title="About us" menu-href="../about-me/about-us.html"
+                        <main-tabs class="main-tabs" menu-title="Contact us"
+                        menu-href="../about-me/contact-us.html"
+                        menu-src="../assets/media/icons/duotune/communication/com003.svg" highlight="true"></main-tabs>
+                        <main-tabs class="main-tabs" menu-title="About us"
+                        menu-href="../about-me/about-us.html"
                         menu-src="../assets/media/icons/duotune/communication/com014.svg" highlight="false"></main-tabs>
                     </div>
                   </div>
@@ -157,210 +224,73 @@
             </div>
           </div>
         </div>
-        <div class="app-main flex-column flex-row-fluid " id="kt_app_main">
-          <div class="d-flex flex-column flex-column-fluid">
-            <div id="kt_app_toolbar" class="app-toolbar  py-2 py-lg-4 ">
-              <div id="kt_app_toolbar_container" class="app-container  container-xxl d-flex flex-stack ">
-                <div class="page-title d-flex flex-column justify-content-center flex-wrap ">
-                  <h1 class="link-yellow page-heading d-flex fw-bolder fs-30px flex-column justify-content-center my-0">
-                    Add New Product
-                  </h1>
-                  <ul class="text-gray-200 breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
-                    Fill in the details below to add a new product to your catalog. </ul>
+        <div class="contact-container">
+          <div class="responsive-container-block big-container">
+            <div class="responsive-container-block textContainer">
+              <div class="topHead">
+                <p class="text-blk heading">
+                  Get in
+                  <span class="orangeText">
+                    touch
+                  </span>
+                </p>
+                <div class="orangeLine" id="w-c-s-bgc_p-2-dm-id">
                 </div>
-                <div class="d-flex align-items-center gap-2 gap-lg-3">
-                  <form action="../product-management/product-management.html">
-                    <button class="btn btn-outline fw-bold  btn justify-content-center align-items-center bg-white">
-                      Cancel
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="kt_app_content" class="app-content  flex-column-fluid ">
-            <div id="kt_app_content_container" class="app-container  container-xxl ">
-              <div class="row gx-12 gx-xl-12">
-                <div class="container-xxl">
-                  <div class="card">
-                    <div class="d-flex justify-content-between mt-3 ">
-                      <div class="row row-cols-1 m-4">
-                        <label class="required form-label fw-bold">Product
-                          Name</label>
-                        <input type="text" name="Email" class="form-control mb-2" placeholder="Product Name">
-                        <div class="d-flex flex-row p-0">
-                          <div class="col">
-                            <label class="required form-label fw-bold">PSKU</label>
-                            <input type="text" name="Email" class="form-control mb-2" placeholder="SKU">
-                          </div>
-                          <div class="col ml-3">
-                            <label class="required form-label fw-bold">Cost price
-                              (RMB)</label>
-                            <input type="text" name="Email" class="form-control mb-2" placeholder="Cost price (RMB)">
-                          </div>
-                        </div>
-                        <div class="d-flex flex-row p-0">
-                          <div class="col">
-                            <label class="required form-label fw-bold">Distribution Price
-                              (RMB)</label>
-                            <input type="text" name="Email" class="form-control mb-2"
-                              placeholder="Distribution Price (RMB)">
-                          </div>
-                          <div class="col ml-3">
-                            <label class="required form-label fw-bold">Procurement
-                              link</label>
-                            <input type="text" name="Email" class="form-control mb-2" placeholder="CProcurement link">
-                          </div>
-                        </div>
-                        <div class="d-flex flex-row p-0">
-                          <div class="col">
-                            <label class="required form-label fw-bold">Weight</label>
-                            <div class="input-group mb-3">
-                              <input type="text" name="Email" class="form-control" aria-describedby="basic-addon2"
-                                placeholder="Weight">
-                              <span class="input-group-text" id="basic-addon2">KG</span>
-                            </div>
-                          </div>
-                          <div class="col ml-3">
-                            <label class="required form-label fw-bold">Country</label>
-                            <div class="mb-10 fv-row fv-plugins-icon-container">
-                              <select class="form-select" data-control="select2" data-placeholder="Select">
-                                <option></option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <label class="required form-label fw-bold">Good Type</label>
-                          <div class="d-flex flex-row p-0">
-                            <input type="radio" class="btn-check" name="goods-outlined" id="general-outlined"
-                              autocomplete="off" checked>
-                            <label class="btn btn-outline-primary btn-outline-custom" for="general-outlined">General
-                              Goods</label>
-                            <input type="radio" class="btn-check" name="goods-outlined" id="sensitive-outlined"
-                              autocomplete="off">
-                            <label class="btn btn-outline-primary btn-outline-custom ml-3"
-                              for="sensitive-outlined">Sensitive Goods</label>
-                          </div>
-                          <br />
-                          <label class="required form-label fw-bold  mt-3">Is it with
-                            battery</label>
-                          <br />
-                          <div class="d-flex flex-row p-0">
-                            <input type="radio" class="btn-check" name="with-outlined" id="with-outlined"
-                              autocomplete="off" checked>
-                            <label class="btn btn-outline-primary btn-outline-custom" for="with-outlined">With
-                              battery</label>
-                            <input type="radio" class="btn-check" name="with-outlined" id="without-outlined"
-                              autocomplete="off">
-                            <label class="btn btn-outline-primary btn-outline-custom ml-3"
-                              for="without-outlined">Without battery</label>
-                          </div>
-                        </div>
+                <div class="contact-card">
+                  <!-- <h1>Contact Us</h1> -->
+                  <div class="contact-info">
+                    <div>
+                      <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+971554044030">971554044030</a>
                       </div>
-                      <div class="m-4">
-                        <label class="required form-label fw-bold">English introduction</label>
-                        <textarea type="text" name="introduction" class="form-control w-lg-400px min-h-500px"
-                          placeholder="English introduction"></textarea>
+                      <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:Customer@yallabena.com">Customer@yallabena.com</a>
                       </div>
                     </div>
-                    <hr class="m-3">
-                    <div class="page-title d-flex flex-column justify-content-center flex-wrap p-3">
-                      <h3
-                        class="link-yellow page-heading d-flex fw-bolder fs-20px flex-column justify-content-center my-0">
-                        Media Upload
-                      </h3>
-                      <ul class="text-gray-200 breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
-                        Add your documents here, and you can upload up to 5 files max </ul>
-                      <div class="d-flex flex-wrap mt-12px mb-10px">
-                        <div class="col-5 d-flex flex-column align-items-center">
-                          <div class="center dropzone  justify-content-evenly w-100">
-                            <div>
-                              <img src="../assets/media/img/upload.svg" class="upload-icon" />
-                              <input id="fileInput" name="fileInput" type="file" class="upload-input" />
-                            </div>
-                            <span class="btn-text-primary">Drag your file(s) or <label for="fileInput" type="button"
-                                class="btn btn-text-primary p-0 ml-3" name="uploadbutton">browse</label></span>
-                            <h6 class="text-gray-200">Max 10 MB files are allowed</h6>
-                          </div>
-                          <p class="text-bink-1 mt-12px form-label fw-bold align-self-start">Only support .jpg, .png and
-                            .svg and zip files</p>
-                        </div>
-                        <div class="col-1 separator-container d-flex flex-column align-items-center">
-                          <div class="separator-line"></div>
-                          <span class="separator-text">OR</span>
-                          <div class="separator-line"></div>
-                        </div>
-                        <div class="col-6 d-flex flex-column align-items-center">
-                          <label class="required form-label fw-bold align-self-start">Upload from URL</label>
-                          <div class="d-flex flex-row card shadow bg-gray-100 align-items-center p-3 h-60px w-100">
-                            <input type="text" class="form-control-plaintext w-100" placeholder="Enter URL" />
-                            <button type="button" class="btn btn-primary fs-8 d-flex align-items-center fw-bolder">
-                              <img class="filterit me-12px" src="../assets/media/img/upload.svg" />
-                              Upload
-                            </button>
-                          </div>
-                        </div>
+                    <div>
+                      <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://www.google.com/maps/place/Riyadh+Saudi+Arabia/@24.7251918,46.8225288,10z/data=!3m1!4b1!4m6!3m5!1s0x3e2f03890d489399:0xba974d1c98e79fd5!8m2!3d24.7135517!4d46.6752957!16zL20vMGRsbV8?entry=tts" target="_blank">Riyagh, Saudi Arabia</a>
                       </div>
-                      <h3 id="imageTitle"
-                        class="link-yellow page-heading d-flex fw-bolder fs-20px flex-column justify-content-center m-3 d-none">
-                        Uploaded Images
-                      </h3>
-                      <div class="d-flex  align-items-center p-3 ">
-                        <div id="imageList" class="d-flex flex-wrap mt-12px gap-2">
-                        </div>
-                      </div>
-                    </div>
-                    <h3
-                      class="link-yellow page-heading d-flex fw-bolder fs-20px flex-column justify-content-center m-3">
-                      Optional Product Information
-                    </h3>
-                    <div class="d-flex justify-content-between mt-3 align-items-start ">
-                      <div class="row row-cols-1 m-4 ">
-                        <div class="d-flex flex-row p-0 align-items-end">
-                          <div class="col me-3">
-                            <label class="required form-label fw-bold">Product Size</label>
-                            <div class="input-group mb-3">
-                              <input type="text" name="Email" class="form-control" aria-describedby="basic-addon2"
-                                placeholder="Length">
-                              <span class="input-group-text" id="basic-addon2">CM</span>
-                            </div>
-                          </div>
-                          <div class="col me-3">
-                            <div class="input-group mb-3">
-                              <input type="text" name="Email" class="form-control" aria-describedby="basic-addon2"
-                                placeholder="Width">
-                              <span class="input-group-text" id="basic-addon2">CM</span>
-                            </div>
-                          </div>
-                          <div class="col me-3">
-                            <div class="input-group mb-3">
-                              <input type="text" name="Email" class="form-control" aria-describedby="basic-addon2"
-                                placeholder="Height">
-                              <span class="input-group-text" id="basic-addon2">CM</span>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="input-group mb-3">
-                              <input type="text" name="Email" class="form-control" aria-describedby="basic-addon2"
-                                placeholder="Weight">
-                              <span class="input-group-text" id="basic-addon2">KG</span>
-                            </div>
-                          </div>
-                        </div>
-                        <label class="required form-label fw-bold">Product Brand</label>
-                        <input type="text" name="Email" class="form-control mb-2" placeholder="Product Brand">
-                      </div>
-                      <div class="m-4">
-                        <label class="required form-label fw-bold">Notesn</label>
-                        <textarea type="text" name="introduction" class="form-control w-lg-400px" placeholder="Notes"
-                          rows="5"></textarea>
+                      <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <a href="https://www.yallabena.com" target="_blank">www.yallabena.com</a>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="responsive-container-block container">
+              <div class="formm-container responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b">
+                <form class="form-box">
+                  <div class="container-block form-wrapper">
+                    <div class="responsive-container-block">
+                      <div class="left4">
+                        <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-2">
+                          <input class="input" id="ijowk-2" name="FirstName" placeholder="First Name">
+                        </div>
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                          <input class="input" id="indfi-2" name="Last Name" placeholder="Last Name">
+                        </div>
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                          <input class="input" id="ipmgh-2" name="Email" placeholder="Email Address">
+                        </div>
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 lastPhone">
+                          <input class="input" id="imgis-2" name="PhoneNumber" placeholder="Phone Number">
+                        </div>
+                      </div>
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-2">
+                        <textarea class="textinput" id="i5vyy-2" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <a class="send" href="#" id="w-c-s-bgc_p-1-dm-id">
+                      Send
+                    </a>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -368,7 +298,6 @@
       </div>
     </div>
   </div>
-
 
 
 
@@ -412,9 +341,117 @@
   <!--end::Javascript-->
 
   <script>
-    function updateTextInput(val) {
-      document.getElementById('rangeValueInput').value = val;
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+      var tableBody = document.querySelector('#kt_datatable_example_1 tbody');
+      for (var i = 1; i <= 6; i++) {
+        var row = document.createElement('tr');
+
+        row.innerHTML = `
+        <td>
+            <div class="form-check me-3 ">
+            	<input class="form-check-input" type="checkbox" data-kt-check="true" 
+              	data-kt-check-target="#kt_datatable_example_1 .form-check-input" value="${i}" />
+            </div>
+        </td>
+        <td>Order NO ${i}</td>
+        <td>Ref NO  ${i}</td>
+        <td>Weight ${i}</td>
+        <td>Country ${i}</td>
+        <td>Order Status ${i}</td>
+        <td>Creation Time ${i}</td>
+        <td>
+                            <div class="frame-35">
+                              <button class="img-wrapper-v2 text-yellow"  data-bs-toggle="modal" data-bs-target="#kt_details">View</button>
+                            
+                          </div>
+						  <div class="modal fade" tabindex="-1" id="kt_status">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h3 class="modal-title fw-bold">  Update Order Status <span class="text-yellow fw-bolder">#323432</span></h3>
+																<!--begin::Close-->
+																<div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+																	data-bs-dismiss="modal"
+																	aria-label="Close">
+																	<i class="ki-duotone ki-cross fs-1"><span
+																			class="path1"></span><span
+																			class="path2"></span></i>
+																</div>
+																<!--end::Close-->
+														</div>
+														<div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_1">
+															<form
+																class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
+																novalidate="novalidate" id="kt_sign_in_form"
+																data-kt-redirect-url="../../demo1/dist/index.html"
+																action="#">
+															
+																<div
+																	class="mb-10 fv-row fv-plugins-icon-container">
+																	<h3 class="fw-bold fs-14px " style='text-align: left;'>Select Status</h3>
+																	<select class="form-select mt-2"
+																		data-control="select2"
+																		data-placeholder="Select an option">
+																		<option></option>
+																		<option value="1">Option 1</option>
+																		<option value="2">Option 2</option>
+																	</select>
+																</div>
+																<div
+															<div class="d-flex align-items-center  mt-16px fv-row fv-plugins-icon-container">
+																			<button type="button" class=" img-wrapper-v2 fw-bold flex-grow-1 me-2" data-bs-dismiss="modal"
+																			aria-label="Close"  data-bs-dismiss="modal"
+																aria-label="Close">Cancel</button>
+																			<button type="button" class="btn btn-primary fw-bold flex-grow-1 ms-2 " data-bs-toggle="modal" data-bs-target="#kt_done" data-bs-dismiss="modal"
+																			aria-label="Close" data-bs-target="#updated" data-bs-dismiss="modal"
+																aria-label="Close">Save & Apply</button>
+																		</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+														<div class="modal fade" tabindex="-1" id="updated">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h3 class="modal-title fw-bold"> <img alt=" Logo"
+																src="../assets/media/icons/duotune/done.svg">
+															Order Updated Successful!</h3>
+																<!--begin::Close-->
+																<div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+																	data-bs-dismiss="modal"
+																	aria-label="Close">
+																	<i class="ki-duotone ki-cross fs-1"><span
+																			class="path1"></span><span
+																			class="path2"></span></i>
+																</div>
+																<!--end::Close-->
+														</div>
+														<div class="modal-body" class="modal fade" tabindex="-1" id="kt_modal_1">
+															<form
+																class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework"
+																novalidate="novalidate" id="kt_sign_in_form"
+																data-kt-redirect-url="../../demo1/dist/index.html"
+																action="#">
+															
+																<p class="fs-12px text-bink">Order data updated successfully. Changes will be reflected on the customer side. We will notify the customer of the status update.</p>
+																<div
+																class="mb-4 ol d-flex justify-content-evenly">
+																<button type="button" data-bs-toggle="modal" data-bs-target="#kt_modal_2" data-bs-dismiss="modal"
+																aria-label="Close"
+																class="btn btn-primary fw-bold  btn justify-content-center align-items-center vw-100">OK</button>
+															</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+						  </td>
+    `;
+        tableBody.appendChild(row);
+      }
+    });
 
     document.getElementById('fileInput').addEventListener('change', function (event) {
       const files = event.target.files;
@@ -465,6 +502,27 @@
         card.remove();
       }
     }
+
+    document.querySelectorAll('.custom-checkbox input[type="radio"]').forEach(function (checkbox) {
+      checkbox.addEventListener('change', function () {
+        document.querySelectorAll('.custom-checkbox').forEach(function (cb) {
+          cb.classList.remove('selected');
+          cb.classList.remove('yes-selected');
+        });
+        if (checkbox.checked) {
+          checkbox.closest('.custom-checkbox').classList.add('selected');
+          checkbox.closest('.custom-checkbox').classList.add('yes-selected');
+        }
+      });
+    });
+
+    document.querySelectorAll('.custom-checkbox').forEach(function (label) {
+      label.addEventListener('click', function () {
+        var input = label.querySelector('input[type="radio"]');
+        input.checked = true;
+        input.dispatchEvent(new Event('change'));
+      });
+    });
   </script>
 </body>
 

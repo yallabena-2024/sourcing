@@ -1610,7 +1610,6 @@
   font-size: var(--subheadline-XS-font-size);
   letter-spacing: var(--subheadline-XS-letter-spacing);
   line-height: var(--subheadline-XS-line-height);
-  white-space: nowrap;
   font-style: var(--subheadline-XS-font-style);
 }
 
@@ -3055,6 +3054,10 @@ canvas {
   right: 0px;
   top: auto;
   bottom: 0px;
+}
+
+.track-order {
+  width: 300px;
 }
 
 /* Responsive Section */

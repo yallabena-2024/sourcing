@@ -5415,7 +5415,7 @@ padding: 16px, 12px, 16px, 12px;
     background-clip: border-box;
     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
     border-radius: var(--bs-card-border-radius);
-    box-shadow: var(--bs-card-box-shadow)
+    /* box-shadow: var(--bs-card-box-shadow) */
 }
 
 .card>hr {
@@ -6680,7 +6680,7 @@ padding: 16px, 12px, 16px, 12px;
     background-color: var(--bs-modal-bg);
     background-clip: padding-box;
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    border-radius: var(--bs-modal-border-radius);
+    /* border-radius: var(--bs-modal-border-radius); */
     box-shadow: var(--bs-modal-box-shadow);
     outline: 0
 }
